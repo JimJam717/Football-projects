@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+
+# Data (Keep for demo)
+# raw_match_data.csv
+# raw_player_data.csv
+# cleaned_match_data.csv
+
+# Images/Plots (Keep scripts to regenerate them)
+*.png
+
+# IDEs
+.vscode/
+.idea/
+.trae/
