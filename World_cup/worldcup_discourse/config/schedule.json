@@ -1,0 +1,101 @@
+[
+  {
+    "match_id": "can_vs_bih_gd1",
+    "nation": "canada",
+    "opponent": "Bosnia and Herzegovina",
+    "kickoff_utc": "2026-06-12T19:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "CanadaSoccer"
+    ]
+  },
+  {
+    "match_id": "usa_vs_par_gd1",
+    "nation": "usa",
+    "opponent": "Paraguay",
+    "kickoff_utc": "2026-06-13T01:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "ussoccer"
+    ]
+  },
+  {
+    "match_id": "ned_vs_jpn_gd1",
+    "nation": "netherlands",
+    "opponent": "Japan",
+    "kickoff_utc": "2026-06-14T20:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "Eredivisie"
+    ]
+  },
+  {
+    "match_id": "ger_vs_cur_gd1",
+    "nation": "germany",
+    "opponent": "Curaçao",
+    "kickoff_utc": "2026-06-14T17:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "bundesliga"
+    ]
+  },
+  {
+    "match_id": "fra_vs_sen_gd1",
+    "nation": "france",
+    "opponent": "Senegal",
+    "kickoff_utc": "2026-06-16T19:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "Ligue1"
+    ]
+  },
+  {
+    "match_id": "eng_vs_cro_gd1",
+    "nation": "england",
+    "opponent": "Croatia",
+    "kickoff_utc": "2026-06-17T20:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "ThreeLions"
+    ]
+  },
+  {
+    "match_id": "sui_vs_qat_gd1",
+    "nation": "switzerland",
+    "opponent": "Qatar",
+    "kickoff_utc": "2026-06-13T19:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "SwissFootball"
+    ]
+  },
+  {
+    "match_id": "sco_vs_hai_gd1",
+    "nation": "scotland",
+    "opponent": "Haiti",
+    "kickoff_utc": "2026-06-14T01:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "ScottishFootball"
+    ]
+  },
+  {
+    "match_id": "aus_vs_tur_gd1",
+    "nation": "australia",
+    "opponent": "Türkiye",
+    "kickoff_utc": "2026-06-14T04:00:00Z",
+    "subreddits": [
+      "soccer",
+      "worldcup",
+      "Aleague"
+    ]
+  }
+]

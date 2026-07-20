@@ -1,0 +1,18 @@
+{
+  "model_id": "multilingual",
+  "model_output_head": "identity_attack",
+  "model_output_fallback_head": "toxicity",
+  "identity_threshold": 0.5,
+  "nationality_threshold": 0.5,
+  "batch_size": 64,
+  "max_text_chars": 512,
+  "supported_languages": ["en", "fr", "es", "it", "pt", "tr", "ru"],
+  "lexicon_path": "config/identity_lexicon.json",
+  "buckets": {
+    "racial_ethnic_flagged": "Flagged for racial/ethnic identity hostility (lexicon hit or model >= threshold)",
+    "nationality_flagged": "Flagged for nationality/xenophobia (lexicon hit or model >= threshold with nationality cue)",
+    "model_unsupported": "Language outside supported model set; no model score; only lexicon applied",
+    "unflagged": "No lexicon hit, model score below threshold (supported languages only)"
+  },
+  "bucket_precedence": ["racial_ethnic_flagged", "nationality_flagged", "model_unsupported", "unflagged"]
+}

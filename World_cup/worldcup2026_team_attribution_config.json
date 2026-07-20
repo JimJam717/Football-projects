@@ -1,0 +1,344 @@
+{
+  "neutral_subreddits": [
+    "soccer",
+    "worldcup"
+  ],
+  "teams": {
+    "alg": {
+      "country_name": "Algeria",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["algeria"],
+      "aliases": ["Algeria", "Les Fennecs"]
+    },
+    "arg": {
+      "country_name": "Argentina",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["argentina"],
+      "aliases": ["Argentina", "La Albiceleste"]
+    },
+    "aus": {
+      "country_name": "Australia",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["Aleague"],
+      "aliases": ["Australia", "Socceroos"]
+    },
+    "aut": {
+      "country_name": "Austria",
+      "languages": ["German"],
+      "language_codes": ["de"],
+      "country_subreddits": ["AustriaFootball"],
+      "aliases": ["Austria", "Österreich"]
+    },
+    "bel": {
+      "country_name": "Belgium",
+      "languages": ["Dutch", "French"],
+      "language_codes": ["nl", "fr"],
+      "country_subreddits": ["BelgianFootball"],
+      "aliases": ["Belgium", "Belgian Red Devils"]
+    },
+    "bih": {
+      "country_name": "Bosnia and Herzegovina",
+      "languages": ["Bosnian"],
+      "language_codes": ["bs"],
+      "country_subreddits": ["bih"],
+      "aliases": ["Bosnia", "Bosnia and Herzegovina"]
+    },
+    "bra": {
+      "country_name": "Brazil",
+      "languages": ["Portuguese"],
+      "language_codes": ["pt"],
+      "country_subreddits": ["futebol"],
+      "aliases": ["Brazil", "Brasil", "Seleção"]
+    },
+    "can": {
+      "country_name": "Canada",
+      "languages": ["English", "French"],
+      "language_codes": ["en", "fr"],
+      "country_subreddits": ["CanadaSoccer"],
+      "aliases": ["Canada", "CanMNT"]
+    },
+    "civ": {
+      "country_name": "Ivory Coast",
+      "languages": ["French"],
+      "language_codes": ["fr"],
+      "country_subreddits": ["IvoryCoast"],
+      "aliases": ["Ivory Coast", "Côte d'Ivoire"]
+    },
+    "cod": {
+      "country_name": "DR Congo",
+      "languages": ["French"],
+      "language_codes": ["fr"],
+      "country_subreddits": ["DRCongo"],
+      "aliases": ["DR Congo", "Congo DR", "Leopards"]
+    },
+    "col": {
+      "country_name": "Colombia",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["Colombia"],
+      "aliases": ["Colombia", "Los Cafeteros"]
+    },
+    "cpv": {
+      "country_name": "Cape Verde",
+      "languages": ["Portuguese"],
+      "language_codes": ["pt"],
+      "country_subreddits": ["CapeVerde"],
+      "aliases": ["Cape Verde", "Cabo Verde"]
+    },
+    "cro": {
+      "country_name": "Croatia",
+      "languages": ["Croatian"],
+      "language_codes": ["hr"],
+      "country_subreddits": ["croatia"],
+      "aliases": ["Croatia", "Hrvatska"]
+    },
+    "cur": {
+      "country_name": "Curacao",
+      "languages": ["Dutch", "Papiamento"],
+      "language_codes": ["nl", "pap"],
+      "country_subreddits": ["Curacao"],
+      "aliases": ["Curacao", "Curaçao"]
+    },
+    "cze": {
+      "country_name": "Czechia",
+      "languages": ["Czech"],
+      "language_codes": ["cs"],
+      "country_subreddits": ["czech"],
+      "aliases": ["Czechia", "Czech Republic"]
+    },
+    "ecu": {
+      "country_name": "Ecuador",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["Ecuador"],
+      "aliases": ["Ecuador", "La Tri"]
+    },
+    "egy": {
+      "country_name": "Egypt",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["Egypt"],
+      "aliases": ["Egypt", "Pharaohs"]
+    },
+    "eng": {
+      "country_name": "England",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["ThreeLions"],
+      "aliases": ["England", "Three Lions"]
+    },
+    "esp": {
+      "country_name": "Spain",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["Spain"],
+      "aliases": ["Spain", "España", "La Roja"]
+    },
+    "fra": {
+      "country_name": "France",
+      "languages": ["French"],
+      "language_codes": ["fr"],
+      "country_subreddits": ["Ligue1", "France"],
+      "aliases": ["France", "Les Bleus"]
+    },
+    "ger": {
+      "country_name": "Germany",
+      "languages": ["German"],
+      "language_codes": ["de"],
+      "country_subreddits": ["bundesliga"],
+      "aliases": ["Germany", "Deutschland", "DFB"]
+    },
+    "gha": {
+      "country_name": "Ghana",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["Ghana"],
+      "aliases": ["Ghana", "Black Stars"]
+    },
+    "hai": {
+      "country_name": "Haiti",
+      "languages": ["French", "Haitian Creole"],
+      "language_codes": ["fr", "ht"],
+      "country_subreddits": ["haiti"],
+      "aliases": ["Haiti", "Haïti"]
+    },
+    "irn": {
+      "country_name": "Iran",
+      "languages": ["Persian"],
+      "language_codes": ["fa"],
+      "country_subreddits": ["iran"],
+      "aliases": ["Iran", "Team Melli"]
+    },
+    "irq": {
+      "country_name": "Iraq",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["Iraq"],
+      "aliases": ["Iraq", "Lions of Mesopotamia"]
+    },
+    "jor": {
+      "country_name": "Jordan",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["jordan"],
+      "aliases": ["Jordan", "Nashama"]
+    },
+    "jpn": {
+      "country_name": "Japan",
+      "languages": ["Japanese"],
+      "language_codes": ["ja"],
+      "country_subreddits": ["JLeague"],
+      "aliases": ["Japan", "Samurai Blue"]
+    },
+    "kor": {
+      "country_name": "South Korea",
+      "languages": ["Korean"],
+      "language_codes": ["ko"],
+      "country_subreddits": ["KLeague"],
+      "aliases": ["South Korea", "Korea Republic"]
+    },
+    "ksa": {
+      "country_name": "Saudi Arabia",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["SaudiArabia"],
+      "aliases": ["Saudi Arabia", "Green Falcons"]
+    },
+    "mar": {
+      "country_name": "Morocco",
+      "languages": ["Arabic", "French"],
+      "language_codes": ["ar", "fr"],
+      "country_subreddits": ["Morocco"],
+      "aliases": ["Morocco", "Atlas Lions"]
+    },
+    "mex": {
+      "country_name": "Mexico",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["LigaMX", "Mexico"],
+      "aliases": ["Mexico", "México", "El Tri"]
+    },
+    "ned": {
+      "country_name": "Netherlands",
+      "languages": ["Dutch"],
+      "language_codes": ["nl"],
+      "country_subreddits": ["Eredivisie"],
+      "aliases": ["Netherlands", "Nederland", "Oranje"]
+    },
+    "nor": {
+      "country_name": "Norway",
+      "languages": ["Norwegian"],
+      "language_codes": ["no"],
+      "country_subreddits": ["NorskFotball"],
+      "aliases": ["Norway", "Norge"]
+    },
+    "nzl": {
+      "country_name": "New Zealand",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["NZFootball"],
+      "aliases": ["New Zealand", "All Whites"]
+    },
+    "pan": {
+      "country_name": "Panama",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["Panama"],
+      "aliases": ["Panama", "Los Canaleros"]
+    },
+    "par": {
+      "country_name": "Paraguay",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["Paraguay"],
+      "aliases": ["Paraguay", "La Albirroja"]
+    },
+    "por": {
+      "country_name": "Portugal",
+      "languages": ["Portuguese"],
+      "language_codes": ["pt"],
+      "country_subreddits": ["PrimeiraLiga", "Portugal"],
+      "aliases": ["Portugal", "Seleção das Quinas"]
+    },
+    "qat": {
+      "country_name": "Qatar",
+      "languages": ["Arabic"],
+      "language_codes": ["ar"],
+      "country_subreddits": ["qatar"],
+      "aliases": ["Qatar", "Al-Annabi"]
+    },
+    "rsa": {
+      "country_name": "South Africa",
+      "languages": ["English", "Afrikaans", "Zulu"],
+      "language_codes": ["en", "af", "zu"],
+      "country_subreddits": ["southafrica"],
+      "aliases": ["South Africa", "Bafana Bafana"]
+    },
+    "sco": {
+      "country_name": "Scotland",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["ScottishFootball"],
+      "aliases": ["Scotland", "Tartan Army"]
+    },
+    "sen": {
+      "country_name": "Senegal",
+      "languages": ["French"],
+      "language_codes": ["fr"],
+      "country_subreddits": ["Senegal"],
+      "aliases": ["Senegal", "Lions of Teranga"]
+    },
+    "sui": {
+      "country_name": "Switzerland",
+      "languages": ["German", "French", "Italian"],
+      "language_codes": ["de", "fr", "it"],
+      "country_subreddits": ["SwissFootball"],
+      "aliases": ["Switzerland", "Suisse", "Schweiz"]
+    },
+    "swe": {
+      "country_name": "Sweden",
+      "languages": ["Swedish"],
+      "language_codes": ["sv"],
+      "country_subreddits": ["SvenskFotboll"],
+      "aliases": ["Sweden", "Sverige"]
+    },
+    "tun": {
+      "country_name": "Tunisia",
+      "languages": ["Arabic", "French"],
+      "language_codes": ["ar", "fr"],
+      "country_subreddits": ["Tunisia"],
+      "aliases": ["Tunisia", "Carthage Eagles"]
+    },
+    "tur": {
+      "country_name": "Turkiye",
+      "languages": ["Turkish"],
+      "language_codes": ["tr"],
+      "country_subreddits": ["superlig", "Turkey"],
+      "aliases": ["Turkiye", "Türkiye", "Turkey"]
+    },
+    "ury": {
+      "country_name": "Uruguay",
+      "languages": ["Spanish"],
+      "language_codes": ["es"],
+      "country_subreddits": ["uruguay"],
+      "aliases": ["Uruguay", "La Celeste"]
+    },
+    "usa": {
+      "country_name": "USA",
+      "languages": ["English"],
+      "language_codes": ["en"],
+      "country_subreddits": ["ussoccer"],
+      "aliases": ["USA", "United States", "USMNT"]
+    },
+    "uzb": {
+      "country_name": "Uzbekistan",
+      "languages": ["Uzbek"],
+      "language_codes": ["uz"],
+      "country_subreddits": ["Uzbekistan"],
+      "aliases": ["Uzbekistan", "Oq bo'rilar"]
+    }
+  }
+}

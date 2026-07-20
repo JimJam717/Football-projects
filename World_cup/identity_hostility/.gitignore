@@ -1,0 +1,19 @@
+# ---- Private / never-tracked artifacts ----
+# Private keyword lexicon (contains sensitive terms; never surfaced in outputs)
+config/identity_lexicon.json
+
+# Private per-comment intermediate (hashed ids, no text, but still row-level)
+data/processed/identity_flags/comment_flags.parquet
+
+# Private QA review sample (FULL untruncated comment text; local eyes only)
+data/processed/identity_flags/qa_sample.csv
+
+# ---- Public artifacts ARE tracked (explicitly un-ignored for clarity) ----
+!data/processed/identity_flags/aggregate_results.parquet
+
+# ---- Python noise ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log

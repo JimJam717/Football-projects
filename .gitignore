@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+*venv*/
+site-packages/
+
+# Environment / secrets
+.env
+*.env
+
+# Model weights / large binaries
+*.pt
+*.pth
+*.onnx
+
+# Media
+*.mp4
+*.mov
+*.avi
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+*.log
+
+# --- Exploitation_network ---
+Exploitation_network/temp_analysis.py
+
+# --- Scouting_Reports (raw scraped data) ---
+Scouting_Reports/*.json
+Scouting_Reports/ipl_male_json.zip
+Scouting_Reports/error_log.txt
+Scouting_Reports/full_error.txt
+
+# --- World_cup (large intermediate pipeline data) ---
+World_cup/data/collected/
+World_cup/data/processed/attributed/
+World_cup/data/processed/language/
+World_cup/data/processed/scored/
+World_cup/identity_hostility/data/
+World_cup/handoff_rendered/
+World_cup/.agents/
+World_cup/**/~$*.docx
+
+# --- tactical-annotator (models, test media, logs) ---
+tactical-annotator/models/
+tactical-annotator/input/
+tactical-annotator/output/
+tactical-annotator/*error*.txt
+tactical-annotator/gui_output*.txt
+tactical-annotator/output.txt
+tactical-annotator/test_gui*.ps1
+tactical-annotator/empty.py
+tactical-annotator/test.py
+tactical-annotator/test_video.py
+tactical-annotator/CUsersPrathamDesktopprojectstactical-annotatorgui/

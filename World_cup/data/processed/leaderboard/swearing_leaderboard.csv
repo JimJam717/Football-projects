@@ -1,0 +1,47 @@
+rank,qualified_for_rank,sample_status,country_name,team_code,eligibility_status,comments,words,swear_hits,swears_per_1000_words,swears_per_100_comments,attributed_share
+1,True,qualified,Scotland,sco,eligible,15000,239966,1078,4.492303,7.186667,0.05718
+2,True,qualified,Turkiye,tur,eligible,17384,335923,1426,4.24502,8.202945,0.066268
+3,True,qualified,Brazil,bra,eligible,15600,284877,999,3.506777,6.403846,0.059468
+4,True,qualified,Australia,aus,eligible,10709,174676,593,3.394857,5.537398,0.040823
+5,True,qualified,Mexico,mex,eligible,35187,695501,1925,2.767789,5.47077,0.134134
+6,True,qualified,USA,usa,eligible,11400,251951,648,2.571929,5.684211,0.043457
+7,True,qualified,England,eng,eligible,2400,64108,144,2.24621,6.0,0.009149
+8,True,qualified,Canada,can,eligible,18373,299925,588,1.96049,3.200348,0.070038
+9,True,qualified,New Zealand,nzl,eligible,1381,35150,66,1.877667,4.779146,0.005264
+10,True,qualified,Norway,nor,eligible,4010,88041,148,1.681035,3.690773,0.015286
+11,True,qualified,Algeria,alg,eligible,2500,61735,96,1.555034,3.84,0.00953
+12,True,qualified,Tunisia,tun,eligible,6311,150226,219,1.457804,3.470132,0.024058
+13,True,qualified,Haiti,hai,eligible,1529,40068,52,1.297794,3.400916,0.005829
+14,True,qualified,South Africa,rsa,eligible,3341,105889,133,1.256032,3.980844,0.012736
+15,True,qualified,Senegal,sen,eligible,1052,28805,34,1.180351,3.231939,0.00401
+16,True,qualified,Morocco,mar,eligible,12052,348940,403,1.154926,3.343843,0.045942
+17,True,qualified,Belgium,bel,eligible,5889,120732,138,1.143028,2.343352,0.022449
+18,True,qualified,Spain,esp,eligible,1966,47457,54,1.137872,2.746694,0.007494
+19,True,qualified,Colombia,col,eligible,2000,65248,67,1.026851,3.35,0.007624
+20,True,qualified,Portugal,por,eligible,6000,199418,189,0.947758,3.15,0.022872
+21,True,qualified,Uruguay,ury,eligible,1531,50301,46,0.914495,3.004572,0.005836
+22,True,qualified,Argentina,arg,eligible,6300,178427,158,0.885516,2.507937,0.024016
+23,True,qualified,Egypt,egy,eligible,6003,57061,45,0.78863,0.749625,0.022884
+24,True,qualified,Paraguay,par,eligible,3756,113145,89,0.786601,2.369542,0.014318
+25,True,qualified,Qatar,qat,eligible,2148,49896,38,0.761584,1.769088,0.008188
+26,True,qualified,Ghana,gha,eligible,1906,45768,31,0.677329,1.626443,0.007266
+27,True,qualified,France,fra,eligible,4727,183636,122,0.664358,2.580918,0.018019
+28,True,qualified,Czechia,cze,eligible,26650,776790,394,0.507216,1.478424,0.10159
+29,True,qualified,Germany,ger,eligible,11248,304596,151,0.495739,1.342461,0.042878
+30,True,qualified,Netherlands,ned,eligible,5527,123742,56,0.452555,1.013208,0.021069
+31,True,qualified,Croatia,cro,eligible,3402,102032,41,0.401835,1.205173,0.012968
+32,True,qualified,Bosnia and Herzegovina,bih,eligible,4816,141339,49,0.346684,1.017442,0.018359
+33,True,qualified,Saudi Arabia,ksa,eligible,3447,12737,3,0.235534,0.087032,0.01314
+,False,low_comments_and_words,Sweden,swe,eligible,53,791,9,11.378003,16.981132,0.000202
+,False,low_comments,South Korea,kor,eligible,456,16407,46,2.803681,10.087719,0.001738
+,False,low_comments,Ecuador,ecu,eligible,571,16811,35,2.08197,6.129597,0.002177
+,False,low_comments,Uzbekistan,uzb,eligible,876,24730,39,1.577032,4.452055,0.003339
+,False,low_comments_and_words,Jordan,jor,eligible,900,8932,11,1.231527,1.222222,0.003431
+,False,low_comments_and_words,Iran,irn,eligible,260,8066,9,1.115795,3.461538,0.000991
+,False,low_comments,Cape Verde,cpv,eligible,592,11864,13,1.095752,2.195946,0.002257
+,False,low_comments,Curacao,cur,eligible,454,11327,12,1.059416,2.643172,0.001731
+,False,low_comments,Japan,jpn,eligible,714,23220,22,0.947459,3.081232,0.002722
+,False,low_words,Iraq,irq,eligible,1188,5472,5,0.913743,0.420875,0.004529
+,False,low_comments,Panama,pan,eligible,700,25034,8,0.319565,1.142857,0.002668
+,False,low_comments_and_words,Switzerland,sui,eligible,18,234,0,0.0,0.0,6.9e-05
+,False,low_comments_and_words,Ivory Coast,civ,eligible,1,1,0,0.0,0.0,4e-06

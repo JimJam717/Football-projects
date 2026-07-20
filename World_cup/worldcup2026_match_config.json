@@ -1,0 +1,977 @@
+{
+  "tournament": "2026 FIFA World Cup",
+  "generated_on": "2026-07-12",
+  "scope": "group_stage_through_quarterfinals",
+  "team_codes": {
+    "Mexico": "mex",
+    "South Korea": "kor",
+    "Czechia": "cze",
+    "South Africa": "rsa",
+    "Canada": "can",
+    "Switzerland": "sui",
+    "Bosnia and Herzegovina": "bih",
+    "Qatar": "qat",
+    "Scotland": "sco",
+    "Brazil": "bra",
+    "Morocco": "mar",
+    "Haiti": "hai",
+    "USA": "usa",
+    "Australia": "aus",
+    "Turkiye": "tur",
+    "Paraguay": "par",
+    "Germany": "ger",
+    "Ivory Coast": "civ",
+    "Ecuador": "ecu",
+    "Curacao": "cur",
+    "Sweden": "swe",
+    "Netherlands": "ned",
+    "Japan": "jpn",
+    "Tunisia": "tun",
+    "Belgium": "bel",
+    "Egypt": "egy",
+    "Iran": "irn",
+    "New Zealand": "nzl",
+    "Spain": "esp",
+    "Cape Verde": "cpv",
+    "Saudi Arabia": "ksa",
+    "Uruguay": "ury",
+    "Norway": "nor",
+    "France": "fra",
+    "Senegal": "sen",
+    "Iraq": "irq",
+    "Argentina": "arg",
+    "Austria": "aut",
+    "Jordan": "jor",
+    "Algeria": "alg",
+    "Colombia": "col",
+    "DR Congo": "cod",
+    "Portugal": "por",
+    "Uzbekistan": "uzb",
+    "England": "eng",
+    "Ghana": "gha",
+    "Panama": "pan",
+    "Croatia": "cro"
+  },
+  "matches": [
+    {
+      "match_id": "mex_vs_rsa_ga_md1",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-11",
+      "team_a": "Mexico",
+      "team_b": "South Africa",
+      "note": null
+    },
+    {
+      "match_id": "kor_vs_cze_ga_md1",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-11",
+      "team_a": "South Korea",
+      "team_b": "Czechia",
+      "note": null
+    },
+    {
+      "match_id": "cze_vs_rsa_ga_md2",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-18",
+      "team_a": "Czechia",
+      "team_b": "South Africa",
+      "note": null
+    },
+    {
+      "match_id": "mex_vs_kor_ga_md2",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-18",
+      "team_a": "Mexico",
+      "team_b": "South Korea",
+      "note": null
+    },
+    {
+      "match_id": "cze_vs_mex_ga_md3",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-24",
+      "team_a": "Czechia",
+      "team_b": "Mexico",
+      "note": null
+    },
+    {
+      "match_id": "rsa_vs_kor_ga_md3",
+      "phase": "group_stage",
+      "round": "Group A",
+      "date": "2026-06-24",
+      "team_a": "South Africa",
+      "team_b": "South Korea",
+      "note": null
+    },
+    {
+      "match_id": "can_vs_bih_gb_md1",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-12",
+      "team_a": "Canada",
+      "team_b": "Bosnia and Herzegovina",
+      "note": null
+    },
+    {
+      "match_id": "sui_vs_qat_gb_md1",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-13",
+      "team_a": "Switzerland",
+      "team_b": "Qatar",
+      "note": null
+    },
+    {
+      "match_id": "sui_vs_bih_gb_md2",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-18",
+      "team_a": "Switzerland",
+      "team_b": "Bosnia and Herzegovina",
+      "note": null
+    },
+    {
+      "match_id": "can_vs_qat_gb_md2",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-18",
+      "team_a": "Canada",
+      "team_b": "Qatar",
+      "note": null
+    },
+    {
+      "match_id": "sui_vs_can_gb_md3",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-24",
+      "team_a": "Switzerland",
+      "team_b": "Canada",
+      "note": null
+    },
+    {
+      "match_id": "bih_vs_qat_gb_md3",
+      "phase": "group_stage",
+      "round": "Group B",
+      "date": "2026-06-24",
+      "team_a": "Bosnia and Herzegovina",
+      "team_b": "Qatar",
+      "note": null
+    },
+    {
+      "match_id": "bra_vs_mar_gc_md1",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-13",
+      "team_a": "Brazil",
+      "team_b": "Morocco",
+      "note": null
+    },
+    {
+      "match_id": "sco_vs_hai_gc_md1",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-13",
+      "team_a": "Scotland",
+      "team_b": "Haiti",
+      "note": null
+    },
+    {
+      "match_id": "sco_vs_mar_gc_md2",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-19",
+      "team_a": "Scotland",
+      "team_b": "Morocco",
+      "note": null
+    },
+    {
+      "match_id": "bra_vs_hai_gc_md2",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-19",
+      "team_a": "Brazil",
+      "team_b": "Haiti",
+      "note": null
+    },
+    {
+      "match_id": "sco_vs_bra_gc_md3",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-24",
+      "team_a": "Scotland",
+      "team_b": "Brazil",
+      "note": null
+    },
+    {
+      "match_id": "mar_vs_hai_gc_md3",
+      "phase": "group_stage",
+      "round": "Group C",
+      "date": "2026-06-24",
+      "team_a": "Morocco",
+      "team_b": "Haiti",
+      "note": null
+    },
+    {
+      "match_id": "usa_vs_par_gd_md1",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-12",
+      "team_a": "USA",
+      "team_b": "Paraguay",
+      "note": null
+    },
+    {
+      "match_id": "aus_vs_tur_gd_md1",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-13",
+      "team_a": "Australia",
+      "team_b": "Turkiye",
+      "note": null
+    },
+    {
+      "match_id": "usa_vs_aus_gd_md2",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-19",
+      "team_a": "USA",
+      "team_b": "Australia",
+      "note": null
+    },
+    {
+      "match_id": "tur_vs_par_gd_md2",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-19",
+      "team_a": "Turkiye",
+      "team_b": "Paraguay",
+      "note": null
+    },
+    {
+      "match_id": "tur_vs_usa_gd_md3",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-25",
+      "team_a": "Turkiye",
+      "team_b": "USA",
+      "note": null
+    },
+    {
+      "match_id": "par_vs_aus_gd_md3",
+      "phase": "group_stage",
+      "round": "Group D",
+      "date": "2026-06-25",
+      "team_a": "Paraguay",
+      "team_b": "Australia",
+      "note": null
+    },
+    {
+      "match_id": "ger_vs_cur_ge_md1",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-14",
+      "team_a": "Germany",
+      "team_b": "Curacao",
+      "note": null
+    },
+    {
+      "match_id": "civ_vs_ecu_ge_md1",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-14",
+      "team_a": "Ivory Coast",
+      "team_b": "Ecuador",
+      "note": null
+    },
+    {
+      "match_id": "ger_vs_civ_ge_md2",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-20",
+      "team_a": "Germany",
+      "team_b": "Ivory Coast",
+      "note": null
+    },
+    {
+      "match_id": "ecu_vs_cur_ge_md2",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-20",
+      "team_a": "Ecuador",
+      "team_b": "Curacao",
+      "note": null
+    },
+    {
+      "match_id": "cur_vs_civ_ge_md3",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-25",
+      "team_a": "Curacao",
+      "team_b": "Ivory Coast",
+      "note": null
+    },
+    {
+      "match_id": "ecu_vs_ger_ge_md3",
+      "phase": "group_stage",
+      "round": "Group E",
+      "date": "2026-06-25",
+      "team_a": "Ecuador",
+      "team_b": "Germany",
+      "note": null
+    },
+    {
+      "match_id": "ned_vs_jpn_gf_md1",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-14",
+      "team_a": "Netherlands",
+      "team_b": "Japan",
+      "note": null
+    },
+    {
+      "match_id": "swe_vs_tun_gf_md1",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-14",
+      "team_a": "Sweden",
+      "team_b": "Tunisia",
+      "note": null
+    },
+    {
+      "match_id": "ned_vs_swe_gf_md2",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-20",
+      "team_a": "Netherlands",
+      "team_b": "Sweden",
+      "note": null
+    },
+    {
+      "match_id": "tun_vs_jpn_gf_md2",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-20",
+      "team_a": "Tunisia",
+      "team_b": "Japan",
+      "note": null
+    },
+    {
+      "match_id": "jpn_vs_swe_gf_md3",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-25",
+      "team_a": "Japan",
+      "team_b": "Sweden",
+      "note": null
+    },
+    {
+      "match_id": "tun_vs_ned_gf_md3",
+      "phase": "group_stage",
+      "round": "Group F",
+      "date": "2026-06-25",
+      "team_a": "Tunisia",
+      "team_b": "Netherlands",
+      "note": null
+    },
+    {
+      "match_id": "bel_vs_egy_gg_md1",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-15",
+      "team_a": "Belgium",
+      "team_b": "Egypt",
+      "note": null
+    },
+    {
+      "match_id": "irn_vs_nzl_gg_md1",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-15",
+      "team_a": "Iran",
+      "team_b": "New Zealand",
+      "note": null
+    },
+    {
+      "match_id": "bel_vs_irn_gg_md2",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-21",
+      "team_a": "Belgium",
+      "team_b": "Iran",
+      "note": null
+    },
+    {
+      "match_id": "nzl_vs_egy_gg_md2",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-21",
+      "team_a": "New Zealand",
+      "team_b": "Egypt",
+      "note": null
+    },
+    {
+      "match_id": "egy_vs_irn_gg_md3",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-26",
+      "team_a": "Egypt",
+      "team_b": "Iran",
+      "note": null
+    },
+    {
+      "match_id": "nzl_vs_bel_gg_md3",
+      "phase": "group_stage",
+      "round": "Group G",
+      "date": "2026-06-26",
+      "team_a": "New Zealand",
+      "team_b": "Belgium",
+      "note": null
+    },
+    {
+      "match_id": "esp_vs_cpv_gh_md1",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-15",
+      "team_a": "Spain",
+      "team_b": "Cape Verde",
+      "note": null
+    },
+    {
+      "match_id": "ksa_vs_ury_gh_md1",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-15",
+      "team_a": "Saudi Arabia",
+      "team_b": "Uruguay",
+      "note": null
+    },
+    {
+      "match_id": "esp_vs_ksa_gh_md2",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-21",
+      "team_a": "Spain",
+      "team_b": "Saudi Arabia",
+      "note": null
+    },
+    {
+      "match_id": "ury_vs_cpv_gh_md2",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-21",
+      "team_a": "Uruguay",
+      "team_b": "Cape Verde",
+      "note": null
+    },
+    {
+      "match_id": "cpv_vs_ksa_gh_md3",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-26",
+      "team_a": "Cape Verde",
+      "team_b": "Saudi Arabia",
+      "note": null
+    },
+    {
+      "match_id": "ury_vs_esp_gh_md3",
+      "phase": "group_stage",
+      "round": "Group H",
+      "date": "2026-06-26",
+      "team_a": "Uruguay",
+      "team_b": "Spain",
+      "note": null
+    },
+    {
+      "match_id": "fra_vs_sen_gi_md1",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-16",
+      "team_a": "France",
+      "team_b": "Senegal",
+      "note": null
+    },
+    {
+      "match_id": "nor_vs_irq_gi_md1",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-16",
+      "team_a": "Norway",
+      "team_b": "Iraq",
+      "note": null
+    },
+    {
+      "match_id": "fra_vs_irq_gi_md2",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-22",
+      "team_a": "France",
+      "team_b": "Iraq",
+      "note": null
+    },
+    {
+      "match_id": "nor_vs_sen_gi_md2",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-22",
+      "team_a": "Norway",
+      "team_b": "Senegal",
+      "note": null
+    },
+    {
+      "match_id": "nor_vs_fra_gi_md3",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-26",
+      "team_a": "Norway",
+      "team_b": "France",
+      "note": null
+    },
+    {
+      "match_id": "sen_vs_irq_gi_md3",
+      "phase": "group_stage",
+      "round": "Group I",
+      "date": "2026-06-26",
+      "team_a": "Senegal",
+      "team_b": "Iraq",
+      "note": null
+    },
+    {
+      "match_id": "arg_vs_alg_gj_md1",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-16",
+      "team_a": "Argentina",
+      "team_b": "Algeria",
+      "note": null
+    },
+    {
+      "match_id": "aut_vs_jor_gj_md1",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-16",
+      "team_a": "Austria",
+      "team_b": "Jordan",
+      "note": null
+    },
+    {
+      "match_id": "arg_vs_aut_gj_md2",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-22",
+      "team_a": "Argentina",
+      "team_b": "Austria",
+      "note": null
+    },
+    {
+      "match_id": "jor_vs_alg_gj_md2",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-22",
+      "team_a": "Jordan",
+      "team_b": "Algeria",
+      "note": null
+    },
+    {
+      "match_id": "jor_vs_arg_gj_md3",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-27",
+      "team_a": "Jordan",
+      "team_b": "Argentina",
+      "note": null
+    },
+    {
+      "match_id": "alg_vs_aut_gj_md3",
+      "phase": "group_stage",
+      "round": "Group J",
+      "date": "2026-06-27",
+      "team_a": "Algeria",
+      "team_b": "Austria",
+      "note": null
+    },
+    {
+      "match_id": "por_vs_cod_gk_md1",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-17",
+      "team_a": "Portugal",
+      "team_b": "DR Congo",
+      "note": null
+    },
+    {
+      "match_id": "uzb_vs_col_gk_md1",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-17",
+      "team_a": "Uzbekistan",
+      "team_b": "Colombia",
+      "note": null
+    },
+    {
+      "match_id": "por_vs_uzb_gk_md2",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-23",
+      "team_a": "Portugal",
+      "team_b": "Uzbekistan",
+      "note": null
+    },
+    {
+      "match_id": "col_vs_cod_gk_md2",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-23",
+      "team_a": "Colombia",
+      "team_b": "DR Congo",
+      "note": null
+    },
+    {
+      "match_id": "col_vs_por_gk_md3",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-27",
+      "team_a": "Colombia",
+      "team_b": "Portugal",
+      "note": null
+    },
+    {
+      "match_id": "cod_vs_uzb_gk_md3",
+      "phase": "group_stage",
+      "round": "Group K",
+      "date": "2026-06-27",
+      "team_a": "DR Congo",
+      "team_b": "Uzbekistan",
+      "note": null
+    },
+    {
+      "match_id": "eng_vs_cro_gl_md1",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-17",
+      "team_a": "England",
+      "team_b": "Croatia",
+      "note": null
+    },
+    {
+      "match_id": "gha_vs_pan_gl_md1",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-17",
+      "team_a": "Ghana",
+      "team_b": "Panama",
+      "note": null
+    },
+    {
+      "match_id": "eng_vs_gha_gl_md2",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-23",
+      "team_a": "England",
+      "team_b": "Ghana",
+      "note": null
+    },
+    {
+      "match_id": "pan_vs_cro_gl_md2",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-23",
+      "team_a": "Panama",
+      "team_b": "Croatia",
+      "note": null
+    },
+    {
+      "match_id": "pan_vs_eng_gl_md3",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-27",
+      "team_a": "Panama",
+      "team_b": "England",
+      "note": null
+    },
+    {
+      "match_id": "cro_vs_gha_gl_md3",
+      "phase": "group_stage",
+      "round": "Group L",
+      "date": "2026-06-27",
+      "team_a": "Croatia",
+      "team_b": "Ghana",
+      "note": null
+    },
+    {
+      "match_id": "can_vs_rsa_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "team_a": "Canada",
+      "team_b": "South Africa",
+      "note": null
+    },
+    {
+      "match_id": "bra_vs_jpn_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team_a": "Brazil",
+      "team_b": "Japan",
+      "note": null
+    },
+    {
+      "match_id": "ger_vs_par_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team_a": "Germany",
+      "team_b": "Paraguay",
+      "note": "PAR won 4-3 PK"
+    },
+    {
+      "match_id": "ned_vs_mar_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-29",
+      "team_a": "Netherlands",
+      "team_b": "Morocco",
+      "note": "MAR won 3-2 PK"
+    },
+    {
+      "match_id": "nor_vs_civ_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team_a": "Norway",
+      "team_b": "Ivory Coast",
+      "note": null
+    },
+    {
+      "match_id": "fra_vs_swe_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team_a": "France",
+      "team_b": "Sweden",
+      "note": null
+    },
+    {
+      "match_id": "mex_vs_ecu_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-06-30",
+      "team_a": "Mexico",
+      "team_b": "Ecuador",
+      "note": null
+    },
+    {
+      "match_id": "eng_vs_cod_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team_a": "England",
+      "team_b": "DR Congo",
+      "note": null
+    },
+    {
+      "match_id": "bel_vs_sen_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team_a": "Belgium",
+      "team_b": "Senegal",
+      "note": "aet"
+    },
+    {
+      "match_id": "usa_vs_bih_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-01",
+      "team_a": "USA",
+      "team_b": "Bosnia and Herzegovina",
+      "note": null
+    },
+    {
+      "match_id": "esp_vs_aut_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team_a": "Spain",
+      "team_b": "Austria",
+      "note": null
+    },
+    {
+      "match_id": "por_vs_cro_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team_a": "Portugal",
+      "team_b": "Croatia",
+      "note": null
+    },
+    {
+      "match_id": "sui_vs_alg_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-02",
+      "team_a": "Switzerland",
+      "team_b": "Algeria",
+      "note": null
+    },
+    {
+      "match_id": "egy_vs_aus_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team_a": "Egypt",
+      "team_b": "Australia",
+      "note": "EGY won 4-2 PK"
+    },
+    {
+      "match_id": "arg_vs_cpv_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team_a": "Argentina",
+      "team_b": "Cape Verde",
+      "note": "aet"
+    },
+    {
+      "match_id": "col_vs_gha_r32",
+      "phase": "knockout",
+      "round": "Round of 32",
+      "date": "2026-07-03",
+      "team_a": "Colombia",
+      "team_b": "Ghana",
+      "note": null
+    },
+    {
+      "match_id": "mar_vs_can_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "team_a": "Morocco",
+      "team_b": "Canada",
+      "note": null
+    },
+    {
+      "match_id": "fra_vs_par_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-04",
+      "team_a": "France",
+      "team_b": "Paraguay",
+      "note": null
+    },
+    {
+      "match_id": "nor_vs_bra_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "team_a": "Norway",
+      "team_b": "Brazil",
+      "note": null
+    },
+    {
+      "match_id": "eng_vs_mex_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-05",
+      "team_a": "England",
+      "team_b": "Mexico",
+      "note": null
+    },
+    {
+      "match_id": "esp_vs_por_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "team_a": "Spain",
+      "team_b": "Portugal",
+      "note": null
+    },
+    {
+      "match_id": "bel_vs_usa_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-06",
+      "team_a": "Belgium",
+      "team_b": "USA",
+      "note": null
+    },
+    {
+      "match_id": "arg_vs_egy_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "team_a": "Argentina",
+      "team_b": "Egypt",
+      "note": null
+    },
+    {
+      "match_id": "sui_vs_col_r16",
+      "phase": "knockout",
+      "round": "Round of 16",
+      "date": "2026-07-07",
+      "team_a": "Switzerland",
+      "team_b": "Colombia",
+      "note": "SUI won 4-3 PK"
+    },
+    {
+      "match_id": "fra_vs_mar_qf",
+      "phase": "knockout",
+      "round": "Quarterfinal",
+      "date": "2026-07-09",
+      "team_a": "France",
+      "team_b": "Morocco",
+      "note": null
+    },
+    {
+      "match_id": "esp_vs_bel_qf",
+      "phase": "knockout",
+      "round": "Quarterfinal",
+      "date": "2026-07-10",
+      "team_a": "Spain",
+      "team_b": "Belgium",
+      "note": null
+    },
+    {
+      "match_id": "eng_vs_nor_qf",
+      "phase": "knockout",
+      "round": "Quarterfinal",
+      "date": "2026-07-11",
+      "team_a": "England",
+      "team_b": "Norway",
+      "note": null
+    },
+    {
+      "match_id": "arg_vs_sui_qf",
+      "phase": "knockout",
+      "round": "Quarterfinal",
+      "date": "2026-07-11",
+      "team_a": "Argentina",
+      "team_b": "Switzerland",
+      "note": "ARG won aet"
+    }
+  ],
+  "upcoming_not_in_scope": [
+    {
+      "match_id": "fra_vs_esp_sf",
+      "phase": "knockout",
+      "round": "Semifinal",
+      "date": "2026-07-14",
+      "team_a": "France",
+      "team_b": "Spain",
+      "note": "scheduled, not yet played as of 2026-07-12"
+    },
+    {
+      "match_id": "eng_vs_arg_sf",
+      "phase": "knockout",
+      "round": "Semifinal",
+      "date": "2026-07-15",
+      "team_a": "England",
+      "team_b": "Argentina",
+      "note": "scheduled, not yet played as of 2026-07-12"
+    }
+  ]
+}

@@ -1,0 +1,1260 @@
+{
+  "canada": [
+    {
+      "name": "Dayne St. Clair",
+      "aliases": [
+        "Clair"
+      ]
+    },
+    {
+      "name": "Maxime Crépeau",
+      "aliases": [
+        "Crépeau"
+      ]
+    },
+    {
+      "name": "Owen Goodman",
+      "aliases": [
+        "Goodman"
+      ]
+    },
+    {
+      "name": "Moïse Bombito",
+      "aliases": [
+        "Bombito"
+      ]
+    },
+    {
+      "name": "Derek Cornelius",
+      "aliases": [
+        "Cornelius"
+      ]
+    },
+    {
+      "name": "Alphonso Davies",
+      "aliases": [
+        "Davies"
+      ]
+    },
+    {
+      "name": "Luc De Fougerolles",
+      "aliases": [
+        "Fougerolles"
+      ]
+    },
+    {
+      "name": "Alistair Johnston",
+      "aliases": [
+        "Johnston"
+      ]
+    },
+    {
+      "name": "Alfie Jones",
+      "aliases": [
+        "Jones"
+      ]
+    },
+    {
+      "name": "Richie Laryea",
+      "aliases": [
+        "Laryea"
+      ]
+    },
+    {
+      "name": "Niko Sigur",
+      "aliases": [
+        "Sigur"
+      ]
+    },
+    {
+      "name": "Joel Waterman",
+      "aliases": [
+        "Waterman"
+      ]
+    },
+    {
+      "name": "Ali Ahmed",
+      "aliases": [
+        "Ahmed"
+      ]
+    },
+    {
+      "name": "Tajon Buchanan",
+      "aliases": [
+        "Buchanan"
+      ]
+    },
+    {
+      "name": "Mathieu Choinière",
+      "aliases": [
+        "Choinière"
+      ]
+    },
+    {
+      "name": "Stephen Eustáquio",
+      "aliases": [
+        "Eustáquio"
+      ]
+    },
+    {
+      "name": "Marcelo Flores",
+      "aliases": [
+        "Flores"
+      ]
+    },
+    {
+      "name": "Ismaël Koné",
+      "aliases": [
+        "Koné"
+      ]
+    },
+    {
+      "name": "Liam Millar",
+      "aliases": [
+        "Millar"
+      ]
+    },
+    {
+      "name": "Jonathan Osorio",
+      "aliases": [
+        "Osorio"
+      ]
+    },
+    {
+      "name": "Nathan Saliba",
+      "aliases": [
+        "Saliba"
+      ]
+    },
+    {
+      "name": "Jacob Shaffelburg",
+      "aliases": [
+        "Shaffelburg"
+      ]
+    },
+    {
+      "name": "Jonathan David",
+      "aliases": [
+        "David"
+      ]
+    },
+    {
+      "name": "Promise David",
+      "aliases": [
+        "David"
+      ]
+    },
+    {
+      "name": "Cyle Larin",
+      "aliases": [
+        "Larin"
+      ]
+    },
+    {
+      "name": "Tani Oluwaseyi",
+      "aliases": [
+        "Oluwaseyi"
+      ]
+    }
+  ],
+  "switzerland": [
+    {
+      "name": "Gregor Kobel",
+      "aliases": [
+        "Kobel"
+      ]
+    },
+    {
+      "name": "Yvon Mvogo",
+      "aliases": [
+        "Mvogo"
+      ]
+    },
+    {
+      "name": "Marvin Keller",
+      "aliases": [
+        "Keller"
+      ]
+    },
+    {
+      "name": "Manuel Akanji",
+      "aliases": [
+        "Akanji"
+      ]
+    },
+    {
+      "name": "Nico Elvedi",
+      "aliases": [
+        "Elvedi"
+      ]
+    },
+    {
+      "name": "Ricardo Rodriguez",
+      "aliases": [
+        "Rodriguez"
+      ]
+    },
+    {
+      "name": "Silvan Widmer",
+      "aliases": [
+        "Widmer"
+      ]
+    },
+    {
+      "name": "Miro Muheim",
+      "aliases": [
+        "Muheim"
+      ]
+    },
+    {
+      "name": "Aurèle Amenda",
+      "aliases": [
+        "Amenda"
+      ]
+    },
+    {
+      "name": "Eray Cömert",
+      "aliases": [
+        "Cömert"
+      ]
+    },
+    {
+      "name": "Luca Jaquez",
+      "aliases": [
+        "Jaquez"
+      ]
+    },
+    {
+      "name": "Granit Xhaka",
+      "aliases": [
+        "Xhaka"
+      ]
+    },
+    {
+      "name": "Johan Manzambi",
+      "aliases": [
+        "Manzambi"
+      ]
+    },
+    {
+      "name": "Remo Freuler",
+      "aliases": [
+        "Freuler"
+      ]
+    },
+    {
+      "name": "Denis Zakaria",
+      "aliases": [
+        "Zakaria"
+      ]
+    },
+    {
+      "name": "Ardon Jashari",
+      "aliases": [
+        "Jashari"
+      ]
+    },
+    {
+      "name": "Djibril Sow",
+      "aliases": [
+        "Sow"
+      ]
+    },
+    {
+      "name": "Christian Fassnacht",
+      "aliases": [
+        "Fassnacht"
+      ]
+    },
+    {
+      "name": "Michel Aebischer",
+      "aliases": [
+        "Aebischer"
+      ]
+    },
+    {
+      "name": "Fabian Rieder",
+      "aliases": [
+        "Rieder"
+      ]
+    },
+    {
+      "name": "Rubén Vargas",
+      "aliases": [
+        "Vargas"
+      ]
+    },
+    {
+      "name": "Breel Embolo",
+      "aliases": [
+        "Embolo"
+      ]
+    },
+    {
+      "name": "Noah Okafor",
+      "aliases": [
+        "Okafor"
+      ]
+    },
+    {
+      "name": "Dan Ndoye",
+      "aliases": [
+        "Ndoye"
+      ]
+    },
+    {
+      "name": "Zeki Amdouni",
+      "aliases": [
+        "Amdouni"
+      ]
+    },
+    {
+      "name": "Cedric Itten",
+      "aliases": [
+        "Itten"
+      ]
+    }
+  ],
+  "scotland": [
+    {
+      "name": "Craig Gordon",
+      "aliases": [
+        "Gordon"
+      ]
+    },
+    {
+      "name": "Angus Gunn",
+      "aliases": [
+        "Gunn"
+      ]
+    },
+    {
+      "name": "Liam Kelly",
+      "aliases": [
+        "Kelly"
+      ]
+    },
+    {
+      "name": "Grant Hanley",
+      "aliases": [
+        "Hanley"
+      ]
+    },
+    {
+      "name": "Jack Hendry",
+      "aliases": [
+        "Hendry"
+      ]
+    },
+    {
+      "name": "Aaron Hickey",
+      "aliases": [
+        "Hickey"
+      ]
+    },
+    {
+      "name": "Dom Hyam",
+      "aliases": [
+        "Hyam"
+      ]
+    },
+    {
+      "name": "Scott McKenna",
+      "aliases": [
+        "McKenna"
+      ]
+    },
+    {
+      "name": "Nathan Patterson",
+      "aliases": [
+        "Patterson"
+      ]
+    },
+    {
+      "name": "Anthony Ralston",
+      "aliases": [
+        "Ralston"
+      ]
+    },
+    {
+      "name": "Andy Robertson",
+      "aliases": [
+        "Robertson"
+      ]
+    },
+    {
+      "name": "John Souttar",
+      "aliases": [
+        "Souttar"
+      ]
+    },
+    {
+      "name": "Kieran Tierney",
+      "aliases": [
+        "Tierney"
+      ]
+    },
+    {
+      "name": "Ryan Christie",
+      "aliases": [
+        "Christie"
+      ]
+    },
+    {
+      "name": "Finlay Curtis",
+      "aliases": [
+        "Curtis"
+      ]
+    },
+    {
+      "name": "Lewis Ferguson",
+      "aliases": [
+        "Ferguson"
+      ]
+    },
+    {
+      "name": "Ben Gannon-Doak",
+      "aliases": [
+        "Gannon-Doak"
+      ]
+    },
+    {
+      "name": "Billy Gilmour",
+      "aliases": [
+        "Gilmour"
+      ]
+    },
+    {
+      "name": "John McGinn",
+      "aliases": [
+        "McGinn"
+      ]
+    },
+    {
+      "name": "Kenny McLean",
+      "aliases": [
+        "McLean"
+      ]
+    },
+    {
+      "name": "Scott McTominay",
+      "aliases": [
+        "McTominay"
+      ]
+    },
+    {
+      "name": "Ché Adams",
+      "aliases": [
+        "Adams"
+      ]
+    },
+    {
+      "name": "Lyndon Dykes",
+      "aliases": [
+        "Dykes"
+      ]
+    },
+    {
+      "name": "George Hirst",
+      "aliases": [
+        "Hirst"
+      ]
+    },
+    {
+      "name": "Lawrence Shankland",
+      "aliases": [
+        "Shankland"
+      ]
+    },
+    {
+      "name": "Ross Stewart",
+      "aliases": [
+        "Stewart"
+      ]
+    }
+  ],
+  "australia": [
+    {
+      "name": "Mathew Ryan",
+      "aliases": [
+        "Ryan"
+      ]
+    },
+    {
+      "name": "Paul Izzo",
+      "aliases": [
+        "Izzo"
+      ]
+    },
+    {
+      "name": "Patrick Beach",
+      "aliases": [
+        "Beach"
+      ]
+    },
+    {
+      "name": "Jordan Bos",
+      "aliases": [
+        "Bos"
+      ]
+    },
+    {
+      "name": "Aziz Behich",
+      "aliases": [
+        "Behich"
+      ]
+    },
+    {
+      "name": "Harry Souttar",
+      "aliases": [
+        "Souttar"
+      ]
+    },
+    {
+      "name": "Alessandro Circati",
+      "aliases": [
+        "Circati"
+      ]
+    },
+    {
+      "name": "Lucas Herrington",
+      "aliases": [
+        "Herrington"
+      ]
+    },
+    {
+      "name": "Cameron Burgess",
+      "aliases": [
+        "Burgess"
+      ]
+    },
+    {
+      "name": "Kai Trewin",
+      "aliases": [
+        "Trewin"
+      ]
+    },
+    {
+      "name": "Milos Degenek",
+      "aliases": [
+        "Degenek"
+      ]
+    },
+    {
+      "name": "Jason Geria",
+      "aliases": [
+        "Geria"
+      ]
+    },
+    {
+      "name": "Jacob Italiano",
+      "aliases": [
+        "Italiano"
+      ]
+    },
+    {
+      "name": "Jackson Irvine",
+      "aliases": [
+        "Irvine"
+      ]
+    },
+    {
+      "name": "Aiden O'Neill",
+      "aliases": [
+        "O'Neill"
+      ]
+    },
+    {
+      "name": "Paul Okon Jr",
+      "aliases": [
+        "Jr"
+      ]
+    },
+    {
+      "name": "Cameron Devlin",
+      "aliases": [
+        "Devlin"
+      ]
+    },
+    {
+      "name": "Connor Metcalfe",
+      "aliases": [
+        "Metcalfe"
+      ]
+    },
+    {
+      "name": "Mathew Leckie",
+      "aliases": [
+        "Leckie"
+      ]
+    },
+    {
+      "name": "Nishan Velupillay",
+      "aliases": [
+        "Velupillay"
+      ]
+    },
+    {
+      "name": "Cristian Volpato",
+      "aliases": [
+        "Volpato"
+      ]
+    },
+    {
+      "name": "Nestory Irankunda",
+      "aliases": [
+        "Irankunda"
+      ]
+    },
+    {
+      "name": "Awer Mabil",
+      "aliases": [
+        "Mabil"
+      ]
+    },
+    {
+      "name": "Ajdin Hrustic",
+      "aliases": [
+        "Hrustic"
+      ]
+    },
+    {
+      "name": "Mohamed Toure",
+      "aliases": [
+        "Toure"
+      ]
+    },
+    {
+      "name": "Tete Yengi",
+      "aliases": [
+        "Yengi"
+      ]
+    }
+  ],
+  "germany": [
+    {
+      "name": "Oliver Baumann",
+      "aliases": [
+        "Baumann"
+      ]
+    },
+    {
+      "name": "Manuel Neuer",
+      "aliases": [
+        "Neuer"
+      ]
+    },
+    {
+      "name": "Alexander Nübel",
+      "aliases": [
+        "Nübel"
+      ]
+    },
+    {
+      "name": "Waldemar Anton",
+      "aliases": [
+        "Anton"
+      ]
+    },
+    {
+      "name": "Nathaniel Brown",
+      "aliases": [
+        "Brown"
+      ]
+    },
+    {
+      "name": "David Raum",
+      "aliases": [
+        "Raum"
+      ]
+    },
+    {
+      "name": "Antonio Rüdiger",
+      "aliases": [
+        "Rüdiger"
+      ]
+    },
+    {
+      "name": "Nico Schlotterbeck",
+      "aliases": [
+        "Schlotterbeck"
+      ]
+    },
+    {
+      "name": "Jonathan Tah",
+      "aliases": [
+        "Tah"
+      ]
+    },
+    {
+      "name": "Malick Thiaw",
+      "aliases": [
+        "Thiaw"
+      ]
+    },
+    {
+      "name": "Pascal Gross",
+      "aliases": [
+        "Gross"
+      ]
+    },
+    {
+      "name": "Joshua Kimmich",
+      "aliases": [
+        "Kimmich"
+      ]
+    },
+    {
+      "name": "Felix Nmecha",
+      "aliases": [
+        "Nmecha"
+      ]
+    },
+    {
+      "name": "Aleksandar Pavlovic",
+      "aliases": [
+        "Pavlovic"
+      ]
+    },
+    {
+      "name": "Angelo Stiller",
+      "aliases": [
+        "Stiller"
+      ]
+    },
+    {
+      "name": "Leon Goretzka",
+      "aliases": [
+        "Goretzka"
+      ]
+    },
+    {
+      "name": "Florian Wirtz",
+      "aliases": [
+        "Wirtz"
+      ]
+    },
+    {
+      "name": "Jamie Leweling",
+      "aliases": [
+        "Leweling"
+      ]
+    },
+    {
+      "name": "Maximilian Beier",
+      "aliases": [
+        "Beier"
+      ]
+    },
+    {
+      "name": "Kai Havertz",
+      "aliases": [
+        "Havertz"
+      ]
+    },
+    {
+      "name": "Lennart Karl",
+      "aliases": [
+        "Karl"
+      ]
+    },
+    {
+      "name": "Jamal Musiala",
+      "aliases": [
+        "Musiala"
+      ]
+    },
+    {
+      "name": "Leroy Sané",
+      "aliases": [
+        "Sané"
+      ]
+    },
+    {
+      "name": "Deniz Undav",
+      "aliases": [
+        "Undav"
+      ]
+    },
+    {
+      "name": "Nick Woltemade",
+      "aliases": [
+        "Woltemade"
+      ]
+    }
+  ],
+  "netherlands": [
+    {
+      "name": "Mark Flekken",
+      "aliases": [
+        "Flekken"
+      ]
+    },
+    {
+      "name": "Robin Roefs",
+      "aliases": [
+        "Roefs"
+      ]
+    },
+    {
+      "name": "Bart Verbruggen",
+      "aliases": [
+        "Verbruggen"
+      ]
+    },
+    {
+      "name": "Nathan Aké",
+      "aliases": [
+        "Aké"
+      ]
+    },
+    {
+      "name": "Denzel Dumfries",
+      "aliases": [
+        "Dumfries"
+      ]
+    },
+    {
+      "name": "Jorrel Hato",
+      "aliases": [
+        "Hato"
+      ]
+    },
+    {
+      "name": "Jurriën Timber",
+      "aliases": [
+        "Timber"
+      ]
+    },
+    {
+      "name": "Jan Paul van Hecke",
+      "aliases": [
+        "Hecke"
+      ]
+    },
+    {
+      "name": "Micky van de Ven",
+      "aliases": [
+        "Ven"
+      ]
+    },
+    {
+      "name": "Virgil van Dijk",
+      "aliases": [
+        "Dijk"
+      ]
+    },
+    {
+      "name": "Frenkie de Jong",
+      "aliases": [
+        "Jong"
+      ]
+    },
+    {
+      "name": "Marten de Roon",
+      "aliases": [
+        "Roon"
+      ]
+    },
+    {
+      "name": "Ryan Gravenberch",
+      "aliases": [
+        "Gravenberch"
+      ]
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "aliases": [
+        "Koopmeiners"
+      ]
+    },
+    {
+      "name": "Tijjani Reijnders",
+      "aliases": [
+        "Reijnders"
+      ]
+    },
+    {
+      "name": "Guus Til",
+      "aliases": [
+        "Til"
+      ]
+    },
+    {
+      "name": "Quinten Timber",
+      "aliases": [
+        "Timber"
+      ]
+    },
+    {
+      "name": "Mats Wieffer",
+      "aliases": [
+        "Wieffer"
+      ]
+    },
+    {
+      "name": "Brian Brobbey",
+      "aliases": [
+        "Brobbey"
+      ]
+    },
+    {
+      "name": "Memphis Depay",
+      "aliases": [
+        "Depay"
+      ]
+    },
+    {
+      "name": "Cody Gakpo",
+      "aliases": [
+        "Gakpo"
+      ]
+    },
+    {
+      "name": "Justin Kluivert",
+      "aliases": [
+        "Kluivert"
+      ]
+    },
+    {
+      "name": "Noa Lang",
+      "aliases": [
+        "Lang"
+      ]
+    },
+    {
+      "name": "Donyell Malen",
+      "aliases": [
+        "Malen"
+      ]
+    },
+    {
+      "name": "Crysencio Summerville",
+      "aliases": [
+        "Summerville"
+      ]
+    },
+    {
+      "name": "Wout Weghorst",
+      "aliases": [
+        "Weghorst"
+      ]
+    }
+  ],
+  "france": [
+    {
+      "name": "Mike Maignan",
+      "aliases": [
+        "Maignan"
+      ]
+    },
+    {
+      "name": "Robin Risser",
+      "aliases": [
+        "Risser"
+      ]
+    },
+    {
+      "name": "Brice Samba",
+      "aliases": [
+        "Samba"
+      ]
+    },
+    {
+      "name": "Lucas Digne",
+      "aliases": [
+        "Digne"
+      ]
+    },
+    {
+      "name": "Malo Gusto",
+      "aliases": [
+        "Gusto"
+      ]
+    },
+    {
+      "name": "Lucas Hernández",
+      "aliases": [
+        "Hernández"
+      ]
+    },
+    {
+      "name": "Theo Hernández",
+      "aliases": [
+        "Hernández"
+      ]
+    },
+    {
+      "name": "Ibrahima Konaté",
+      "aliases": [
+        "Konaté"
+      ]
+    },
+    {
+      "name": "Jules Koundé",
+      "aliases": [
+        "Koundé"
+      ]
+    },
+    {
+      "name": "Maxence Lacroix",
+      "aliases": [
+        "Lacroix"
+      ]
+    },
+    {
+      "name": "William Saliba",
+      "aliases": [
+        "Saliba"
+      ]
+    },
+    {
+      "name": "Dayot Upamecano",
+      "aliases": [
+        "Upamecano"
+      ]
+    },
+    {
+      "name": "N'Golo Kanté",
+      "aliases": [
+        "Kanté"
+      ]
+    },
+    {
+      "name": "Manu Koné",
+      "aliases": [
+        "Koné"
+      ]
+    },
+    {
+      "name": "Adrien Rabiot",
+      "aliases": [
+        "Rabiot"
+      ]
+    },
+    {
+      "name": "Aurélien Tchouaméni",
+      "aliases": [
+        "Tchouaméni"
+      ]
+    },
+    {
+      "name": "Warren Zaïre-Emery",
+      "aliases": [
+        "Zaïre-Emery"
+      ]
+    },
+    {
+      "name": "Maghnes Akliouche",
+      "aliases": [
+        "Akliouche"
+      ]
+    },
+    {
+      "name": "Bradley Barcola",
+      "aliases": [
+        "Barcola"
+      ]
+    },
+    {
+      "name": "Rayan Cherki",
+      "aliases": [
+        "Cherki"
+      ]
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "aliases": [
+        "Dembélé"
+      ]
+    },
+    {
+      "name": "Désiré Doué",
+      "aliases": [
+        "Doué"
+      ]
+    },
+    {
+      "name": "Jean-Philippe Mateta",
+      "aliases": [
+        "Mateta"
+      ]
+    },
+    {
+      "name": "Kylian Mbappé",
+      "aliases": [
+        "Mbappé"
+      ]
+    },
+    {
+      "name": "Michael Olise",
+      "aliases": [
+        "Olise"
+      ]
+    },
+    {
+      "name": "Marcus Thuram",
+      "aliases": [
+        "Thuram"
+      ]
+    }
+  ],
+  "england": [
+    {
+      "name": "Jordan Pickford",
+      "aliases": [
+        "Pickford"
+      ]
+    },
+    {
+      "name": "Dean Henderson",
+      "aliases": [
+        "Henderson"
+      ]
+    },
+    {
+      "name": "James Trafford",
+      "aliases": [
+        "Trafford"
+      ]
+    },
+    {
+      "name": "Reece James",
+      "aliases": [
+        "James"
+      ]
+    },
+    {
+      "name": "Ezri Konsa",
+      "aliases": [
+        "Konsa"
+      ]
+    },
+    {
+      "name": "Jarell Quansah",
+      "aliases": [
+        "Quansah"
+      ]
+    },
+    {
+      "name": "John Stones",
+      "aliases": [
+        "Stones"
+      ]
+    },
+    {
+      "name": "Marc Guéhi",
+      "aliases": [
+        "Guéhi"
+      ]
+    },
+    {
+      "name": "Dan Burn",
+      "aliases": [
+        "Burn"
+      ]
+    },
+    {
+      "name": "Nico O'Reilly",
+      "aliases": [
+        "O'Reilly"
+      ]
+    },
+    {
+      "name": "Djed Spence",
+      "aliases": [
+        "Spence"
+      ]
+    },
+    {
+      "name": "Tino Livramento",
+      "aliases": [
+        "Livramento"
+      ]
+    },
+    {
+      "name": "Declan Rice",
+      "aliases": [
+        "Rice"
+      ]
+    },
+    {
+      "name": "Elliot Anderson",
+      "aliases": [
+        "Anderson"
+      ]
+    },
+    {
+      "name": "Kobbie Mainoo",
+      "aliases": [
+        "Mainoo"
+      ]
+    },
+    {
+      "name": "Jordan Henderson",
+      "aliases": [
+        "Henderson"
+      ]
+    },
+    {
+      "name": "Morgan Rogers",
+      "aliases": [
+        "Rogers"
+      ]
+    },
+    {
+      "name": "Jude Bellingham",
+      "aliases": [
+        "Bellingham"
+      ]
+    },
+    {
+      "name": "Eberechi Eze",
+      "aliases": [
+        "Eze"
+      ]
+    },
+    {
+      "name": "Harry Kane",
+      "aliases": [
+        "Kane"
+      ]
+    },
+    {
+      "name": "Ivan Toney",
+      "aliases": [
+        "Toney"
+      ]
+    },
+    {
+      "name": "Ollie Watkins",
+      "aliases": [
+        "Watkins"
+      ]
+    },
+    {
+      "name": "Bukayo Saka",
+      "aliases": [
+        "Saka"
+      ]
+    },
+    {
+      "name": "Marcus Rashford",
+      "aliases": [
+        "Rashford"
+      ]
+    },
+    {
+      "name": "Anthony Gordon",
+      "aliases": [
+        "Gordon"
+      ]
+    },
+    {
+      "name": "Noni Madueke",
+      "aliases": [
+        "Madueke"
+      ]
+    }
+  ]
+}

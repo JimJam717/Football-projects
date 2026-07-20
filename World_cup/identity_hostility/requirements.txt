@@ -1,0 +1,11 @@
+# Identity-Hostility Dashboard dependencies (free / local only, no paid APIs)
+#
+# NOTE: torch + transformers are large. A CPU-only torch wheel is fine for this project.
+# If you already have a working torch/transformers install (e.g. the discourse venv),
+# you only strictly need `detoxify`, `pandas`, and `pyarrow`.
+
+detoxify>=0.5.2
+transformers>=4.30
+torch>=2.0
+pandas>=2.0
+pyarrow>=14.0

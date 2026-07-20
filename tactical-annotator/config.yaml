@@ -1,0 +1,36 @@
+model_path: models/football_yolov8.pt
+confidence: 0.35
+input_video: "C:\\Users\\Pratham\\Desktop\\projects\\tactical-annotator\\input\\test_videos\\goal.mp4"
+output_video: output/annotated.mp4
+output_fps: 30
+output_size: [720, 1280]  # width x height, 9:16
+# determined by running --inspect-frame N --classify-only
+cluster_map:
+  0: 0
+  1: 1
+  2: -1   # referee / goalkeeper / other
+
+team_colors:
+  0: [0, 140, 255]       # BGR orange
+  1: [255, 100, 0]       # BGR blue
+  "-1": [200, 200, 200]
+
+show_rings: true
+show_connections: true
+show_zones: false
+show_movement_arrows: true
+
+# populated after --inspect-frame reveals tracker_ids
+connections: []
+# example: [[3, 7], [7, 12], [3, 12]]
+
+zones: []
+# example: [[3, 7, 12]]
+
+labels: {}
+# example: {"5": "Dumfries"}
+
+run_threshold: 8.0      # pixels/frame to qualify as a run
+history_frames: 15
+lost_track_buffer: 30
+min_matching_threshold: 0.8

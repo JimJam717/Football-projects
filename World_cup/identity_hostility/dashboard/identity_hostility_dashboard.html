@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity-Hostility Dashboard — World Cup 2026</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+    :root {
+      color-scheme: light;
+      --pitch-haze: #C7D7B1;
+      --ink: #17231E;
+      --paper: #F2F0E8;
+      --signal-blue: #1E5AA8;
+      --card-yellow: #F4C542;
+      --card-red: #D93632;
+      --line: 3px solid var(--ink);
+      --shadow: 6px 6px 0 var(--ink);
+      --shadow-sm: 3px 3px 0 var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--pitch-haze); }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(23,35,30,0.055) 3px, transparent 3px),
+        linear-gradient(90deg, rgba(23,35,30,0.055) 3px, transparent 3px),
+        var(--pitch-haze);
+      background-size: 28px 28px;
+      color: var(--ink);
+      font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      pointer-events: none;
+      background: repeating-linear-gradient(0deg, rgba(23,35,30,0.09) 0, rgba(23,35,30,0.09) 1px, transparent 1px, transparent 5px);
+      mix-blend-mode: multiply;
+      opacity: 0.22;
+    }
+    main { width: min(1440px, calc(100vw - 32px)); margin: 0 auto; padding: 28px 0 56px; }
+    h1,h2,h3,p { margin: 0; }
+    h1 {
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 0.92;
+      font-family: "Barlow Condensed", ui-sans-serif, sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-shadow: 4px 4px 0 var(--signal-blue);
+    }
+    h2 {
+      font-family: "Barlow Condensed", ui-sans-serif, sans-serif;
+      font-size: 22px;
+      line-height: 0.95;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    h3 {
+      color: var(--ink);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: start;
+      padding: 20px;
+      border: var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+    }
+    .hero .lede {
+      margin-top: 12px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      max-width: 780px;
+    }
+    .hero-numbers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 200px;
+    }
+    .stat-card {
+      border: var(--line);
+      background: var(--card-yellow);
+      box-shadow: var(--shadow-sm);
+      padding: 12px 16px;
+    }
+    .stat-card.blue { background: var(--signal-blue); color: var(--paper); }
+    .stat-card.red { background: var(--card-red); color: var(--paper); }
+    .stat-label {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+    }
+    .stat-value {
+      font-family: "Barlow Condensed", ui-sans-serif, sans-serif;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    /* ---- Panels ---- */
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 22px;
+    }
+    .panel {
+      border: var(--line);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .panel-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 10px;
+    }
+    .panel-full { grid-column: 1 / -1; }
+
+    /* ---- Bar chart ---- */
+    .bar-list { display: grid; gap: 7px; }
+    .bar-row { display: grid; gap: 4px; }
+    .bar-row-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .bar-row-label .pct {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 12px;
+      color: var(--signal-blue);
+    }
+    .bar-track {
+      height: 14px;
+      background: rgba(23,35,30,0.12);
+      border: 1px solid rgba(23,35,30,0.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .bar-fill {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      transition: width 600ms cubic-bezier(.4,0,.2,1);
+    }
+    .bar-fill.racial-ethnic { background: var(--card-red); }
+    .bar-fill.nationality { background: var(--signal-blue); }
+    .bar-fill.any-flag { background: var(--ink); }
+    .bar-fill.unsupported { background: rgba(23,35,30,0.35); }
+    .bar-n {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 10px;
+      color: rgba(23,35,30,0.55);
+    }
+
+    /* ---- 2x2 overlap ---- */
+    .overlap-grid {
+      display: grid;
+      grid-template-columns: auto 1fr 1fr;
+      gap: 4px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 12px;
+    }
+    .overlap-cell {
+      border: 2px solid var(--ink);
+      padding: 12px;
+      text-align: center;
+    }
+    .overlap-cell.header {
+      background: var(--ink);
+      color: var(--paper);
+      font-weight: 600;
+      font-size: 11px;
+    }
+    .overlap-cell.high { background: var(--card-red); color: var(--paper); }
+    .overlap-cell.mid { background: var(--card-yellow); }
+    .overlap-cell.low { background: var(--paper); }
+    .overlap-n { font-size: 20px; font-weight: 700; display: block; }
+    .overlap-pct { font-size: 11px; opacity: 0.75; }
+
+    /* ---- Methodology panel ---- */
+    .methodology {
+      background: var(--ink);
+      color: var(--paper);
+      border: var(--line);
+      box-shadow: var(--shadow);
+      padding: 20px;
+      grid-column: 1 / -1;
+    }
+    .methodology h2 { color: var(--card-yellow); margin-bottom: 12px; }
+    .methodology ul {
+      margin: 0; padding-left: 18px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .methodology li { margin-bottom: 4px; }
+    .caveat-badge {
+      display: inline-block;
+      background: var(--card-red);
+      color: var(--paper);
+      border: 2px solid var(--paper);
+      padding: 3px 8px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+
+    /* ---- Legend ---- */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--ink);
+      flex-shrink: 0;
+    }
+    .legend-swatch.racial-ethnic { background: var(--card-red); }
+    .legend-swatch.nationality { background: var(--signal-blue); }
+    .legend-swatch.unsupported { background: rgba(23,35,30,0.35); }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .filter-btn {
+      border: 2px solid var(--ink);
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 10px;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 var(--ink);
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    @keyframes barIn {
+      from { width: 0 !important; }
+    }
+
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-numbers { flex-direction: row; flex-wrap: wrap; }
+      .panels { grid-template-columns: 1fr; }
+      .panel-full { grid-column: 1; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div>
+      <h1>Identity-Hostility<br>Detected Rates</h1>
+      <p class="lede">
+        Model-flagged analysis of racial/ethnic and nationality-based hostile language
+        in 457,898 Reddit comments across 100+ World Cup 2026 match threads.
+        All rates are model-detected — not human-verified.
+        No individual comments, usernames, or slurs are shown.
+      </p>
+    </div>
+    <div class="hero-numbers" id="hero-numbers">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- All panels -->
+  <div class="panels" id="panels">
+
+    <!-- Panel 1: By stage -->
+    <div class="panel">
+      <div class="panel-title"><h2>By tournament stage</h2></div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-swatch racial-ethnic"></div> Racial/ethnic</div>
+        <div class="legend-item"><div class="legend-swatch nationality"></div> Nationality</div>
+      </div>
+      <div class="bar-list" id="stage-bars"></div>
+    </div>
+
+    <!-- Panel 2: By subreddit -->
+    <div class="panel">
+      <div class="panel-title"><h2>By subreddit</h2></div>
+      <div class="filter-bar" id="subreddit-filter"></div>
+      <div class="bar-list" id="subreddit-bars"></div>
+    </div>
+
+    <!-- Panel 3: By language -->
+    <div class="panel">
+      <div class="panel-title"><h2>By detected language</h2></div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-swatch racial-ethnic"></div> Racial/ethnic</div>
+        <div class="legend-item"><div class="legend-swatch nationality"></div> Nationality</div>
+        <div class="legend-item"><div class="legend-swatch unsupported"></div> Model unsupported lang</div>
+      </div>
+      <div class="bar-list" id="language-bars"></div>
+    </div>
+
+    <!-- Panel 4: Profanity × identity overlap -->
+    <div class="panel">
+      <div class="panel-title"><h2>Profanity ✕ identity flag overlap</h2></div>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;opacity:0.7;margin-bottom:14px;">
+        Profanity = swear_count &gt; 0 (from Swearing WC scorer)
+      </p>
+      <div class="overlap-grid" id="overlap-grid"></div>
+    </div>
+
+    <!-- Panel 5: By match (full width) -->
+    <div class="panel panel-full">
+      <div class="panel-title"><h2>By match</h2></div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-swatch racial-ethnic"></div> Racial/ethnic rate</div>
+        <div class="legend-item"><div class="legend-swatch nationality"></div> Nationality rate</div>
+      </div>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;opacity:0.6;text-transform:uppercase;margin-bottom:12px;">
+        Matches with n &lt; 100 comments shown with reduced opacity.
+      </p>
+      <div class="bar-list" id="match-bars"></div>
+    </div>
+
+    <!-- Panel 6: Methodology (always visible) -->
+    <div class="methodology">
+      <div class="caveat-badge">⚠ Methodology &amp; Limitations — always visible</div>
+      <h2>How to read these numbers</h2>
+      <ul id="methodology-list"></ul>
+    </div>
+
+  </div>
+</main>
+
+<script>
+// ---- Embedded aggregate data (injected at generation time) ----
+const AGGREGATE = {"headline": [{"breakdown": "headline", "group": "all", "n": 457898, "racial_ethnic_flagged_n": 2430.0, "nationality_flagged_n": 339.0, "model_unsupported_n": 215335.0, "unflagged_n": 239794.0, "any_flagged_n": 2769.0, "racial_ethnic_rate": 0.005307, "nationality_rate": 0.00074, "model_unsupported_rate": 0.470268, "any_flagged_rate": 0.006047, "profanity": null, "identity_flag": null, "rate": NaN}], "by_match": [{"breakdown": "by_match", "group": "civ_vs_ecu_ge_md1", "n": 72, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 18.0, "unflagged_n": 49.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.069444, "nationality_rate": 0.0, "model_unsupported_rate": 0.25, "any_flagged_rate": 0.069444, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "fra_vs_mar_qf", "n": 1700, "racial_ethnic_flagged_n": 50.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 474.0, "unflagged_n": 1172.0, "any_flagged_n": 54.0, "racial_ethnic_rate": 0.029412, "nationality_rate": 0.002353, "model_unsupported_rate": 0.278824, "any_flagged_rate": 0.031765, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "rsa_vs_kor_ga_md3", "n": 1272, "racial_ethnic_flagged_n": 30.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 402.0, "unflagged_n": 835.0, "any_flagged_n": 35.0, "racial_ethnic_rate": 0.023585, "nationality_rate": 0.003931, "model_unsupported_rate": 0.316038, "any_flagged_rate": 0.027516, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "fra_vs_par_r16", "n": 1553, "racial_ethnic_flagged_n": 33.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 375.0, "unflagged_n": 1145.0, "any_flagged_n": 33.0, "racial_ethnic_rate": 0.021249, "nationality_rate": 0.0, "model_unsupported_rate": 0.241468, "any_flagged_rate": 0.021249, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nor_vs_sen_gi_md2", "n": 1129, "racial_ethnic_flagged_n": 22.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 662.0, "unflagged_n": 444.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.019486, "nationality_rate": 0.000886, "model_unsupported_rate": 0.58636, "any_flagged_rate": 0.020372, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "fra_vs_sen_gi_md1", "n": 1192, "racial_ethnic_flagged_n": 24.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 272.0, "unflagged_n": 896.0, "any_flagged_n": 24.0, "racial_ethnic_rate": 0.020134, "nationality_rate": 0.0, "model_unsupported_rate": 0.228188, "any_flagged_rate": 0.020134, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "swe_vs_tun_gf_md1", "n": 2004, "racial_ethnic_flagged_n": 34.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1068.0, "unflagged_n": 899.0, "any_flagged_n": 37.0, "racial_ethnic_rate": 0.016966, "nationality_rate": 0.001497, "model_unsupported_rate": 0.532934, "any_flagged_rate": 0.018463, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "arg_vs_cpv_r32", "n": 1052, "racial_ethnic_flagged_n": 19.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 299.0, "unflagged_n": 734.0, "any_flagged_n": 19.0, "racial_ethnic_rate": 0.018061, "nationality_rate": 0.0, "model_unsupported_rate": 0.284221, "any_flagged_rate": 0.018061, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "mex_vs_ecu_r32", "n": 2727, "racial_ethnic_flagged_n": 49.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 873.0, "unflagged_n": 1805.0, "any_flagged_n": 49.0, "racial_ethnic_rate": 0.017968, "nationality_rate": 0.0, "model_unsupported_rate": 0.320132, "any_flagged_rate": 0.017968, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bel_vs_sen_r32", "n": 1513, "racial_ethnic_flagged_n": 26.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 566.0, "unflagged_n": 920.0, "any_flagged_n": 27.0, "racial_ethnic_rate": 0.017184, "nationality_rate": 0.000661, "model_unsupported_rate": 0.374091, "any_flagged_rate": 0.017845, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "mar_vs_hai_gc_md3", "n": 2986, "racial_ethnic_flagged_n": 47.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 1306.0, "unflagged_n": 1629.0, "any_flagged_n": 51.0, "racial_ethnic_rate": 0.01574, "nationality_rate": 0.00134, "model_unsupported_rate": 0.437374, "any_flagged_rate": 0.01708, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "arg_vs_sui_qf", "n": 4100, "racial_ethnic_flagged_n": 64.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1251.0, "unflagged_n": 2783.0, "any_flagged_n": 66.0, "racial_ethnic_rate": 0.01561, "nationality_rate": 0.000488, "model_unsupported_rate": 0.305122, "any_flagged_rate": 0.016098, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "jpn_vs_swe_gf_md3", "n": 65, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 18.0, "unflagged_n": 46.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.015385, "nationality_rate": 0.0, "model_unsupported_rate": 0.276923, "any_flagged_rate": 0.015385, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "tun_vs_jpn_gf_md2", "n": 2319, "racial_ethnic_flagged_n": 34.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 1166.0, "unflagged_n": 1118.0, "any_flagged_n": 35.0, "racial_ethnic_rate": 0.014661, "nationality_rate": 0.000431, "model_unsupported_rate": 0.502803, "any_flagged_rate": 0.015093, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "eng_vs_mex_r16", "n": 600, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 193.0, "unflagged_n": 399.0, "any_flagged_n": 8.0, "racial_ethnic_rate": 0.011667, "nationality_rate": 0.001667, "model_unsupported_rate": 0.321667, "any_flagged_rate": 0.013333, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "esp_vs_bel_qf", "n": 1300, "racial_ethnic_flagged_n": 14.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 541.0, "unflagged_n": 742.0, "any_flagged_n": 17.0, "racial_ethnic_rate": 0.010769, "nationality_rate": 0.002308, "model_unsupported_rate": 0.416154, "any_flagged_rate": 0.013077, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "esp_vs_por_r16", "n": 3000, "racial_ethnic_flagged_n": 37.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 842.0, "unflagged_n": 2119.0, "any_flagged_n": 39.0, "racial_ethnic_rate": 0.012333, "nationality_rate": 0.000667, "model_unsupported_rate": 0.280667, "any_flagged_rate": 0.013, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "arg_vs_egy_r16", "n": 2400, "racial_ethnic_flagged_n": 29.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 1369.0, "unflagged_n": 1001.0, "any_flagged_n": 30.0, "racial_ethnic_rate": 0.012083, "nationality_rate": 0.000417, "model_unsupported_rate": 0.570417, "any_flagged_rate": 0.0125, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sui_vs_col_r16", "n": 1000, "racial_ethnic_flagged_n": 9.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 455.0, "unflagged_n": 533.0, "any_flagged_n": 12.0, "racial_ethnic_rate": 0.009, "nationality_rate": 0.003, "model_unsupported_rate": 0.455, "any_flagged_rate": 0.012, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nor_vs_bra_r16", "n": 1200, "racial_ethnic_flagged_n": 11.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 459.0, "unflagged_n": 727.0, "any_flagged_n": 14.0, "racial_ethnic_rate": 0.009167, "nationality_rate": 0.0025, "model_unsupported_rate": 0.3825, "any_flagged_rate": 0.011667, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "pan_vs_cro_gl_md2", "n": 700, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 221.0, "unflagged_n": 471.0, "any_flagged_n": 8.0, "racial_ethnic_rate": 0.011429, "nationality_rate": 0.0, "model_unsupported_rate": 0.315714, "any_flagged_rate": 0.011429, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "alg_vs_aut_gj_md3", "n": 800, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 285.0, "unflagged_n": 506.0, "any_flagged_n": 9.0, "racial_ethnic_rate": 0.00625, "nationality_rate": 0.005, "model_unsupported_rate": 0.35625, "any_flagged_rate": 0.01125, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bel_vs_usa_r16", "n": 2500, "racial_ethnic_flagged_n": 23.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 949.0, "unflagged_n": 1523.0, "any_flagged_n": 28.0, "racial_ethnic_rate": 0.0092, "nationality_rate": 0.002, "model_unsupported_rate": 0.3796, "any_flagged_rate": 0.0112, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sen_vs_irq_gi_md3", "n": 548, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 414.0, "unflagged_n": 128.0, "any_flagged_n": 6.0, "racial_ethnic_rate": 0.009124, "nationality_rate": 0.001825, "model_unsupported_rate": 0.755474, "any_flagged_rate": 0.010949, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ury_vs_esp_gh_md3", "n": 833, "racial_ethnic_flagged_n": 9.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 216.0, "unflagged_n": 608.0, "any_flagged_n": 9.0, "racial_ethnic_rate": 0.010804, "nationality_rate": 0.0, "model_unsupported_rate": 0.259304, "any_flagged_rate": 0.010804, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bra_vs_jpn_r32", "n": 2013, "racial_ethnic_flagged_n": 20.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 504.0, "unflagged_n": 1488.0, "any_flagged_n": 21.0, "racial_ethnic_rate": 0.009935, "nationality_rate": 0.000497, "model_unsupported_rate": 0.250373, "any_flagged_rate": 0.010432, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "gha_vs_pan_gl_md1", "n": 200, "racial_ethnic_flagged_n": 2.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 64.0, "unflagged_n": 134.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.01, "nationality_rate": 0.0, "model_unsupported_rate": 0.32, "any_flagged_rate": 0.01, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "mex_vs_rsa_ga_md1", "n": 30278, "racial_ethnic_flagged_n": 265.0, "nationality_flagged_n": 34.0, "model_unsupported_n": 10855.0, "unflagged_n": 19124.0, "any_flagged_n": 299.0, "racial_ethnic_rate": 0.008752, "nationality_rate": 0.001123, "model_unsupported_rate": 0.358511, "any_flagged_rate": 0.009875, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "fra_vs_swe_r32", "n": 728, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 224.0, "unflagged_n": 497.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.009615, "nationality_rate": 0.0, "model_unsupported_rate": 0.307692, "any_flagged_rate": 0.009615, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "col_vs_gha_r32", "n": 1830, "racial_ethnic_flagged_n": 17.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 632.0, "unflagged_n": 1181.0, "any_flagged_n": 17.0, "racial_ethnic_rate": 0.00929, "nationality_rate": 0.0, "model_unsupported_rate": 0.345355, "any_flagged_rate": 0.00929, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "fra_vs_irq_gi_md2", "n": 2073, "racial_ethnic_flagged_n": 19.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1337.0, "unflagged_n": 717.0, "any_flagged_n": 19.0, "racial_ethnic_rate": 0.009165, "nationality_rate": 0.0, "model_unsupported_rate": 0.644959, "any_flagged_rate": 0.009165, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "eng_vs_gha_gl_md2", "n": 876, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 349.0, "unflagged_n": 520.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.005708, "nationality_rate": 0.002283, "model_unsupported_rate": 0.398402, "any_flagged_rate": 0.007991, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sco_vs_mar_gc_md2", "n": 13563, "racial_ethnic_flagged_n": 90.0, "nationality_flagged_n": 17.0, "model_unsupported_n": 5476.0, "unflagged_n": 7980.0, "any_flagged_n": 107.0, "racial_ethnic_rate": 0.006636, "nationality_rate": 0.001253, "model_unsupported_rate": 0.403745, "any_flagged_rate": 0.007889, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ned_vs_mar_r32", "n": 1300, "racial_ethnic_flagged_n": 9.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 669.0, "unflagged_n": 621.0, "any_flagged_n": 10.0, "racial_ethnic_rate": 0.006923, "nationality_rate": 0.000769, "model_unsupported_rate": 0.514615, "any_flagged_rate": 0.007692, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "por_vs_uzb_gk_md2", "n": 2076, "racial_ethnic_flagged_n": 13.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 606.0, "unflagged_n": 1455.0, "any_flagged_n": 15.0, "racial_ethnic_rate": 0.006262, "nationality_rate": 0.000963, "model_unsupported_rate": 0.291908, "any_flagged_rate": 0.007225, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "irn_vs_nzl_gg_md1", "n": 416, "racial_ethnic_flagged_n": 3.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 151.0, "unflagged_n": 262.0, "any_flagged_n": 3.0, "racial_ethnic_rate": 0.007212, "nationality_rate": 0.0, "model_unsupported_rate": 0.362981, "any_flagged_rate": 0.007212, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "uzb_vs_col_gk_md1", "n": 700, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 233.0, "unflagged_n": 462.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.007143, "nationality_rate": 0.0, "model_unsupported_rate": 0.332857, "any_flagged_rate": 0.007143, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "eng_vs_nor_qf", "n": 2300, "racial_ethnic_flagged_n": 14.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1288.0, "unflagged_n": 996.0, "any_flagged_n": 16.0, "racial_ethnic_rate": 0.006087, "nationality_rate": 0.00087, "model_unsupported_rate": 0.56, "any_flagged_rate": 0.006957, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nzl_vs_egy_gg_md2", "n": 4895, "racial_ethnic_flagged_n": 31.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 2495.0, "unflagged_n": 2366.0, "any_flagged_n": 34.0, "racial_ethnic_rate": 0.006333, "nationality_rate": 0.000613, "model_unsupported_rate": 0.509704, "any_flagged_rate": 0.006946, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "usa_vs_bih_r32", "n": 3900, "racial_ethnic_flagged_n": 24.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1731.0, "unflagged_n": 2142.0, "any_flagged_n": 27.0, "racial_ethnic_rate": 0.006154, "nationality_rate": 0.000769, "model_unsupported_rate": 0.443846, "any_flagged_rate": 0.006923, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sui_vs_alg_r32", "n": 2600, "racial_ethnic_flagged_n": 13.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 1110.0, "unflagged_n": 1472.0, "any_flagged_n": 18.0, "racial_ethnic_rate": 0.005, "nationality_rate": 0.001923, "model_unsupported_rate": 0.426923, "any_flagged_rate": 0.006923, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "egy_vs_irn_gg_md3", "n": 11206, "racial_ethnic_flagged_n": 71.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 5595.0, "unflagged_n": 5535.0, "any_flagged_n": 76.0, "racial_ethnic_rate": 0.006336, "nationality_rate": 0.000446, "model_unsupported_rate": 0.499286, "any_flagged_rate": 0.006782, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "mar_vs_can_r16", "n": 2700, "racial_ethnic_flagged_n": 15.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1201.0, "unflagged_n": 1481.0, "any_flagged_n": 18.0, "racial_ethnic_rate": 0.005556, "nationality_rate": 0.001111, "model_unsupported_rate": 0.444815, "any_flagged_rate": 0.006667, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "jor_vs_arg_gj_md3", "n": 2900, "racial_ethnic_flagged_n": 18.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 1288.0, "unflagged_n": 1593.0, "any_flagged_n": 19.0, "racial_ethnic_rate": 0.006207, "nationality_rate": 0.000345, "model_unsupported_rate": 0.444138, "any_flagged_rate": 0.006552, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "jor_vs_alg_gj_md2", "n": 1300, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 714.0, "unflagged_n": 578.0, "any_flagged_n": 8.0, "racial_ethnic_rate": 0.006154, "nationality_rate": 0.0, "model_unsupported_rate": 0.549231, "any_flagged_rate": 0.006154, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "tun_vs_ned_gf_md3", "n": 3330, "racial_ethnic_flagged_n": 17.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 2311.0, "unflagged_n": 999.0, "any_flagged_n": 20.0, "racial_ethnic_rate": 0.005105, "nationality_rate": 0.000901, "model_unsupported_rate": 0.693994, "any_flagged_rate": 0.006006, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "can_vs_rsa_r32", "n": 1200, "racial_ethnic_flagged_n": 6.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 417.0, "unflagged_n": 776.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.005, "nationality_rate": 0.000833, "model_unsupported_rate": 0.3475, "any_flagged_rate": 0.005833, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "can_vs_qat_gb_md2", "n": 7889, "racial_ethnic_flagged_n": 41.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 3184.0, "unflagged_n": 4659.0, "any_flagged_n": 46.0, "racial_ethnic_rate": 0.005197, "nationality_rate": 0.000634, "model_unsupported_rate": 0.4036, "any_flagged_rate": 0.005831, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "tur_vs_usa_gd_md3", "n": 19512, "racial_ethnic_flagged_n": 92.0, "nationality_flagged_n": 20.0, "model_unsupported_n": 6347.0, "unflagged_n": 13053.0, "any_flagged_n": 112.0, "racial_ethnic_rate": 0.004715, "nationality_rate": 0.001025, "model_unsupported_rate": 0.325287, "any_flagged_rate": 0.00574, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "mex_vs_kor_ga_md2", "n": 13989, "racial_ethnic_flagged_n": 74.0, "nationality_flagged_n": 6.0, "model_unsupported_n": 5280.0, "unflagged_n": 8629.0, "any_flagged_n": 80.0, "racial_ethnic_rate": 0.00529, "nationality_rate": 0.000429, "model_unsupported_rate": 0.377439, "any_flagged_rate": 0.005719, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "esp_vs_aut_r32", "n": 2818, "racial_ethnic_flagged_n": 14.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1250.0, "unflagged_n": 1552.0, "any_flagged_n": 16.0, "racial_ethnic_rate": 0.004968, "nationality_rate": 0.00071, "model_unsupported_rate": 0.443577, "any_flagged_rate": 0.005678, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bra_vs_hai_gc_md2", "n": 10276, "racial_ethnic_flagged_n": 49.0, "nationality_flagged_n": 9.0, "model_unsupported_n": 3307.0, "unflagged_n": 6911.0, "any_flagged_n": 58.0, "racial_ethnic_rate": 0.004768, "nationality_rate": 0.000876, "model_unsupported_rate": 0.321818, "any_flagged_rate": 0.005644, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "usa_vs_par_gd_md1", "n": 4183, "racial_ethnic_flagged_n": 18.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 1411.0, "unflagged_n": 2749.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.004303, "nationality_rate": 0.001195, "model_unsupported_rate": 0.337318, "any_flagged_rate": 0.005498, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nor_vs_fra_gi_md3", "n": 2229, "racial_ethnic_flagged_n": 12.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 885.0, "unflagged_n": 1332.0, "any_flagged_n": 12.0, "racial_ethnic_rate": 0.005384, "nationality_rate": 0.0, "model_unsupported_rate": 0.397039, "any_flagged_rate": 0.005384, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nor_vs_civ_r32", "n": 1900, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1198.0, "unflagged_n": 692.0, "any_flagged_n": 10.0, "racial_ethnic_rate": 0.004211, "nationality_rate": 0.001053, "model_unsupported_rate": 0.630526, "any_flagged_rate": 0.005263, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bel_vs_egy_gg_md1", "n": 12539, "racial_ethnic_flagged_n": 51.0, "nationality_flagged_n": 12.0, "model_unsupported_n": 6514.0, "unflagged_n": 5962.0, "any_flagged_n": 63.0, "racial_ethnic_rate": 0.004067, "nationality_rate": 0.000957, "model_unsupported_rate": 0.519499, "any_flagged_rate": 0.005024, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ger_vs_cur_ge_md1", "n": 12985, "racial_ethnic_flagged_n": 56.0, "nationality_flagged_n": 9.0, "model_unsupported_n": 6747.0, "unflagged_n": 6173.0, "any_flagged_n": 65.0, "racial_ethnic_rate": 0.004313, "nationality_rate": 0.000693, "model_unsupported_rate": 0.5196, "any_flagged_rate": 0.005006, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "col_vs_por_gk_md3", "n": 1600, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 346.0, "unflagged_n": 1246.0, "any_flagged_n": 8.0, "racial_ethnic_rate": 0.005, "nationality_rate": 0.0, "model_unsupported_rate": 0.21625, "any_flagged_rate": 0.005, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "aut_vs_jor_gj_md1", "n": 200, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 131.0, "unflagged_n": 68.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.005, "nationality_rate": 0.0, "model_unsupported_rate": 0.655, "any_flagged_rate": 0.005, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sui_vs_qat_gb_md1", "n": 11445, "racial_ethnic_flagged_n": 51.0, "nationality_flagged_n": 6.0, "model_unsupported_n": 5878.0, "unflagged_n": 5510.0, "any_flagged_n": 57.0, "racial_ethnic_rate": 0.004456, "nationality_rate": 0.000524, "model_unsupported_rate": 0.513587, "any_flagged_rate": 0.00498, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "tur_vs_par_gd_md2", "n": 8043, "racial_ethnic_flagged_n": 36.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 2341.0, "unflagged_n": 5662.0, "any_flagged_n": 40.0, "racial_ethnic_rate": 0.004476, "nationality_rate": 0.000497, "model_unsupported_rate": 0.291061, "any_flagged_rate": 0.004973, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cze_vs_mex_ga_md3", "n": 40962, "racial_ethnic_flagged_n": 166.0, "nationality_flagged_n": 36.0, "model_unsupported_n": 21985.0, "unflagged_n": 18775.0, "any_flagged_n": 202.0, "racial_ethnic_rate": 0.004053, "nationality_rate": 0.000879, "model_unsupported_rate": 0.536717, "any_flagged_rate": 0.004931, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "usa_vs_aus_gd_md2", "n": 3100, "racial_ethnic_flagged_n": 13.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1066.0, "unflagged_n": 2019.0, "any_flagged_n": 15.0, "racial_ethnic_rate": 0.004194, "nationality_rate": 0.000645, "model_unsupported_rate": 0.343871, "any_flagged_rate": 0.004839, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "par_vs_aus_gd_md3", "n": 4769, "racial_ethnic_flagged_n": 20.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1601.0, "unflagged_n": 3145.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.004194, "nationality_rate": 0.000629, "model_unsupported_rate": 0.33571, "any_flagged_rate": 0.004823, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "egy_vs_aus_r32", "n": 4800, "racial_ethnic_flagged_n": 19.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 2816.0, "unflagged_n": 1961.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.003958, "nationality_rate": 0.000833, "model_unsupported_rate": 0.586667, "any_flagged_rate": 0.004792, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sco_vs_hai_gc_md1", "n": 5473, "racial_ethnic_flagged_n": 23.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 2070.0, "unflagged_n": 3377.0, "any_flagged_n": 26.0, "racial_ethnic_rate": 0.004202, "nationality_rate": 0.000548, "model_unsupported_rate": 0.37822, "any_flagged_rate": 0.004751, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sco_vs_bra_gc_md3", "n": 10000, "racial_ethnic_flagged_n": 41.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 3259.0, "unflagged_n": 6696.0, "any_flagged_n": 45.0, "racial_ethnic_rate": 0.0041, "nationality_rate": 0.0004, "model_unsupported_rate": 0.3259, "any_flagged_rate": 0.0045, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bra_vs_mar_gc_md1", "n": 9383, "racial_ethnic_flagged_n": 35.0, "nationality_flagged_n": 5.0, "model_unsupported_n": 3812.0, "unflagged_n": 5531.0, "any_flagged_n": 40.0, "racial_ethnic_rate": 0.00373, "nationality_rate": 0.000533, "model_unsupported_rate": 0.406267, "any_flagged_rate": 0.004263, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bel_vs_irn_gg_md2", "n": 6144, "racial_ethnic_flagged_n": 22.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 3252.0, "unflagged_n": 2866.0, "any_flagged_n": 26.0, "racial_ethnic_rate": 0.003581, "nationality_rate": 0.000651, "model_unsupported_rate": 0.529297, "any_flagged_rate": 0.004232, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nor_vs_irq_gi_md1", "n": 2603, "racial_ethnic_flagged_n": 9.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1650.0, "unflagged_n": 942.0, "any_flagged_n": 11.0, "racial_ethnic_rate": 0.003458, "nationality_rate": 0.000768, "model_unsupported_rate": 0.633884, "any_flagged_rate": 0.004226, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cro_vs_gha_gl_md3", "n": 1700, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 989.0, "unflagged_n": 704.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.002941, "nationality_rate": 0.001176, "model_unsupported_rate": 0.581765, "any_flagged_rate": 0.004118, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "arg_vs_alg_gj_md1", "n": 2300, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 812.0, "unflagged_n": 1479.0, "any_flagged_n": 9.0, "racial_ethnic_rate": 0.003478, "nationality_rate": 0.000435, "model_unsupported_rate": 0.353043, "any_flagged_rate": 0.003913, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "eng_vs_cro_gl_md1", "n": 1800, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 729.0, "unflagged_n": 1064.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.003889, "nationality_rate": 0.0, "model_unsupported_rate": 0.405, "any_flagged_rate": 0.003889, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "aus_vs_tur_gd_md1", "n": 10755, "racial_ethnic_flagged_n": 35.0, "nationality_flagged_n": 6.0, "model_unsupported_n": 3880.0, "unflagged_n": 6834.0, "any_flagged_n": 41.0, "racial_ethnic_rate": 0.003254, "nationality_rate": 0.000558, "model_unsupported_rate": 0.360762, "any_flagged_rate": 0.003812, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ury_vs_cpv_gh_md2", "n": 1074, "racial_ethnic_flagged_n": 4.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 284.0, "unflagged_n": 786.0, "any_flagged_n": 4.0, "racial_ethnic_rate": 0.003724, "nationality_rate": 0.0, "model_unsupported_rate": 0.264432, "any_flagged_rate": 0.003724, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "can_vs_bih_gb_md1", "n": 28916, "racial_ethnic_flagged_n": 81.0, "nationality_flagged_n": 19.0, "model_unsupported_n": 12921.0, "unflagged_n": 15895.0, "any_flagged_n": 100.0, "racial_ethnic_rate": 0.002801, "nationality_rate": 0.000657, "model_unsupported_rate": 0.446846, "any_flagged_rate": 0.003458, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cze_vs_rsa_ga_md2", "n": 25953, "racial_ethnic_flagged_n": 70.0, "nationality_flagged_n": 17.0, "model_unsupported_n": 15950.0, "unflagged_n": 9916.0, "any_flagged_n": 87.0, "racial_ethnic_rate": 0.002697, "nationality_rate": 0.000655, "model_unsupported_rate": 0.614572, "any_flagged_rate": 0.003352, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "pan_vs_eng_gl_md3", "n": 300, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 96.0, "unflagged_n": 203.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.003333, "model_unsupported_rate": 0.32, "any_flagged_rate": 0.003333, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "col_vs_cod_gk_md2", "n": 3100, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1561.0, "unflagged_n": 1529.0, "any_flagged_n": 10.0, "racial_ethnic_rate": 0.002258, "nationality_rate": 0.000968, "model_unsupported_rate": 0.503548, "any_flagged_rate": 0.003226, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ger_vs_civ_ge_md2", "n": 13540, "racial_ethnic_flagged_n": 29.0, "nationality_flagged_n": 11.0, "model_unsupported_n": 7502.0, "unflagged_n": 5998.0, "any_flagged_n": 40.0, "racial_ethnic_rate": 0.002142, "nationality_rate": 0.000812, "model_unsupported_rate": 0.554062, "any_flagged_rate": 0.002954, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "por_vs_cod_gk_md1", "n": 2000, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 422.0, "unflagged_n": 1573.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.0025, "nationality_rate": 0.0, "model_unsupported_rate": 0.211, "any_flagged_rate": 0.0025, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "kor_vs_cze_ga_md1", "n": 10061, "racial_ethnic_flagged_n": 22.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 8831.0, "unflagged_n": 1207.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.002187, "nationality_rate": 9.9e-05, "model_unsupported_rate": 0.877746, "any_flagged_rate": 0.002286, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ger_vs_par_r32", "n": 1979, "racial_ethnic_flagged_n": 2.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 1305.0, "unflagged_n": 670.0, "any_flagged_n": 4.0, "racial_ethnic_rate": 0.001011, "nationality_rate": 0.001011, "model_unsupported_rate": 0.659424, "any_flagged_rate": 0.002021, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "eng_vs_cod_r32", "n": 500, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 126.0, "unflagged_n": 373.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.002, "nationality_rate": 0.0, "model_unsupported_rate": 0.252, "any_flagged_rate": 0.002, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "esp_vs_cpv_gh_md1", "n": 532, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 165.0, "unflagged_n": 366.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.00188, "nationality_rate": 0.0, "model_unsupported_rate": 0.31015, "any_flagged_rate": 0.00188, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sui_vs_can_gb_md3", "n": 3200, "racial_ethnic_flagged_n": 3.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 1357.0, "unflagged_n": 1837.0, "any_flagged_n": 6.0, "racial_ethnic_rate": 0.000937, "nationality_rate": 0.000937, "model_unsupported_rate": 0.424063, "any_flagged_rate": 0.001875, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "por_vs_cro_r32", "n": 3900, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 2773.0, "unflagged_n": 1120.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.001795, "nationality_rate": 0.0, "model_unsupported_rate": 0.711026, "any_flagged_rate": 0.001795, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ned_vs_jpn_gf_md1", "n": 2580, "racial_ethnic_flagged_n": 4.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 2387.0, "unflagged_n": 189.0, "any_flagged_n": 4.0, "racial_ethnic_rate": 0.00155, "nationality_rate": 0.0, "model_unsupported_rate": 0.925194, "any_flagged_rate": 0.00155, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "bih_vs_qat_gb_md3", "n": 1337, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 845.0, "unflagged_n": 490.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.000748, "nationality_rate": 0.000748, "model_unsupported_rate": 0.632012, "any_flagged_rate": 0.001496, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "esp_vs_ksa_gh_md2", "n": 700, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 566.0, "unflagged_n": 133.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.001429, "nationality_rate": 0.0, "model_unsupported_rate": 0.808571, "any_flagged_rate": 0.001429, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ned_vs_swe_gf_md2", "n": 1439, "racial_ethnic_flagged_n": 2.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1388.0, "unflagged_n": 49.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.00139, "nationality_rate": 0.0, "model_unsupported_rate": 0.964559, "any_flagged_rate": 0.00139, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ksa_vs_ury_gh_md1", "n": 2347, "racial_ethnic_flagged_n": 3.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1998.0, "unflagged_n": 346.0, "any_flagged_n": 3.0, "racial_ethnic_rate": 0.001278, "nationality_rate": 0.0, "model_unsupported_rate": 0.8513, "any_flagged_rate": 0.001278, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "arg_vs_aut_gj_md2", "n": 800, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 242.0, "unflagged_n": 557.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.00125, "nationality_rate": 0.0, "model_unsupported_rate": 0.3025, "any_flagged_rate": 0.00125, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ecu_vs_ger_ge_md3", "n": 4056, "racial_ethnic_flagged_n": 4.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 3890.0, "unflagged_n": 161.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.000986, "nationality_rate": 0.000247, "model_unsupported_rate": 0.959073, "any_flagged_rate": 0.001233, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "nzl_vs_bel_gg_md3", "n": 1933, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 1228.0, "unflagged_n": 703.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.000517, "nationality_rate": 0.000517, "model_unsupported_rate": 0.635282, "any_flagged_rate": 0.001035, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cur_vs_civ_ge_md3", "n": 101, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 22.0, "unflagged_n": 79.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.217822, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "ecu_vs_cur_ge_md2", "n": 293, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 92.0, "unflagged_n": 201.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.313993, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cod_vs_uzb_gk_md3", "n": 100, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 32.0, "unflagged_n": 68.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.32, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "cpv_vs_ksa_gh_md3", "n": 780, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 680.0, "unflagged_n": 100.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.871795, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_match", "group": "sui_vs_bih_gb_md2", "n": 2031, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1988.0, "unflagged_n": 43.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.978828, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}], "by_stage": [{"breakdown": "by_stage", "group": "Knockout", "n": 59113, "racial_ethnic_flagged_n": 547.0, "nationality_flagged_n": 51.0, "model_unsupported_n": 25890.0, "unflagged_n": 32625.0, "any_flagged_n": 598.0, "racial_ethnic_rate": 0.009253, "nationality_rate": 0.000863, "model_unsupported_rate": 0.437975, "any_flagged_rate": 0.010116, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_stage", "group": "Group Stage", "n": 398785, "racial_ethnic_flagged_n": 1883.0, "nationality_flagged_n": 288.0, "model_unsupported_n": 189445.0, "unflagged_n": 207169.0, "any_flagged_n": 2171.0, "racial_ethnic_rate": 0.004722, "nationality_rate": 0.000722, "model_unsupported_rate": 0.475055, "any_flagged_rate": 0.005444, "profanity": null, "identity_flag": null, "rate": NaN}], "by_subreddit": [{"breakdown": "by_subreddit", "group": "Senegal", "n": 1052, "racial_ethnic_flagged_n": 51.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 386.0, "unflagged_n": 614.0, "any_flagged_n": 52.0, "racial_ethnic_rate": 0.048479, "nationality_rate": 0.000951, "model_unsupported_rate": 0.36692, "any_flagged_rate": 0.04943, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "iran", "n": 260, "racial_ethnic_flagged_n": 6.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 103.0, "unflagged_n": 151.0, "any_flagged_n": 6.0, "racial_ethnic_rate": 0.023077, "nationality_rate": 0.0, "model_unsupported_rate": 0.396154, "any_flagged_rate": 0.023077, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Ecuador", "n": 571, "racial_ethnic_flagged_n": 13.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 125.0, "unflagged_n": 433.0, "any_flagged_n": 13.0, "racial_ethnic_rate": 0.022767, "nationality_rate": 0.0, "model_unsupported_rate": 0.218914, "any_flagged_rate": 0.022767, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "southafrica", "n": 3326, "racial_ethnic_flagged_n": 48.0, "nationality_flagged_n": 7.0, "model_unsupported_n": 1147.0, "unflagged_n": 2124.0, "any_flagged_n": 55.0, "racial_ethnic_rate": 0.014432, "nationality_rate": 0.002105, "model_unsupported_rate": 0.344859, "any_flagged_rate": 0.016536, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Tunisia", "n": 6311, "racial_ethnic_flagged_n": 84.0, "nationality_flagged_n": 7.0, "model_unsupported_n": 3266.0, "unflagged_n": 2954.0, "any_flagged_n": 91.0, "racial_ethnic_rate": 0.01331, "nationality_rate": 0.001109, "model_unsupported_rate": 0.517509, "any_flagged_rate": 0.014419, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "haiti", "n": 1529, "racial_ethnic_flagged_n": 19.0, "nationality_flagged_n": 3.0, "model_unsupported_n": 549.0, "unflagged_n": 958.0, "any_flagged_n": 22.0, "racial_ethnic_rate": 0.012426, "nationality_rate": 0.001962, "model_unsupported_rate": 0.359058, "any_flagged_rate": 0.014388, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Mexico", "n": 17697, "racial_ethnic_flagged_n": 242.0, "nationality_flagged_n": 10.0, "model_unsupported_n": 5229.0, "unflagged_n": 12216.0, "any_flagged_n": 252.0, "racial_ethnic_rate": 0.013675, "nationality_rate": 0.000565, "model_unsupported_rate": 0.295474, "any_flagged_rate": 0.01424, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Ligue1", "n": 1627, "racial_ethnic_flagged_n": 22.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 394.0, "unflagged_n": 1211.0, "any_flagged_n": 22.0, "racial_ethnic_rate": 0.013522, "nationality_rate": 0.0, "model_unsupported_rate": 0.242163, "any_flagged_rate": 0.013522, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "argentina", "n": 6300, "racial_ethnic_flagged_n": 81.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 2017.0, "unflagged_n": 4201.0, "any_flagged_n": 82.0, "racial_ethnic_rate": 0.012857, "nationality_rate": 0.000159, "model_unsupported_rate": 0.320159, "any_flagged_rate": 0.013016, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Uzbekistan", "n": 876, "racial_ethnic_flagged_n": 9.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 319.0, "unflagged_n": 546.0, "any_flagged_n": 11.0, "racial_ethnic_rate": 0.010274, "nationality_rate": 0.002283, "model_unsupported_rate": 0.364155, "any_flagged_rate": 0.012557, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Panama", "n": 700, "racial_ethnic_flagged_n": 8.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 151.0, "unflagged_n": 541.0, "any_flagged_n": 8.0, "racial_ethnic_rate": 0.011429, "nationality_rate": 0.0, "model_unsupported_rate": 0.215714, "any_flagged_rate": 0.011429, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Morocco", "n": 12052, "racial_ethnic_flagged_n": 112.0, "nationality_flagged_n": 24.0, "model_unsupported_n": 5374.0, "unflagged_n": 6542.0, "any_flagged_n": 136.0, "racial_ethnic_rate": 0.009293, "nationality_rate": 0.001991, "model_unsupported_rate": 0.445901, "any_flagged_rate": 0.011284, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Colombia", "n": 2000, "racial_ethnic_flagged_n": 22.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 429.0, "unflagged_n": 1549.0, "any_flagged_n": 22.0, "racial_ethnic_rate": 0.011, "nationality_rate": 0.0, "model_unsupported_rate": 0.2145, "any_flagged_rate": 0.011, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Paraguay", "n": 3756, "racial_ethnic_flagged_n": 39.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 994.0, "unflagged_n": 2721.0, "any_flagged_n": 41.0, "racial_ethnic_rate": 0.010383, "nationality_rate": 0.000532, "model_unsupported_rate": 0.264643, "any_flagged_rate": 0.010916, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "algeria", "n": 2500, "racial_ethnic_flagged_n": 19.0, "nationality_flagged_n": 6.0, "model_unsupported_n": 954.0, "unflagged_n": 1521.0, "any_flagged_n": 25.0, "racial_ethnic_rate": 0.0076, "nationality_rate": 0.0024, "model_unsupported_rate": 0.3816, "any_flagged_rate": 0.01, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Egypt", "n": 6003, "racial_ethnic_flagged_n": 58.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 5057.0, "unflagged_n": 886.0, "any_flagged_n": 60.0, "racial_ethnic_rate": 0.009662, "nationality_rate": 0.000333, "model_unsupported_rate": 0.842412, "any_flagged_rate": 0.009995, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "NZFootball", "n": 1381, "racial_ethnic_flagged_n": 11.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 374.0, "unflagged_n": 994.0, "any_flagged_n": 13.0, "racial_ethnic_rate": 0.007965, "nationality_rate": 0.001448, "model_unsupported_rate": 0.270818, "any_flagged_rate": 0.009413, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "France", "n": 3100, "racial_ethnic_flagged_n": 27.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 595.0, "unflagged_n": 2478.0, "any_flagged_n": 27.0, "racial_ethnic_rate": 0.00871, "nationality_rate": 0.0, "model_unsupported_rate": 0.191935, "any_flagged_rate": 0.00871, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "CapeVerde", "n": 592, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 201.0, "unflagged_n": 386.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.008446, "nationality_rate": 0.0, "model_unsupported_rate": 0.339527, "any_flagged_rate": 0.008446, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Ghana", "n": 1906, "racial_ethnic_flagged_n": 11.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 735.0, "unflagged_n": 1156.0, "any_flagged_n": 15.0, "racial_ethnic_rate": 0.005771, "nationality_rate": 0.002099, "model_unsupported_rate": 0.385624, "any_flagged_rate": 0.00787, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Spain", "n": 1966, "racial_ethnic_flagged_n": 14.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 591.0, "unflagged_n": 1360.0, "any_flagged_n": 15.0, "racial_ethnic_rate": 0.007121, "nationality_rate": 0.000509, "model_unsupported_rate": 0.30061, "any_flagged_rate": 0.00763, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "JLeague", "n": 707, "racial_ethnic_flagged_n": 4.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 177.0, "unflagged_n": 525.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.005658, "nationality_rate": 0.001414, "model_unsupported_rate": 0.250354, "any_flagged_rate": 0.007072, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "qatar", "n": 2148, "racial_ethnic_flagged_n": 12.0, "nationality_flagged_n": 2.0, "model_unsupported_n": 821.0, "unflagged_n": 1313.0, "any_flagged_n": 14.0, "racial_ethnic_rate": 0.005587, "nationality_rate": 0.000931, "model_unsupported_rate": 0.382216, "any_flagged_rate": 0.006518, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "worldcup", "n": 100300, "racial_ethnic_flagged_n": 522.0, "nationality_flagged_n": 102.0, "model_unsupported_n": 39273.0, "unflagged_n": 60403.0, "any_flagged_n": 624.0, "racial_ethnic_rate": 0.005204, "nationality_rate": 0.001017, "model_unsupported_rate": 0.391555, "any_flagged_rate": 0.006221, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Portugal", "n": 4500, "racial_ethnic_flagged_n": 27.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 752.0, "unflagged_n": 3721.0, "any_flagged_n": 27.0, "racial_ethnic_rate": 0.006, "nationality_rate": 0.0, "model_unsupported_rate": 0.167111, "any_flagged_rate": 0.006, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Iraq", "n": 1188, "racial_ethnic_flagged_n": 6.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 1065.0, "unflagged_n": 116.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.005051, "nationality_rate": 0.000842, "model_unsupported_rate": 0.896465, "any_flagged_rate": 0.005892, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "ussoccer", "n": 11400, "racial_ethnic_flagged_n": 52.0, "nationality_flagged_n": 13.0, "model_unsupported_n": 3639.0, "unflagged_n": 7696.0, "any_flagged_n": 65.0, "racial_ethnic_rate": 0.004561, "nationality_rate": 0.00114, "model_unsupported_rate": 0.319211, "any_flagged_rate": 0.005702, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "soccer", "n": 95400, "racial_ethnic_flagged_n": 453.0, "nationality_flagged_n": 90.0, "model_unsupported_n": 41274.0, "unflagged_n": 53583.0, "any_flagged_n": 543.0, "racial_ethnic_rate": 0.004748, "nationality_rate": 0.000943, "model_unsupported_rate": 0.432642, "any_flagged_rate": 0.005692, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "LigaMX", "n": 17490, "racial_ethnic_flagged_n": 87.0, "nationality_flagged_n": 7.0, "model_unsupported_n": 8599.0, "unflagged_n": 8797.0, "any_flagged_n": 94.0, "racial_ethnic_rate": 0.004974, "nationality_rate": 0.0004, "model_unsupported_rate": 0.491652, "any_flagged_rate": 0.005374, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "ThreeLions", "n": 2400, "racial_ethnic_flagged_n": 10.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 692.0, "unflagged_n": 1697.0, "any_flagged_n": 11.0, "racial_ethnic_rate": 0.004167, "nationality_rate": 0.000417, "model_unsupported_rate": 0.288333, "any_flagged_rate": 0.004583, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Turkey", "n": 7010, "racial_ethnic_flagged_n": 32.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1480.0, "unflagged_n": 5498.0, "any_flagged_n": 32.0, "racial_ethnic_rate": 0.004565, "nationality_rate": 0.0, "model_unsupported_rate": 0.211127, "any_flagged_rate": 0.004565, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Aleague", "n": 10709, "racial_ethnic_flagged_n": 35.0, "nationality_flagged_n": 8.0, "model_unsupported_n": 4306.0, "unflagged_n": 6360.0, "any_flagged_n": 43.0, "racial_ethnic_rate": 0.003268, "nationality_rate": 0.000747, "model_unsupported_rate": 0.402092, "any_flagged_rate": 0.004015, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "futebol", "n": 15600, "racial_ethnic_flagged_n": 62.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 4399.0, "unflagged_n": 11139.0, "any_flagged_n": 62.0, "racial_ethnic_rate": 0.003974, "nationality_rate": 0.0, "model_unsupported_rate": 0.281987, "any_flagged_rate": 0.003974, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "uruguay", "n": 1531, "racial_ethnic_flagged_n": 6.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 396.0, "unflagged_n": 1129.0, "any_flagged_n": 6.0, "racial_ethnic_rate": 0.003919, "nationality_rate": 0.0, "model_unsupported_rate": 0.258654, "any_flagged_rate": 0.003919, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "BelgianFootball", "n": 5889, "racial_ethnic_flagged_n": 14.0, "nationality_flagged_n": 9.0, "model_unsupported_n": 4331.0, "unflagged_n": 1535.0, "any_flagged_n": 23.0, "racial_ethnic_rate": 0.002377, "nationality_rate": 0.001528, "model_unsupported_rate": 0.735439, "any_flagged_rate": 0.003906, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "CanadaSoccer", "n": 18373, "racial_ethnic_flagged_n": 59.0, "nationality_flagged_n": 12.0, "model_unsupported_n": 7344.0, "unflagged_n": 10958.0, "any_flagged_n": 71.0, "racial_ethnic_rate": 0.003211, "nationality_rate": 0.000653, "model_unsupported_rate": 0.399717, "any_flagged_rate": 0.003864, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "ScottishFootball", "n": 15000, "racial_ethnic_flagged_n": 44.0, "nationality_flagged_n": 7.0, "model_unsupported_n": 5962.0, "unflagged_n": 8987.0, "any_flagged_n": 51.0, "racial_ethnic_rate": 0.002933, "nationality_rate": 0.000467, "model_unsupported_rate": 0.397467, "any_flagged_rate": 0.0034, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "PrimeiraLiga", "n": 1500, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 355.0, "unflagged_n": 1140.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.003333, "nationality_rate": 0.0, "model_unsupported_rate": 0.236667, "any_flagged_rate": 0.003333, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "superlig", "n": 10366, "racial_ethnic_flagged_n": 23.0, "nationality_flagged_n": 8.0, "model_unsupported_n": 3312.0, "unflagged_n": 7023.0, "any_flagged_n": 31.0, "racial_ethnic_rate": 0.002219, "nationality_rate": 0.000772, "model_unsupported_rate": 0.319506, "any_flagged_rate": 0.002991, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "bundesliga", "n": 11248, "racial_ethnic_flagged_n": 25.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 11033.0, "unflagged_n": 189.0, "any_flagged_n": 26.0, "racial_ethnic_rate": 0.002223, "nationality_rate": 8.9e-05, "model_unsupported_rate": 0.980885, "any_flagged_rate": 0.002312, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "jordan", "n": 900, "racial_ethnic_flagged_n": 2.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 684.0, "unflagged_n": 214.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.002222, "nationality_rate": 0.0, "model_unsupported_rate": 0.76, "any_flagged_rate": 0.002222, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "KLeague", "n": 453, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 79.0, "unflagged_n": 373.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.002208, "nationality_rate": 0.0, "model_unsupported_rate": 0.174393, "any_flagged_rate": 0.002208, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "czech", "n": 26649, "racial_ethnic_flagged_n": 33.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 25949.0, "unflagged_n": 663.0, "any_flagged_n": 37.0, "racial_ethnic_rate": 0.001238, "nationality_rate": 0.00015, "model_unsupported_rate": 0.973733, "any_flagged_rate": 0.001388, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Eredivisie", "n": 5527, "racial_ethnic_flagged_n": 7.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 5383.0, "unflagged_n": 137.0, "any_flagged_n": 7.0, "racial_ethnic_rate": 0.001267, "nationality_rate": 0.0, "model_unsupported_rate": 0.973946, "any_flagged_rate": 0.001267, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "NorskFotball", "n": 3998, "racial_ethnic_flagged_n": 4.0, "nationality_flagged_n": 1.0, "model_unsupported_n": 3711.0, "unflagged_n": 282.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.001001, "nationality_rate": 0.00025, "model_unsupported_rate": 0.928214, "any_flagged_rate": 0.001251, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "SaudiArabia", "n": 3447, "racial_ethnic_flagged_n": 2.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 3129.0, "unflagged_n": 316.0, "any_flagged_n": 2.0, "racial_ethnic_rate": 0.00058, "nationality_rate": 0.0, "model_unsupported_rate": 0.907746, "any_flagged_rate": 0.00058, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "croatia", "n": 3400, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 3313.0, "unflagged_n": 86.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.000294, "nationality_rate": 0.0, "model_unsupported_rate": 0.974412, "any_flagged_rate": 0.000294, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "bih", "n": 4797, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 4703.0, "unflagged_n": 93.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.000208, "nationality_rate": 0.0, "model_unsupported_rate": 0.980404, "any_flagged_rate": 0.000208, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "Curacao", "n": 454, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 175.0, "unflagged_n": 279.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.385463, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "IvoryCoast", "n": 1, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_subreddit", "group": "SvenskFotboll", "n": 8, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 8.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}], "by_language": [{"breakdown": "by_language", "group": "es", "n": 24707, "racial_ethnic_flagged_n": 332.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 0.0, "unflagged_n": 24375.0, "any_flagged_n": 332.0, "racial_ethnic_rate": 0.013437, "nationality_rate": 0.0, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.013437, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "fr", "n": 4252, "racial_ethnic_flagged_n": 51.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 0.0, "unflagged_n": 4201.0, "any_flagged_n": 51.0, "racial_ethnic_rate": 0.011994, "nationality_rate": 0.0, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.011994, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "en", "n": 188384, "racial_ethnic_flagged_n": 1757.0, "nationality_flagged_n": 286.0, "model_unsupported_n": 0.0, "unflagged_n": 186341.0, "any_flagged_n": 2043.0, "racial_ethnic_rate": 0.009327, "nationality_rate": 0.001518, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.010845, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "sv", "n": 96, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 95.0, "unflagged_n": 0.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.010417, "nationality_rate": 0.0, "model_unsupported_rate": 0.989583, "any_flagged_rate": 0.010417, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "zu", "n": 156, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 155.0, "unflagged_n": 0.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.00641, "nationality_rate": 0.0, "model_unsupported_rate": 0.99359, "any_flagged_rate": 0.00641, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "pt", "n": 16107, "racial_ethnic_flagged_n": 91.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 0.0, "unflagged_n": 16016.0, "any_flagged_n": 91.0, "racial_ethnic_rate": 0.00565, "nationality_rate": 0.0, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.00565, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "tr", "n": 8829, "racial_ethnic_flagged_n": 24.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 0.0, "unflagged_n": 8805.0, "any_flagged_n": 24.0, "racial_ethnic_rate": 0.002718, "nationality_rate": 0.0, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.002718, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "de", "n": 9510, "racial_ethnic_flagged_n": 21.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 9489.0, "unflagged_n": 0.0, "any_flagged_n": 21.0, "racial_ethnic_rate": 0.002208, "nationality_rate": 0.0, "model_unsupported_rate": 0.997792, "any_flagged_rate": 0.002208, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "unknown", "n": 91161, "racial_ethnic_flagged_n": 99.0, "nationality_flagged_n": 49.0, "model_unsupported_n": 91013.0, "unflagged_n": 0.0, "any_flagged_n": 148.0, "racial_ethnic_rate": 0.001086, "nationality_rate": 0.000538, "model_unsupported_rate": 0.998376, "any_flagged_rate": 0.001624, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "nl", "n": 6546, "racial_ethnic_flagged_n": 5.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 6541.0, "unflagged_n": 0.0, "any_flagged_n": 5.0, "racial_ethnic_rate": 0.000764, "nationality_rate": 0.0, "model_unsupported_rate": 0.999236, "any_flagged_rate": 0.000764, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "cs", "n": 20634, "racial_ethnic_flagged_n": 12.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 20622.0, "unflagged_n": 0.0, "any_flagged_n": 12.0, "racial_ethnic_rate": 0.000582, "nationality_rate": 0.0, "model_unsupported_rate": 0.999418, "any_flagged_rate": 0.000582, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "short_text", "n": 74042, "racial_ethnic_flagged_n": 35.0, "nationality_flagged_n": 4.0, "model_unsupported_n": 74003.0, "unflagged_n": 0.0, "any_flagged_n": 39.0, "racial_ethnic_rate": 0.000473, "nationality_rate": 5.4e-05, "model_unsupported_rate": 0.999473, "any_flagged_rate": 0.000527, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "bs", "n": 2149, "racial_ethnic_flagged_n": 1.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 2148.0, "unflagged_n": 0.0, "any_flagged_n": 1.0, "racial_ethnic_rate": 0.000465, "nationality_rate": 0.0, "model_unsupported_rate": 0.999535, "any_flagged_rate": 0.000465, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "ar", "n": 7313, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 7313.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "af", "n": 89, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 89.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "ko", "n": 7, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 7.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "hr", "n": 1087, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 1087.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "fa", "n": 7, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 7.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "ja", "n": 9, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 9.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "it", "n": 56, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 0.0, "unflagged_n": 56.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 0.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}, {"breakdown": "by_language", "group": "nb", "n": 2757, "racial_ethnic_flagged_n": 0.0, "nationality_flagged_n": 0.0, "model_unsupported_n": 2757.0, "unflagged_n": 0.0, "any_flagged_n": 0.0, "racial_ethnic_rate": 0.0, "nationality_rate": 0.0, "model_unsupported_rate": 1.0, "any_flagged_rate": 0.0, "profanity": null, "identity_flag": null, "rate": NaN}], "overlap": [{"breakdown": "overlap", "group": "profanity=yes_identity=yes", "n": 470, "racial_ethnic_flagged_n": NaN, "nationality_flagged_n": NaN, "model_unsupported_n": NaN, "unflagged_n": NaN, "any_flagged_n": NaN, "racial_ethnic_rate": NaN, "nationality_rate": NaN, "model_unsupported_rate": NaN, "any_flagged_rate": NaN, "profanity": true, "identity_flag": true, "rate": 0.001026}, {"breakdown": "overlap", "group": "profanity=yes_identity=no", "n": 15890, "racial_ethnic_flagged_n": NaN, "nationality_flagged_n": NaN, "model_unsupported_n": NaN, "unflagged_n": NaN, "any_flagged_n": NaN, "racial_ethnic_rate": NaN, "nationality_rate": NaN, "model_unsupported_rate": NaN, "any_flagged_rate": NaN, "profanity": true, "identity_flag": false, "rate": 0.034702}, {"breakdown": "overlap", "group": "profanity=no_identity=yes", "n": 2299, "racial_ethnic_flagged_n": NaN, "nationality_flagged_n": NaN, "model_unsupported_n": NaN, "unflagged_n": NaN, "any_flagged_n": NaN, "racial_ethnic_rate": NaN, "nationality_rate": NaN, "model_unsupported_rate": NaN, "any_flagged_rate": NaN, "profanity": false, "identity_flag": true, "rate": 0.005021}, {"breakdown": "overlap", "group": "profanity=no_identity=no", "n": 439239, "racial_ethnic_flagged_n": NaN, "nationality_flagged_n": NaN, "model_unsupported_n": NaN, "unflagged_n": NaN, "any_flagged_n": NaN, "racial_ethnic_rate": NaN, "nationality_rate": NaN, "model_unsupported_rate": NaN, "any_flagged_rate": NaN, "profanity": false, "identity_flag": false, "rate": 0.959251}]};
+const METHODOLOGY_POINTS = ["All rates are MODEL-DETECTED — not human-verified. A flag means the model or lexicon matched; it does not confirm a racist or xenophobic incident.", "Data source: 457,898 deduplicated Reddit comments from World Cup 2026 match threads collected via Arctic Shift. This describes Reddit comment behaviour in these threads only — not any country's fanbase, team, or general population.", "Flag method: two-signal combination — (1) a private keyword lexicon for racial/ethnic and nationality/xenophobia terms; (2) Detoxify multilingual model (unitary/multilingual-toxic-xlm-roberta) scoring identity-based hostility. A comment is flagged if either signal exceeds the configured threshold.", "Language coverage: Detoxify multilingual supports en, fr, es, it, pt, tr, ru. Comments in other detected languages are marked 'model_unsupported' — the lexicon still applies, but no model score is generated. Model-unsupported comments that are not lexicon hits are neither flagged nor unflagged; they are reported separately.", "Attribution: flag rates are shown by match, stage, subreddit, and language — not by country or fanbase. Subreddit identity is not the same as speaker nationality.", "Profanity is a secondary signal only. The swear_count field comes from the Swearing World Cup scorer and is shown in the overlap panel to illustrate co-occurrence, not to imply that profanity equals hostility.", "No individual comments, usernames, or raw text are shown anywhere in this dashboard.", "No slurs appear in any output, label, or category name.", "No 'most hostile' rankings. All panels show rates, not competitive orderings.", "Thresholds are configurable in config/flag_config.json. Defaults were calibrated against a ~200-row manual review sample."];
+
+// ---- Helpers ----
+const pct = (r) => (r == null ? "—" : (r * 100).toFixed(2) + "%");
+const fmt = (n) => n == null ? "—" : n.toLocaleString();
+
+function bar(fillClass, widthPct, title) {
+  const w = Math.min(widthPct * 100, 100);
+  return `<div class="bar-track" title="${title}"><div class="bar-fill ${fillClass}" style="width:${w}%;animation:barIn 600ms ease"></div></div>`;
+}
+
+// ---- Panel: headline stat cards ----
+function renderHero() {
+  const h = AGGREGATE.headline[0] || {};
+  const container = document.getElementById("hero-numbers");
+  const cards = [
+    { label: "Total comments", value: fmt(h.n), cls: "" },
+    { label: "Racial/ethnic detected rate", value: pct(h.racial_ethnic_rate), cls: "red" },
+    { label: "Nationality detected rate", value: pct(h.nationality_rate), cls: "blue" },
+    { label: "Model-unsupported language share", value: pct(h.model_unsupported_rate), cls: "" },
+  ];
+  container.innerHTML = cards.map(c =>
+    `<div class="stat-card ${c.cls}">
+       <div class="stat-label">${c.label}</div>
+       <div class="stat-value">${c.value}</div>
+     </div>`
+  ).join("");
+}
+
+// ---- Generic horizontal bar list ----
+function renderBarList(containerId, rows, labelKey, rate1Key, rate1Class, rate1Label, rate2Key, rate2Class, rate2Label, minN) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const html = rows.map(row => {
+    const thin = (row.n || 0) < (minN || 100);
+    return `<div class="bar-row" style="opacity:${thin ? 0.45 : 1}">
+      <div class="bar-row-label">
+        <span>${row[labelKey] || "unknown"}</span>
+        <span class="pct">${pct(row[rate1Key])} RE / ${pct(row[rate2Key])} NAT <span class="bar-n">n=${fmt(row.n)}</span></span>
+      </div>
+      ${bar(rate1Class, row[rate1Key] || 0, `${rate1Label}: ${pct(row[rate1Key])}`)}
+      ${bar(rate2Class, row[rate2Key] || 0, `${rate2Label}: ${pct(row[rate2Key])}`)}
+    </div>`;
+  }).join("");
+  container.innerHTML = html;
+}
+
+// ---- Panel: by stage ----
+function renderStage() {
+  const rows = (AGGREGATE.by_stage || []).slice().sort((a,b) => (b.any_flagged_rate||0)-(a.any_flagged_rate||0));
+  renderBarList("stage-bars", rows, "group", "racial_ethnic_rate", "racial-ethnic", "Racial/ethnic", "nationality_rate", "nationality", "Nationality", 0);
+}
+
+// ---- Panel: by subreddit ----
+let subredditShowAll = false;
+function renderSubreddit() {
+  let rows = (AGGREGATE.by_subreddit || []).slice().sort((a,b)=>(b.n||0)-(a.n||0));
+  const filterBar = document.getElementById("subreddit-filter");
+  if (!subredditShowAll) rows = rows.slice(0, 12);
+  filterBar.innerHTML = `
+    <button class="filter-btn ${subredditShowAll ? "" : "active"}" onclick="subredditShowAll=false;renderSubreddit()">Top 12</button>
+    <button class="filter-btn ${subredditShowAll ? "active" : ""}" onclick="subredditShowAll=true;renderSubreddit()">All</button>`;
+  renderBarList("subreddit-bars", rows, "group", "racial_ethnic_rate", "racial-ethnic", "Racial/ethnic", "nationality_rate", "nationality", "Nationality", 50);
+}
+
+// ---- Panel: by language ----
+function renderLanguage() {
+  const rows = (AGGREGATE.by_language || []).slice().sort((a,b)=>(b.n||0)-(a.n||0));
+  const container = document.getElementById("language-bars");
+  const html = rows.map(row => {
+    const isUnsup = row.group === "unknown" || row.model_unsupported_n === row.n;
+    const thin = (row.n || 0) < 50;
+    return `<div class="bar-row" style="opacity:${thin ? 0.4 : 1}">
+      <div class="bar-row-label">
+        <span>${row.group || "unknown"}${isUnsup ? " <small style='opacity:.6'>(model unsupported)</small>" : ""}</span>
+        <span class="pct">${pct(row.racial_ethnic_rate)} RE / ${pct(row.nationality_rate)} NAT <span class="bar-n">n=${fmt(row.n)}</span></span>
+      </div>
+      ${bar("racial-ethnic", row.racial_ethnic_rate||0, "Racial/ethnic: "+pct(row.racial_ethnic_rate))}
+      ${bar("nationality", row.nationality_rate||0, "Nationality: "+pct(row.nationality_rate))}
+    </div>`;
+  }).join("");
+  container.innerHTML = html;
+}
+
+// ---- Panel: overlap 2x2 ----
+function renderOverlap() {
+  const cells = AGGREGATE.overlap || [];
+  const lookup = {};
+  cells.forEach(c => { lookup[c.group] = c; });
+
+  const total = cells.reduce((s,c)=>s+(c.n||0),0);
+  function cellClass(n) {
+    const r = total > 0 ? n/total : 0;
+    if (r > 0.1) return "high";
+    if (r > 0.02) return "mid";
+    return "low";
+  }
+
+  function cell(profanity, identity) {
+    const key = `profanity=${profanity ? "yes" : "no"}_identity=${identity ? "yes" : "no"}`;
+    const c = lookup[key] || { n: 0, rate: 0 };
+    return `<div class="overlap-cell ${cellClass(c.n)}">
+      <span class="overlap-n">${fmt(c.n)}</span>
+      <span class="overlap-pct">${pct(c.rate)}</span>
+    </div>`;
+  }
+
+  document.getElementById("overlap-grid").innerHTML = `
+    <div class="overlap-cell header"></div>
+    <div class="overlap-cell header">No identity flag</div>
+    <div class="overlap-cell header">Identity flagged</div>
+    <div class="overlap-cell header">No profanity</div>
+    ${cell(false, false)}${cell(false, true)}
+    <div class="overlap-cell header">Has profanity</div>
+    ${cell(true, false)}${cell(true, true)}`;
+}
+
+// ---- Panel: by match ----
+function renderMatch() {
+  const rows = (AGGREGATE.by_match || []).slice().sort((a,b)=>(b.any_flagged_rate||0)-(a.any_flagged_rate||0));
+  renderBarList("match-bars", rows, "group", "racial_ethnic_rate", "racial-ethnic", "Racial/ethnic", "nationality_rate", "nationality", "Nationality", 100);
+}
+
+// ---- Panel: methodology ----
+function renderMethodology() {
+  const ul = document.getElementById("methodology-list");
+  ul.innerHTML = METHODOLOGY_POINTS.map(p => `<li>${p}</li>`).join("");
+}
+
+// ---- Init ----
+renderHero();
+renderStage();
+renderSubreddit();
+renderLanguage();
+renderOverlap();
+renderMatch();
+renderMethodology();
+</script>
+</body>
+</html>

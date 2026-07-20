@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Reddit Discourse Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090d12;
+      --panel: #111922;
+      --panel-soft: #162130;
+      --text: #eef4f7;
+      --muted: #9eacb8;
+      --line: #283747;
+      --green: #5bd4a0;
+      --gold: #f2c15f;
+      --red: #ff6b73;
+      --blue: #7ea7ff;
+      --cyan: #64d5df;
+      --violet: #b592ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 1000px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    main {
+      width: min(1180px, calc(100vw - 72px));
+      margin: 0 auto;
+      padding: 42px 0 48px;
+    }
+
+    header, section {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 8px;
+    }
+
+    header {
+      padding: 30px;
+      margin-bottom: 22px;
+    }
+
+    section {
+      padding: 26px;
+      margin-top: 22px;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.08;
+      font-weight: 760;
+      max-width: 860px;
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 720;
+    }
+
+    h3 {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 760;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .lede {
+      margin-top: 16px;
+      color: #c6d1da;
+      font-size: 16px;
+      line-height: 1.55;
+      max-width: 900px;
+    }
+
+    .context-line {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 22px;
+      padding: 10px 13px;
+      color: #d8e4eb;
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+
+    .finding-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      margin-bottom: 22px;
+    }
+
+    .badge {
+      flex: 0 0 auto;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 780;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .confirmed {
+      color: var(--green);
+    }
+
+    .null {
+      color: var(--gold);
+    }
+
+    .finding-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .chart-box {
+      min-height: 340px;
+      padding: 8px 2px 0;
+    }
+
+    .side-notes {
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+
+    .callout, details {
+      padding: 18px;
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .callout b {
+      display: block;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    details {
+      color: #c6d1da;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--text);
+      font-weight: 720;
+      list-style-position: outside;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .takeaway {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: #d9e5ec;
+      font-size: 17px;
+      line-height: 1.45;
+      font-weight: 680;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      margin: 2px 0 22px;
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel-soft);
+      color: #d2dee7;
+      font: inherit;
+      font-size: 14px;
+      font-weight: 720;
+      padding: 10px 13px;
+      cursor: pointer;
+    }
+
+    button.active {
+      color: var(--text);
+      border-color: var(--cyan);
+      background: #17313a;
+    }
+
+    .explorer-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .mini-note {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .mini-note b {
+      display: block;
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .method {
+      margin-top: 22px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .method details {
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 20px 24px;
+    }
+
+    .method summary {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h3>Section 1: Overview</h3>
+      <h1>Reddit World Cup Discourse Analysis</h1>
+      <p class="lede">Comments were automatically flagged for abusive language, identity-targeted content, or racism/discrimination discussion, then checked against sentiment analysis to see if the flags mean anything real.</p>
+      <div class="context-line"><span class="dot"></span><span>Total comments analyzed: 136,110 sentiment-scored records, 21,433 flagged records.</span></div>
+    </header>
+
+    <section>
+      <div class="finding-head">
+        <div>
+          <h3>Section 2</h3>
+          <h2>H4: Do flags reflect real hostility?</h2>
+        </div>
+        <div class="badge confirmed">Confirmed</div>
+      </div>
+      <div class="finding-grid">
+        <div class="chart-box">
+          <canvas id="flagSentimentChart"></canvas>
+        </div>
+        <div class="side-notes">
+          <div class="callout">
+            <b>Flagged comments are negative 86% of the time versus 55% for unflagged, a 31 point gap.</b>
+          </div>
+          <details>
+            <summary>Confidence</summary>
+            <p>This difference is extremely unlikely to be due to chance.</p>
+          </details>
+        </div>
+      </div>
+      <p class="takeaway">Takeaway: the flagging system is catching real hostility, not noise.</p>
+    </section>
+
+    <section>
+      <div class="finding-head">
+        <div>
+          <h3>Section 3</h3>
+          <h2>H1: Does match outcome affect hostility?</h2>
+        </div>
+        <div class="badge null">Null result</div>
+      </div>
+      <div class="finding-grid">
+        <div class="chart-box">
+          <canvas id="outcomeChart"></canvas>
+        </div>
+        <div class="side-notes">
+          <div class="callout">
+            <b>Rates are close across win, loss, and draw, with no large difference.</b>
+          </div>
+          <details>
+            <summary>Confidence</summary>
+            <p>The difference is statistically detectable, but too small to matter much.</p>
+          </details>
+        </div>
+      </div>
+      <p class="takeaway">Takeaway: losing a match does not appear to meaningfully increase hostile discourse compared to winning or drawing; this is a real and useful finding, not a failed test.</p>
+    </section>
+
+    <section>
+      <div class="finding-head">
+        <div>
+          <h3>Section 4</h3>
+          <h2>Descriptive patterns to explore</h2>
+        </div>
+      </div>
+      <div class="toolbar" aria-label="Pattern selector">
+        <button type="button" class="active" data-view="categories">Flag categories</button>
+        <button type="button" data-view="matchFlags">Match flag rates</button>
+        <button type="button" data-view="matchSentiment">Match negativity</button>
+      </div>
+      <div class="explorer-grid">
+        <div class="chart-box">
+          <canvas id="patternChart"></canvas>
+        </div>
+        <div class="mini-note" id="patternNote">
+          <b>Abusive or hard language is the largest flag category.</b>
+          The scan found 17,564 abusive or hard-language records, compared with 6,881 negative-match-tone records, 2,520 identity-targeted-context records, 840 racism/discrimination-discussion records, and 4 severe-identity-slur records.
+        </div>
+      </div>
+    </section>
+
+    <section class="method">
+      <details>
+        <summary>Methodology note</summary>
+        <p>Data source: Reddit comments from 14 matches in the 2026 World Cup project. Sentiment was scored with an XLM-RoBERTa model. Flag categories covered abusive language, identity-targeted content, and racism/discrimination discussion.</p>
+      </details>
+    </section>
+  </main>
+
+  <script>
+    const textColor = "#eef4f7";
+    const mutedColor = "#9eacb8";
+    const gridColor = "rgba(158, 172, 184, 0.16)";
+    Chart.defaults.color = mutedColor;
+    Chart.defaults.font.family = 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    Chart.defaults.font.size = 13;
+
+    const baseOptions = {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: "top",
+          align: "start",
+          labels: {
+            color: textColor,
+            boxWidth: 12,
+            boxHeight: 12,
+            useBorderRadius: true
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { color: textColor, font: { weight: 700 } }
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: gridColor }
+        }
+      }
+    };
+
+    new Chart(document.getElementById("flagSentimentChart"), {
+      type: "bar",
+      data: {
+        labels: ["Flagged", "Unflagged"],
+        datasets: [
+          { label: "Negative", data: [86.27, 55.41], backgroundColor: "#ff6b73", borderRadius: 5 },
+          { label: "Neutral", data: [3.19, 21.52], backgroundColor: "#7ea7ff", borderRadius: 5 },
+          { label: "Positive", data: [10.54, 23.07], backgroundColor: "#64d5df", borderRadius: 5 }
+        ]
+      },
+      options: {
+        ...baseOptions,
+        plugins: {
+          ...baseOptions.plugins,
+          tooltip: { callbacks: { label: context => `${context.dataset.label}: ${context.raw.toFixed(2)}%` } }
+        },
+        scales: {
+          ...baseOptions.scales,
+          y: {
+            ...baseOptions.scales.y,
+            max: 100,
+            title: { display: true, text: "Share of comments", color: mutedColor },
+            ticks: { callback: value => `${value}%` }
+          }
+        }
+      }
+    });
+
+    new Chart(document.getElementById("outcomeChart"), {
+      type: "bar",
+      data: {
+        labels: ["Win", "Loss", "Draw"],
+        datasets: [
+          { label: "Flag rate", data: [10.35, 8.71, 9.57], backgroundColor: ["#5bd4a0", "#f2c15f", "#7ea7ff"], borderRadius: 5, maxBarThickness: 90 }
+        ]
+      },
+      options: {
+        ...baseOptions,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: context => `Flag rate: ${context.raw.toFixed(2)}%` } }
+        },
+        scales: {
+          ...baseOptions.scales,
+          y: {
+            ...baseOptions.scales.y,
+            max: 12,
+            title: { display: true, text: "Flagged comments", color: mutedColor },
+            ticks: { callback: value => `${value}%` }
+          }
+        }
+      }
+    });
+
+    const patternViews = {
+      categories: {
+        type: "bar",
+        labels: ["Abusive or hard language", "Negative match tone", "Identity-targeted context", "Racism/discrimination discussion", "Severe identity slur"],
+        datasets: [
+          { label: "Flagged records", data: [17564, 6881, 2520, 840, 4], backgroundColor: ["#ff6b73", "#f2c15f", "#b592ff", "#64d5df", "#7ea7ff"], borderRadius: 5 }
+        ],
+        max: 18000,
+        tickSuffix: "",
+        title: "Flagged records",
+        note: "<b>Abusive or hard language is the largest flag category.</b>The scan found 17,564 abusive or hard-language records, compared with 6,881 negative-match-tone records, 2,520 identity-targeted-context records, 840 racism/discrimination-discussion records, and 4 severe-identity-slur records."
+      },
+      matchFlags: {
+        type: "bar",
+        labels: ["England-Croatia", "Scotland-Haiti", "Australia-Turkey", "France-Sweden", "France-Senegal", "Netherlands-Morocco", "Canada-BIH", "Germany-Curacao", "England-COD", "Germany-Paraguay", "Netherlands-Japan"],
+        datasets: [
+          { label: "Flag rate", data: [10.17, 9.468, 9.279, 9.217, 8.842, 8.59, 7.915, 7.044, 6.509, 6.328, 5.596], backgroundColor: "#64d5df", borderRadius: 5 }
+        ],
+        max: 12,
+        tickSuffix: "%",
+        title: "Flagged records",
+        note: "<b>Flag rates vary more by match than by win/loss/draw.</b>England-Croatia was highest at 10.17%, while Netherlands-Japan was lowest at 5.596% among the scanned match list."
+      },
+      matchSentiment: {
+        type: "bar",
+        labels: ["France-Sweden", "England-Croatia", "France-Senegal", "Germany-Paraguay", "Canada-BIH", "Scotland-Haiti", "Scotland-Brazil", "Germany-Curacao", "Netherlands-Morocco", "Switzerland-Canada", "Australia-Turkey", "Netherlands-Japan", "England-COD", "Ecuador-Germany"],
+        datasets: [
+          { label: "Negative share", data: [63.13, 62.04, 61.08, 59.89, 58.13, 57.05, 56.88, 56.7, 56.6, 55.13, 54.9, 54.52, 53.97, 34.0], backgroundColor: "#ff6b73", borderRadius: 5 }
+        ],
+        max: 70,
+        tickSuffix: "%",
+        title: "Negative comments",
+        note: "<b>Most matches cluster in a broadly negative range.</b>France-Sweden was highest at 63.13% negative, while England-COD was 53.97%; Ecuador-Germany was lower at 34.0% but had a much smaller scored sample."
+      }
+    };
+
+    const patternChart = new Chart(document.getElementById("patternChart"), {
+      type: "bar",
+      data: {
+        labels: patternViews.categories.labels,
+        datasets: patternViews.categories.datasets
+      },
+      options: {
+        ...baseOptions,
+        indexAxis: "y",
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: context => {
+                const suffix = patternViews[activeView].tickSuffix;
+                const value = suffix === "%" ? context.raw.toFixed(3).replace(/0+$/, "").replace(/\.$/, "") : context.raw.toLocaleString();
+                return `${context.dataset.label}: ${value}${suffix}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            max: patternViews.categories.max,
+            title: { display: true, text: patternViews.categories.title, color: mutedColor },
+            ticks: { callback: value => value.toLocaleString() },
+            grid: { color: gridColor }
+          },
+          y: {
+            grid: { display: false },
+            ticks: { color: textColor, font: { weight: 700 } }
+          }
+        }
+      }
+    });
+
+    let activeView = "categories";
+    const note = document.getElementById("patternNote");
+    document.querySelectorAll("[data-view]").forEach(button => {
+      button.addEventListener("click", () => {
+        activeView = button.dataset.view;
+        const view = patternViews[activeView];
+        document.querySelectorAll("[data-view]").forEach(item => item.classList.toggle("active", item === button));
+        patternChart.data.labels = view.labels;
+        patternChart.data.datasets = view.datasets;
+        patternChart.options.scales.x.max = view.max;
+        patternChart.options.scales.x.title.text = view.title;
+        patternChart.options.scales.x.ticks.callback = value => view.tickSuffix === "%" ? `${value}%` : value.toLocaleString();
+        note.innerHTML = view.note;
+        patternChart.update();
+      });
+    });
+  </script>
+</body>
+</html>
