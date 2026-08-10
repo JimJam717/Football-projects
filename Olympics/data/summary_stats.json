@@ -1,0 +1,24 @@
+{
+  "total_athletes": 11113,
+  "known_birthplace_athletes": 9475,
+  "diaspora_athletes": 975,
+  "diaspora_share_all_athletes": 10.29,
+  "total_medal_winning_athletes": 2013,
+  "diaspora_medal_winning_athletes": 138,
+  "diaspora_share_medal_winners": 6.86,
+  "diaspora_medalist_vs_all_delta": -3.43,
+  "excluding_eor_ain": {
+    "known_birthplace_athletes": 9415,
+    "diaspora_athletes": 915,
+    "diaspora_share_all_athletes": 9.72,
+    "total_medal_winning_athletes": 2006,
+    "diaspora_medal_winning_athletes": 132,
+    "diaspora_share_medal_winners": 6.58,
+    "diaspora_medalist_vs_all_delta": -3.14
+  },
+  "medal_reconciliation": {
+    "medal_rows": 2268,
+    "distinct_medalists": 2013,
+    "medals_total_sum": 1043
+  }
+}

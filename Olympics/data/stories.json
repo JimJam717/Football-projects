@@ -1,0 +1,113 @@
+[
+  {
+    "id": "belfast",
+    "headline": "One city, two teams",
+    "big_number": "11 born -> 6 IRL / 3 GBR",
+    "big_number_label": "Belfast-born athletes split across Olympic flags",
+    "body": "Belfast is the cleanest edge case in the dataset: athletes born in one city appear under both Ireland and Great Britain. Good Friday dual eligibility makes that legally ordinary, while the source data itself records Belfast's country inconsistently. The dataset can't decide, and neither can the athletes.",
+    "type_tag": "intra-sovereign",
+    "action": {
+      "target_tab": "corridors",
+      "focus": {
+        "kind": "contested",
+        "id": "belfast"
+      }
+    },
+    "insight_ids": ["insight-044", "insight-012", "insight-036"],
+    "caveat": "Birthplace fields reflect recorded source data, not a final claim about identity."
+  },
+  {
+    "id": "triple-mismatch",
+    "headline": "Three flags, one family",
+    "big_number": "13 triple mismatches",
+    "big_number_label": "Birthplace, nationality, and Olympic team all differ",
+    "body": "The Crooks siblings are the memorable cluster: born in the United States, British nationals, swimming for the Cayman Islands. Under the Olympic Charter, birthplace, passport, and flag can be three different answers to 'where are you from.'",
+    "type_tag": "heritage-return",
+    "action": {
+      "target_tab": "corridors",
+      "focus": {
+        "kind": "contested",
+        "id": "triple-mismatch"
+      }
+    },
+    "insight_ids": ["insight-007"],
+    "caveat": "Triple mismatch is a data relationship, not a contradiction in eligibility."
+  },
+  {
+    "id": "moscow",
+    "headline": "The ghost delegation",
+    "big_number": "19/19 Moscow-born, 13 flags, 0 for Russia",
+    "big_number_label": "Political exclusion appears as total diaspora",
+    "body": "Russia had no Paris 2024 Olympic team. In the data, that turns Moscow into instant diaspora: every known Moscow-born athlete competed under another flag. Minsk echoes the pattern at 6/6.",
+    "type_tag": "refugee-or-neutral",
+    "action": {
+      "target_tab": "map",
+      "filters": {
+        "view": "city"
+      },
+      "focus": {
+        "kind": "city",
+        "city": "Moscow",
+        "birth_country": "Russian Federation"
+      }
+    },
+    "insight_ids": ["insight-025", "insight-029", "insight-011", "insight-050"],
+    "caveat": "EOR/AIN and Russian/Belarusian cases are shown separately where they can inflate headline rates."
+  },
+  {
+    "id": "medals",
+    "headline": "Flag-switching doesn't buy medals",
+    "big_number": "10.3% of athletes -> 6.9% of medalists",
+    "big_number_label": "A -3.4 point medal gap",
+    "body": "Diaspora athletes underperform at medals overall, still true after excluding EOR/AIN: 9.7% of athletes become 6.6% of medalists. The exceptions are targeted state naturalization patterns: Morocco overperforms its delegation baseline, Bulgaria does too, and Bahrain's four medalists were all foreign-born by design.",
+    "type_tag": "talent-market",
+    "action": {
+      "target_tab": "rankings",
+      "focus": {
+        "kind": "module",
+        "id": "medal-dumbbell-module"
+      }
+    },
+    "insight_ids": ["insight-004", "insight-005"],
+    "caveat": "Birthplace does not equal identity; EOR/AIN shown both ways."
+  },
+  {
+    "id": "france-colonies",
+    "headline": "Empire's afterlife runs one way",
+    "big_number": "36 athletes, 13 corridors, ~0 reverse flow",
+    "big_number_label": "France-born athletes for former French African colonies",
+    "body": "France-born athletes compete for Mali, Algeria, Morocco, Guinea, and more, with football driving the shape: France -> Guinea is 5/6 footballers. The traffic almost never flows back, which separates post-colonial return from two-way talent circulation like US <-> Canada.",
+    "type_tag": "post-colonial",
+    "action": {
+      "target_tab": "corridors",
+      "filters": {
+        "type": ["post-colonial"],
+        "birth": "France",
+        "min": 1
+      },
+      "focus": {
+        "kind": "module",
+        "id": "corridors-module"
+      }
+    },
+    "insight_ids": ["insight-083", "insight-017"],
+    "caveat": "Corridor types are hand-reviewed classifications, not ground truth."
+  },
+  {
+    "id": "small-nations",
+    "headline": "For small nations, the diaspora IS the team",
+    "big_number": "21% vs 8%",
+    "big_number_label": "Foreign-born share: small delegations vs 100+ athlete delegations",
+    "body": "Delegations with 29 or fewer known birthplaces average 21% foreign-born, compared with 8% for delegations of 100 or more. Haiti is 6/6, Samoa 6/7, Palestine 5/6; Mali's team does not just recruit abroad, 19 of 20 known residences are abroad.",
+    "type_tag": "heritage-return",
+    "action": {
+      "target_tab": "rankings",
+      "focus": {
+        "kind": "module",
+        "id": "dependency-scatter-module"
+      }
+    },
+    "insight_ids": ["insight-049", "insight-060", "insight-063", "insight-017"],
+    "caveat": "Small-team percentages move quickly; denominators are shown in the drawer."
+  }
+]

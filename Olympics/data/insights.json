@@ -1,0 +1,776 @@
+[
+  {
+    "id": "insight-001",
+    "category": "training_host",
+    "headline": "United States is the largest recorded training-abroad host country",
+    "value": 507,
+    "baseline": "athletes with residence_country present and trains_abroad true",
+    "score": 507.0,
+    "evidence": "Top hosts: United States (507), France (144), Spain (113), Germany (112), Great Britain (103), Italy (50), Netherlands (40), Australia (31), Romania (31), Russian Federation (27)"
+  },
+  {
+    "id": "insight-002",
+    "category": "refugee_neutral_team",
+    "headline": "AIN is 100% foreign-born by construction",
+    "value": "100.0%",
+    "baseline": "EOR/AIN are separated from small-NOC dependency rankings",
+    "score": 99.0,
+    "evidence": "24 of 24 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-003",
+    "category": "refugee_neutral_team",
+    "headline": "EOR is 100% foreign-born by construction",
+    "value": "100.0%",
+    "baseline": "EOR/AIN are separated from small-NOC dependency rankings",
+    "score": 99.0,
+    "evidence": "36 of 36 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-004",
+    "category": "medal_overperformance_noc",
+    "headline": "Bulgaria converts diaspora athletes into medals at an unusually high rate",
+    "value": "+37.6 points",
+    "baseline": "min 5 medal-winning athletes and medalist share exceeds delegation share by >= 15.0 points",
+    "score": 37.63,
+    "evidence": "Diaspora share among medalists: 57.1%; delegation diaspora share: 19.5%."
+  },
+  {
+    "id": "insight-005",
+    "category": "medal_overperformance_noc",
+    "headline": "Morocco converts diaspora athletes into medals at an unusually high rate",
+    "value": "+25.0 points",
+    "baseline": "min 5 medal-winning athletes and medalist share exceeds delegation share by >= 15.0 points",
+    "score": 25.0,
+    "evidence": "Diaspora share among medalists: 55.0%; delegation diaspora share: 30.0%."
+  },
+  {
+    "id": "insight-006",
+    "category": "corridor_asymmetry",
+    "headline": "United States -> Puerto Rico is a strongly one-way Olympic corridor",
+    "value": "24:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 24.0,
+    "evidence": "24 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-007",
+    "category": "triple_mismatch",
+    "headline": "13 athletes have born/national-of/represents triple mismatches",
+    "value": 13,
+    "baseline": "identity_profile == triple_mismatch, or birth/nationality/representation are all present and different",
+    "score": 22.639,
+    "evidence": "Examples: VESNINA Elena; Tennis; born Ukraine; national of Russian Federation; represents AIN | SCOTT Gabby; Athletics; born Germany; national of United States; represents Puerto Rico | ROMERO Ismael; Basketball; born Cuba; national of United States; represents Puerto Rico | KOROVASHKOV Alexey; Canoe Sprint; born Ukraine; national of Russian Federation; represents AIN | KHASLAKHANAU Abubakar; Wrestling; born Russian Federation; national of Belarus; represents AIN | KADZIMAHAMEDAU Mahamedkhabib; Wrestling; born Russian Federation; national of Belarus; represents AIN | IIJIMA Manami; Triathlon; born Japan; national of United States; represents Guam | HOWELL Davonte; Athletics; born Barbados; national of Great Britain; represents Cayman Islands"
+  },
+  {
+    "id": "insight-008",
+    "category": "corridor_asymmetry",
+    "headline": "United States -> Nigeria is a strongly one-way Olympic corridor",
+    "value": "18:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 18.0,
+    "evidence": "18 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-009",
+    "category": "corridor_asymmetry",
+    "headline": "IR Iran -> EOR is a strongly one-way Olympic corridor",
+    "value": "15:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 15.0,
+    "evidence": "15 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-010",
+    "category": "split_city",
+    "headline": "London natives split across 10 Olympic delegations",
+    "value": 10,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 13.497,
+    "evidence": "Represented NOCs: IRL, GBR, JAM, CHN, HUN, MEX, FRA, NZL, CYP, USA; birth country: Great Britain."
+  },
+  {
+    "id": "insight-011",
+    "category": "corridor_asymmetry",
+    "headline": "Russian Federation -> AIN is a strongly one-way Olympic corridor",
+    "value": "13:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 13.0,
+    "evidence": "13 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-012",
+    "category": "corridor_asymmetry",
+    "headline": "Great Britain -> Ireland is a strongly one-way Olympic corridor",
+    "value": "22:2",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 11.0,
+    "evidence": "22 athletes move in the dominant direction versus 2 in reverse."
+  },
+  {
+    "id": "insight-013",
+    "category": "corridor_asymmetry",
+    "headline": "Great Britain -> Australia is a strongly one-way Olympic corridor",
+    "value": "10:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 10.0,
+    "evidence": "10 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-014",
+    "category": "team_trains_elsewhere",
+    "headline": "AIN is a team that largely trains elsewhere",
+    "value": "18/18 (100.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 10.0,
+    "evidence": "18 of 18 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-015",
+    "category": "team_trains_elsewhere",
+    "headline": "EOR is a team that largely trains elsewhere",
+    "value": "37/37 (100.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 10.0,
+    "evidence": "37 of 37 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-016",
+    "category": "split_city",
+    "headline": "Houston, Tx natives split across 7 Olympic delegations",
+    "value": 7,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 9.833,
+    "evidence": "Represented NOCs: PUR, IRL, EGY, LBN, FRA, NGR, USA; birth country: United States."
+  },
+  {
+    "id": "insight-017",
+    "category": "team_trains_elsewhere",
+    "headline": "MLI is a team that largely trains elsewhere",
+    "value": "19/20 (95.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 9.5,
+    "evidence": "19 of 20 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-018",
+    "category": "team_trains_elsewhere",
+    "headline": "GUI is a team that largely trains elsewhere",
+    "value": "20/22 (90.9%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 9.091,
+    "evidence": "20 of 22 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-019",
+    "category": "corridor_asymmetry",
+    "headline": "Belarus -> AIN is a strongly one-way Olympic corridor",
+    "value": "9:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 9.0,
+    "evidence": "9 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-020",
+    "category": "team_trains_elsewhere",
+    "headline": "BRN is a team that largely trains elsewhere",
+    "value": "9/10 (90.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 9.0,
+    "evidence": "9 of 10 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-021",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Table Tennis are meaningfully older than homegrown athletes",
+    "value": "+8.9 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 8.857,
+    "evidence": "Diaspora mean age 36.1 (n=21); homegrown mean age 27.3 (n=154)."
+  },
+  {
+    "id": "insight-022",
+    "category": "team_trains_elsewhere",
+    "headline": "BAH is a team that largely trains elsewhere",
+    "value": "14/16 (87.5%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 8.75,
+    "evidence": "14 of 16 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-023",
+    "category": "team_trains_elsewhere",
+    "headline": "NGR is a team that largely trains elsewhere",
+    "value": "51/63 (81.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 8.095,
+    "evidence": "51 of 63 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-024",
+    "category": "corridor_asymmetry",
+    "headline": "Great Britain -> New Zealand is a strongly one-way Olympic corridor",
+    "value": "8:0",
+    "baseline": "combined flow >= 8, ratio >= 5",
+    "score": 8.0,
+    "evidence": "8 athletes move in the dominant direction versus 0 in reverse."
+  },
+  {
+    "id": "insight-025",
+    "category": "full_diaspora_city",
+    "headline": "Every known Paris 2024 athlete born in Moscow represented another NOC",
+    "value": "19/19",
+    "baseline": "total_born >= 5 and diaspora_pct = 100%",
+    "score": 7.996,
+    "evidence": "Moscow, Russian Federation produced 19 known-birthplace athletes, all diaspora. The recorded birth country had no NOC key in country_stats.json at Paris 2024."
+  },
+  {
+    "id": "insight-026",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Shooting are meaningfully older than homegrown athletes",
+    "value": "+7.3 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 7.259,
+    "evidence": "Diaspora mean age 36.1 (n=15); homegrown mean age 28.9 (n=327)."
+  },
+  {
+    "id": "insight-027",
+    "category": "split_city",
+    "headline": "Seoul natives split across 4 Olympic delegations",
+    "value": 4,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 7.219,
+    "evidence": "Represented NOCs: NZL, GUM, KOR, USA; birth country: Korea."
+  },
+  {
+    "id": "insight-028",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Skateboarding are meaningfully older than homegrown athletes",
+    "value": "+7.0 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 7.048,
+    "evidence": "Diaspora mean age 28.0 (n=5); homegrown mean age 21.0 (n=83)."
+  },
+  {
+    "id": "insight-029",
+    "category": "full_diaspora_city",
+    "headline": "Every known Paris 2024 athlete born in Minsk represented another NOC",
+    "value": "6/6",
+    "baseline": "total_born >= 5 and diaspora_pct = 100%",
+    "score": 6.946,
+    "evidence": "Minsk, Belarus produced 6 known-birthplace athletes, all diaspora. The recorded birth country had no NOC key in country_stats.json at Paris 2024."
+  },
+  {
+    "id": "insight-030",
+    "category": "split_city",
+    "headline": "Bristol natives split across 4 Olympic delegations",
+    "value": 4,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 6.079,
+    "evidence": "Represented NOCs: IRL, AUS, GBR, NZL; birth country: Great Britain."
+  },
+  {
+    "id": "insight-031",
+    "category": "team_trains_elsewhere",
+    "headline": "SAM is a team that largely trains elsewhere",
+    "value": "8/15 (53.3%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 5.333,
+    "evidence": "8 of 15 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-032",
+    "category": "team_trains_elsewhere",
+    "headline": "DOM is a team that largely trains elsewhere",
+    "value": "18/34 (52.9%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 5.294,
+    "evidence": "18 of 34 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-033",
+    "category": "team_trains_elsewhere",
+    "headline": "BOT is a team that largely trains elsewhere",
+    "value": "5/10 (50.0%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 5.0,
+    "evidence": "5 of 10 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-034",
+    "category": "corridor_outlier",
+    "headline": "United States -> Puerto Rico is an unusually large Olympic migration corridor",
+    "value": 24,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 4.976,
+    "evidence": "24 athletes; top sport: Basketball (16)."
+  },
+  {
+    "id": "insight-035",
+    "category": "team_trains_elsewhere",
+    "headline": "JAM is a team that largely trains elsewhere",
+    "value": "28/58 (48.3%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 4.828,
+    "evidence": "28 of 58 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-036",
+    "category": "corridor_outlier",
+    "headline": "Great Britain -> Ireland is an unusually large Olympic migration corridor",
+    "value": 22,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 4.823,
+    "evidence": "22 athletes; top sport: Swimming (4)."
+  },
+  {
+    "id": "insight-037",
+    "category": "team_trains_elsewhere",
+    "headline": "PUR is a team that largely trains elsewhere",
+    "value": "16/35 (45.7%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 4.571,
+    "evidence": "16 of 35 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-038",
+    "category": "corridor_outlier",
+    "headline": "United States -> Nigeria is an unusually large Olympic migration corridor",
+    "value": 18,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 4.472,
+    "evidence": "18 athletes; top sport: Athletics (9)."
+  },
+  {
+    "id": "insight-039",
+    "category": "split_city",
+    "headline": "New Jersey natives split across 3 Olympic delegations",
+    "value": 3,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.386,
+    "evidence": "Represented NOCs: ISV, PUR, AUS; birth country: United States."
+  },
+  {
+    "id": "insight-040",
+    "category": "split_city",
+    "headline": "Brooklyn, Ny natives split across 3 Olympic delegations",
+    "value": 3,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.386,
+    "evidence": "Represented NOCs: GUY, USA, PUR; birth country: United States."
+  },
+  {
+    "id": "insight-041",
+    "category": "split_city",
+    "headline": "Bradford natives split across 3 Olympic delegations",
+    "value": 3,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.386,
+    "evidence": "Represented NOCs: IRL, AUS, GBR; birth country: Great Britain."
+  },
+  {
+    "id": "insight-042",
+    "category": "split_city",
+    "headline": "Morristown, Nj natives split across 3 Olympic delegations",
+    "value": 3,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.386,
+    "evidence": "Represented NOCs: PUR, BER, USA; birth country: United States."
+  },
+  {
+    "id": "insight-043",
+    "category": "team_trains_elsewhere",
+    "headline": "MAR is a team that largely trains elsewhere",
+    "value": "21/48 (43.8%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 4.375,
+    "evidence": "21 of 48 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-044",
+    "category": "split_city",
+    "headline": "Belfast natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.303,
+    "evidence": "Represented NOCs: IRL, GBR; birth country: Great Britain."
+  },
+  {
+    "id": "insight-045",
+    "category": "team_trains_elsewhere",
+    "headline": "TUN is a team that largely trains elsewhere",
+    "value": "9/21 (42.9%)",
+    "baseline": "min 10 known residences and >= 40% abroad",
+    "score": 4.286,
+    "evidence": "9 of 21 athletes with known residence live outside their represented country."
+  },
+  {
+    "id": "insight-046",
+    "category": "corridor_outlier",
+    "headline": "IR Iran -> EOR is an unusually large Olympic migration corridor",
+    "value": 15,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 4.153,
+    "evidence": "15 athletes; top sport: Taekwondo (3)."
+  },
+  {
+    "id": "insight-047",
+    "category": "split_city",
+    "headline": "Tampa, Fl natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 4.079,
+    "evidence": "Represented NOCs: PUR, USA; birth country: United States."
+  },
+  {
+    "id": "insight-048",
+    "category": "small_noc_dependency",
+    "headline": "Haiti relies unusually heavily on foreign-born athletes",
+    "value": "100.0%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 4.013,
+    "evidence": "6 of 6 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-049",
+    "category": "corridor_outlier",
+    "headline": "Russian Federation -> AIN is an unusually large Olympic migration corridor",
+    "value": 13,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 3.903,
+    "evidence": "13 athletes; top sport: Tennis (6)."
+  },
+  {
+    "id": "insight-050",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Equestrian are meaningfully older than homegrown athletes",
+    "value": "+3.7 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 3.719,
+    "evidence": "Diaspora mean age 42.4 (n=16); homegrown mean age 38.7 (n=227)."
+  },
+  {
+    "id": "insight-051",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Beach Volleyball are meaningfully older than homegrown athletes",
+    "value": "+3.6 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 3.647,
+    "evidence": "Diaspora mean age 32.7 (n=7); homegrown mean age 29.1 (n=89)."
+  },
+  {
+    "id": "insight-052",
+    "category": "split_city",
+    "headline": "Cambridge natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.609,
+    "evidence": "Represented NOCs: IRL, GBR; birth country: Great Britain."
+  },
+  {
+    "id": "insight-053",
+    "category": "split_city",
+    "headline": "Birmingham natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.609,
+    "evidence": "Represented NOCs: IRL, GBR; birth country: Great Britain."
+  },
+  {
+    "id": "insight-054",
+    "category": "corridor_outlier",
+    "headline": "Great Britain -> Australia is an unusually large Olympic migration corridor",
+    "value": 10,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 3.443,
+    "evidence": "10 athletes; top sport: Athletics (3)."
+  },
+  {
+    "id": "insight-055",
+    "category": "split_city",
+    "headline": "Pittsburgh, Pa natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.386,
+    "evidence": "Represented NOCs: PUR, USA; birth country: United States."
+  },
+  {
+    "id": "insight-056",
+    "category": "split_city",
+    "headline": "Lawrenceville, Ga natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.386,
+    "evidence": "Represented NOCs: PUR, USA; birth country: United States."
+  },
+  {
+    "id": "insight-057",
+    "category": "small_noc_dependency",
+    "headline": "UA Emirates relies unusually heavily on foreign-born athletes",
+    "value": "85.7%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 3.327,
+    "evidence": "6 of 7 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-058",
+    "category": "small_noc_dependency",
+    "headline": "Bahrain relies unusually heavily on foreign-born athletes",
+    "value": "85.7%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 3.327,
+    "evidence": "12 of 14 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-059",
+    "category": "small_noc_dependency",
+    "headline": "Samoa relies unusually heavily on foreign-born athletes",
+    "value": "85.7%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 3.327,
+    "evidence": "6 of 7 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-060",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in 3x3 Basketball are meaningfully older than homegrown athletes",
+    "value": "+3.3 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 3.317,
+    "evidence": "Diaspora mean age 32.6 (n=5); homegrown mean age 29.3 (n=60)."
+  },
+  {
+    "id": "insight-061",
+    "category": "corridor_outlier",
+    "headline": "Belarus -> AIN is an unusually large Olympic migration corridor",
+    "value": 9,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 3.259,
+    "evidence": "9 athletes; top sport: Swimming (3)."
+  },
+  {
+    "id": "insight-062",
+    "category": "corridor_outlier",
+    "headline": "United States -> Canada is an unusually large Olympic migration corridor",
+    "value": 9,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 3.259,
+    "evidence": "9 athletes; top sport: Athletics (3)."
+  },
+  {
+    "id": "insight-063",
+    "category": "small_noc_dependency",
+    "headline": "Palestine relies unusually heavily on foreign-born athletes",
+    "value": "83.3%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 3.213,
+    "evidence": "5 of 6 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-064",
+    "category": "split_city",
+    "headline": "Charleston, Sc natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.099,
+    "evidence": "Represented NOCs: PUR, USA; birth country: United States."
+  },
+  {
+    "id": "insight-065",
+    "category": "split_city",
+    "headline": "Birkenhead natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.099,
+    "evidence": "Represented NOCs: IRL, GBR; birth country: Great Britain."
+  },
+  {
+    "id": "insight-066",
+    "category": "split_city",
+    "headline": "Jacksonville, Fl natives split across 2 Olympic delegations",
+    "value": 2,
+    "baseline": "city has multiple represented NOCs and constituent/territory rules appear to apply",
+    "score": 3.099,
+    "evidence": "Represented NOCs: ISV, USA; birth country: United States."
+  },
+  {
+    "id": "insight-067",
+    "category": "corridor_outlier",
+    "headline": "Great Britain -> New Zealand is an unusually large Olympic migration corridor",
+    "value": 8,
+    "baseline": "log-count z >= 3.0; mean=0.34, sigma=0.57",
+    "score": 3.053,
+    "evidence": "8 athletes; top sport: Football (5)."
+  },
+  {
+    "id": "insight-068",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Skateboarding medals",
+    "value": "2.80x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 2.802,
+    "evidence": "Diaspora share among medalists: 16.7%; sport population share: 6.0%."
+  },
+  {
+    "id": "insight-069",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Triathlon are meaningfully older than homegrown athletes",
+    "value": "+2.7 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 2.689,
+    "evidence": "Diaspora mean age 30.9 (n=11); homegrown mean age 28.2 (n=100)."
+  },
+  {
+    "id": "insight-070",
+    "category": "age_gap",
+    "headline": "Diaspora athletes in Canoe Slalom are meaningfully younger than homegrown athletes",
+    "value": "-2.6 years",
+    "baseline": "min 25 known ages and absolute mean gap >= 2.5 years",
+    "score": 2.583,
+    "evidence": "Diaspora mean age 25.8 (n=12); homegrown mean age 28.4 (n=72)."
+  },
+  {
+    "id": "insight-071",
+    "category": "small_noc_dependency",
+    "headline": "South Sudan relies unusually heavily on foreign-born athletes",
+    "value": "69.2%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 2.536,
+    "evidence": "9 of 13 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-072",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Golf medals",
+    "value": "2.50x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 2.499,
+    "evidence": "Diaspora share among medalists: 16.7%; sport population share: 6.7%."
+  },
+  {
+    "id": "insight-073",
+    "category": "sport_outlier",
+    "headline": "Wrestling has an unusually high diaspora share",
+    "value": "21.2%",
+    "baseline": "sports with >= 25 known birthplaces; mean=9.8%, sigma=5.1",
+    "score": 2.255,
+    "evidence": "42 of 198 classified athletes are diaspora."
+  },
+  {
+    "id": "insight-074",
+    "category": "sport_outlier",
+    "headline": "Basketball has an unusually high diaspora share",
+    "value": "20.9%",
+    "baseline": "sports with >= 25 known birthplaces; mean=9.8%, sigma=5.1",
+    "score": 2.194,
+    "evidence": "56 of 268 classified athletes are diaspora."
+  },
+  {
+    "id": "insight-075",
+    "category": "sport_outlier",
+    "headline": "Trampoline Gymnastics has an unusually high diaspora share",
+    "value": "20.7%",
+    "baseline": "sports with >= 25 known birthplaces; mean=9.8%, sigma=5.1",
+    "score": 2.152,
+    "evidence": "6 of 29 classified athletes are diaspora."
+  },
+  {
+    "id": "insight-076",
+    "category": "small_noc_dependency",
+    "headline": "Qatar relies unusually heavily on foreign-born athletes",
+    "value": "60.0%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 2.093,
+    "evidence": "6 of 10 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-077",
+    "category": "small_noc_dependency",
+    "headline": "Liberia relies unusually heavily on foreign-born athletes",
+    "value": "60.0%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 2.093,
+    "evidence": "3 of 5 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-078",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Modern Pentathlon medals",
+    "value": "2.03x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 2.033,
+    "evidence": "Diaspora share among medalists: 16.7%; sport population share: 8.2%."
+  },
+  {
+    "id": "insight-079",
+    "category": "small_noc_dependency",
+    "headline": "Puerto Rico relies unusually heavily on foreign-born athletes",
+    "value": "58.7%",
+    "baseline": "qualifying NOC mean=16.4%, sigma=20.8%, threshold=58.1%",
+    "score": 2.031,
+    "evidence": "27 of 46 classified athletes are foreign-born."
+  },
+  {
+    "id": "insight-080",
+    "category": "corridor_sport_concentration",
+    "headline": "Morocco -> Spain is concentrated in Athletics",
+    "value": "6/6 (100.0%)",
+    "baseline": "corridors with >= 5 athletes and top-sport share >= 80%",
+    "score": 1.946,
+    "evidence": "6 of 6 athletes in this corridor compete in Athletics."
+  },
+  {
+    "id": "insight-081",
+    "category": "corridor_sport_concentration",
+    "headline": "Spain -> Dominican Republic is concentrated in Football",
+    "value": "6/6 (100.0%)",
+    "baseline": "corridors with >= 5 athletes and top-sport share >= 80%",
+    "score": 1.946,
+    "evidence": "6 of 6 athletes in this corridor compete in Football."
+  },
+  {
+    "id": "insight-082",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Cycling BMX Freestyle medals",
+    "value": "1.92x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 1.916,
+    "evidence": "Diaspora share among medalists: 16.7%; sport population share: 8.7%."
+  },
+  {
+    "id": "insight-083",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Marathon Swimming medals",
+    "value": "1.74x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 1.741,
+    "evidence": "Diaspora share among medalists: 11.1%; sport population share: 6.4%."
+  },
+  {
+    "id": "insight-084",
+    "category": "corridor_sport_concentration",
+    "headline": "France -> Guinea is concentrated in Football",
+    "value": "5/6 (83.3%)",
+    "baseline": "corridors with >= 5 athletes and top-sport share >= 80%",
+    "score": 1.622,
+    "evidence": "5 of 6 athletes in this corridor compete in Football."
+  },
+  {
+    "id": "insight-085",
+    "category": "medal_overperformance_sport",
+    "headline": "Diaspora athletes overperform in Trampoline Gymnastics medals",
+    "value": "1.61x",
+    "baseline": "diaspora medal share >= 1.5x population share",
+    "score": 1.611,
+    "evidence": "Diaspora share among medalists: 33.3%; sport population share: 20.7%."
+  },
+  {
+    "id": "insight-086",
+    "category": "corridor_sport_concentration",
+    "headline": "United States -> Germany is concentrated in Basketball",
+    "value": "4/5 (80.0%)",
+    "baseline": "corridors with >= 5 athletes and top-sport share >= 80%",
+    "score": 1.433,
+    "evidence": "4 of 5 athletes in this corridor compete in Basketball."
+  }
+]

@@ -1,0 +1,1204 @@
+[
+  {
+    "sport": "Athletics",
+    "total_athletes": 2020,
+    "total_records_with_birthplace_data": 1692,
+    "total_classified_birthplace_records": 1692,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1494,
+    "diaspora_count": 198,
+    "diaspora_pct": 11.7,
+    "medal_count": 211,
+    "medal_winning_athletes": 178,
+    "diaspora_medal_count": 19,
+    "diaspora_medal_pct": 8.43,
+    "top_source_countries": {
+      "United States": 47,
+      "Kenya": 15,
+      "Ethiopia": 14,
+      "Eritrea": 8,
+      "Morocco": 8
+    },
+    "top_represented_countries": {
+      "Italy": 17,
+      "Australia": 12,
+      "Spain": 11,
+      "Nigeria": 9,
+      "Bahrain": 8
+    }
+  },
+  {
+    "sport": "Swimming",
+    "total_athletes": 836,
+    "total_records_with_birthplace_data": 618,
+    "total_classified_birthplace_records": 620,
+    "inferred_homegrown_count": 2,
+    "homegrown_count": 547,
+    "diaspora_count": 73,
+    "diaspora_pct": 11.77,
+    "medal_count": 214,
+    "medal_winning_athletes": 122,
+    "diaspora_medal_count": 7,
+    "diaspora_medal_pct": 5.74,
+    "top_source_countries": {
+      "United States": 30,
+      "Great Britain": 7,
+      "France": 4,
+      "Russian Federation": 4,
+      "Belarus": 3
+    },
+    "top_represented_countries": {
+      "Ireland": 5,
+      "Canada": 5,
+      "AIN": 4,
+      "Australia": 4,
+      "Netherlands": 4
+    }
+  },
+  {
+    "sport": "Football",
+    "total_athletes": 553,
+    "total_records_with_birthplace_data": 528,
+    "total_classified_birthplace_records": 528,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 465,
+    "diaspora_count": 63,
+    "diaspora_pct": 11.93,
+    "medal_count": 124,
+    "medal_winning_athletes": 124,
+    "diaspora_medal_count": 15,
+    "diaspora_medal_pct": 12.1,
+    "top_source_countries": {
+      "France": 15,
+      "United States": 9,
+      "Spain": 9,
+      "Belgium": 7,
+      "Great Britain": 6
+    },
+    "top_represented_countries": {
+      "Morocco": 11,
+      "Dominican Republic": 10,
+      "New Zealand": 7,
+      "Mali": 6,
+      "Guinea": 6
+    }
+  },
+  {
+    "sport": "Rowing",
+    "total_athletes": 493,
+    "total_records_with_birthplace_data": 368,
+    "total_classified_birthplace_records": 368,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 348,
+    "diaspora_count": 20,
+    "diaspora_pct": 5.43,
+    "medal_count": 144,
+    "medal_winning_athletes": 140,
+    "diaspora_medal_count": 6,
+    "diaspora_medal_pct": 4.29,
+    "top_source_countries": {
+      "Great Britain": 5,
+      "United States": 3,
+      "Belarus": 2,
+      "South Africa": 2,
+      "Brazil": 1
+    },
+    "top_represented_countries": {
+      "Great Britain": 3,
+      "Ireland": 2,
+      "Italy": 2,
+      "United States": 2,
+      "Australia": 2
+    }
+  },
+  {
+    "sport": "Hockey",
+    "total_athletes": 415,
+    "total_records_with_birthplace_data": 335,
+    "total_classified_birthplace_records": 335,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 319,
+    "diaspora_count": 16,
+    "diaspora_pct": 4.78,
+    "medal_count": 102,
+    "medal_winning_athletes": 102,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 0.98,
+    "top_source_countries": {
+      "Great Britain": 5,
+      "Australia": 3,
+      "Argentina": 2,
+      "United States": 1,
+      "South Africa": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 3,
+      "Belgium": 3,
+      "New Zealand": 3,
+      "Australia": 3,
+      "Great Britain": 2
+    }
+  },
+  {
+    "sport": "Handball",
+    "total_athletes": 386,
+    "total_records_with_birthplace_data": 375,
+    "total_classified_birthplace_records": 375,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 349,
+    "diaspora_count": 26,
+    "diaspora_pct": 6.93,
+    "medal_count": 94,
+    "medal_winning_athletes": 94,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 2.13,
+    "top_source_countries": {
+      "Germany": 4,
+      "Yugoslavia": 4,
+      "Serbia": 3,
+      "Bosnia & Herzegovina": 2,
+      "France": 1
+    },
+    "top_represented_countries": {
+      "Croatia": 5,
+      "Slovenia": 5,
+      "Hungary": 4,
+      "Spain": 4,
+      "France": 3
+    }
+  },
+  {
+    "sport": "Judo",
+    "total_athletes": 378,
+    "total_records_with_birthplace_data": 377,
+    "total_classified_birthplace_records": 377,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 312,
+    "diaspora_count": 65,
+    "diaspora_pct": 17.24,
+    "medal_count": 105,
+    "medal_winning_athletes": 82,
+    "diaspora_medal_count": 11,
+    "diaspora_medal_pct": 10.98,
+    "top_source_countries": {
+      "Russian Federation": 11,
+      "France": 7,
+      "Georgia": 6,
+      "Japan": 6,
+      "Great Britain": 4
+    },
+    "top_represented_countries": {
+      "UA Emirates": 6,
+      "EOR": 6,
+      "Canada": 5,
+      "T\u00fcrkiye": 3,
+      "Portugal": 3
+    }
+  },
+  {
+    "sport": "Shooting",
+    "total_athletes": 342,
+    "total_records_with_birthplace_data": 321,
+    "total_classified_birthplace_records": 321,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 306,
+    "diaspora_count": 15,
+    "diaspora_pct": 4.67,
+    "medal_count": 54,
+    "medal_winning_athletes": 49,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 4.08,
+    "top_source_countries": {
+      "Italy": 2,
+      "Belarus": 2,
+      "Cura\u00e7ao": 1,
+      "Ukraine": 1,
+      "Russian Federation": 1
+    },
+    "top_represented_countries": {
+      "EOR": 2,
+      "Australia": 2,
+      "Aruba": 1,
+      "Israel": 1,
+      "Ukraine": 1
+    }
+  },
+  {
+    "sport": "Sailing",
+    "total_athletes": 330,
+    "total_records_with_birthplace_data": 326,
+    "total_classified_birthplace_records": 326,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 301,
+    "diaspora_count": 25,
+    "diaspora_pct": 7.67,
+    "medal_count": 42,
+    "medal_winning_athletes": 42,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 2.38,
+    "top_source_countries": {
+      "New Zealand": 3,
+      "Germany": 3,
+      "United States": 2,
+      "Ireland": 2,
+      "Russian Federation": 2
+    },
+    "top_represented_countries": {
+      "Austria": 2,
+      "Australia": 2,
+      "Saint Lucia": 1,
+      "Puerto Rico": 1,
+      "Bermuda": 1
+    }
+  },
+  {
+    "sport": "Rugby Sevens",
+    "total_athletes": 317,
+    "total_records_with_birthplace_data": 234,
+    "total_classified_birthplace_records": 234,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 219,
+    "diaspora_count": 15,
+    "diaspora_pct": 6.41,
+    "medal_count": 78,
+    "medal_winning_athletes": 78,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 5.13,
+    "top_source_countries": {
+      "Great Britain": 4,
+      "Fiji": 2,
+      "Hong Kong, China": 2,
+      "Bahrain": 1,
+      "Kenya": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 5,
+      "United States": 3,
+      "France": 2,
+      "Japan": 1,
+      "Uruguay": 1
+    }
+  },
+  {
+    "sport": "Volleyball",
+    "total_athletes": 311,
+    "total_records_with_birthplace_data": 278,
+    "total_classified_birthplace_records": 278,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 263,
+    "diaspora_count": 15,
+    "diaspora_pct": 5.4,
+    "medal_count": 76,
+    "medal_winning_athletes": 76,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 5.26,
+    "top_source_countries": {
+      "Cuba": 3,
+      "Germany": 3,
+      "Bosnia & Herzegovina": 2,
+      "Hungary": 1,
+      "Norway": 1
+    },
+    "top_represented_countries": {
+      "Brazil": 3,
+      "France": 2,
+      "T\u00fcrkiye": 2,
+      "Poland": 2,
+      "Italy": 2
+    }
+  },
+  {
+    "sport": "Wrestling",
+    "total_athletes": 291,
+    "total_records_with_birthplace_data": 198,
+    "total_classified_birthplace_records": 198,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 156,
+    "diaspora_count": 42,
+    "diaspora_pct": 21.21,
+    "medal_count": 72,
+    "medal_winning_athletes": 72,
+    "diaspora_medal_count": 10,
+    "diaspora_medal_pct": 13.89,
+    "top_source_countries": {
+      "Russian Federation": 18,
+      "United States": 7,
+      "IR Iran": 4,
+      "Georgia": 3,
+      "Ukraine": 3
+    },
+    "top_represented_countries": {
+      "Azerbaijan": 5,
+      "Puerto Rico": 4,
+      "Serbia": 4,
+      "Uzbekistan": 3,
+      "Albania": 2
+    }
+  },
+  {
+    "sport": "Basketball",
+    "total_athletes": 287,
+    "total_records_with_birthplace_data": 268,
+    "total_classified_birthplace_records": 268,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 212,
+    "diaspora_count": 56,
+    "diaspora_pct": 20.9,
+    "medal_count": 71,
+    "medal_winning_athletes": 71,
+    "diaspora_medal_count": 8,
+    "diaspora_medal_pct": 11.27,
+    "top_source_countries": {
+      "United States": 37,
+      "Canada": 2,
+      "Bosnia & Herzegovina": 2,
+      "Sudan": 2,
+      "Cambodia": 1
+    },
+    "top_represented_countries": {
+      "Puerto Rico": 17,
+      "South Sudan": 8,
+      "Serbia": 7,
+      "Nigeria": 6,
+      "Germany": 4
+    }
+  },
+  {
+    "sport": "Water Polo",
+    "total_athletes": 286,
+    "total_records_with_birthplace_data": 239,
+    "total_classified_birthplace_records": 239,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 212,
+    "diaspora_count": 27,
+    "diaspora_pct": 11.3,
+    "medal_count": 78,
+    "medal_winning_athletes": 78,
+    "diaspora_medal_count": 6,
+    "diaspora_medal_pct": 7.69,
+    "top_source_countries": {
+      "Italy": 3,
+      "United States": 3,
+      "Montenegro": 3,
+      "Serbia": 2,
+      "Romania": 2
+    },
+    "top_represented_countries": {
+      "France": 4,
+      "Hungary": 4,
+      "Romania": 3,
+      "Australia": 3,
+      "United States": 2
+    }
+  },
+  {
+    "sport": "Fencing",
+    "total_athletes": 260,
+    "total_records_with_birthplace_data": 183,
+    "total_classified_birthplace_records": 183,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 162,
+    "diaspora_count": 21,
+    "diaspora_pct": 11.48,
+    "medal_count": 90,
+    "medal_winning_athletes": 83,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 5,
+      "China": 3,
+      "Russian Federation": 2,
+      "Algeria": 2,
+      "United States": 2
+    },
+    "top_represented_countries": {
+      "Canada": 5,
+      "Egypt": 2,
+      "United States": 2,
+      "Algeria": 2,
+      "Cabo Verde": 1
+    }
+  },
+  {
+    "sport": "Boxing",
+    "total_athletes": 248,
+    "total_records_with_birthplace_data": 238,
+    "total_classified_birthplace_records": 238,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 215,
+    "diaspora_count": 23,
+    "diaspora_pct": 9.66,
+    "medal_count": 52,
+    "medal_winning_athletes": 52,
+    "diaspora_medal_count": 6,
+    "diaspora_medal_pct": 11.54,
+    "top_source_countries": {
+      "Great Britain": 4,
+      "Cuba": 3,
+      "Russian Federation": 3,
+      "Cameroon": 2,
+      "United States": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 3,
+      "Serbia": 3,
+      "EOR": 2,
+      "Australia": 2,
+      "Mexico": 1
+    }
+  },
+  {
+    "sport": "Equestrian",
+    "total_athletes": 243,
+    "total_records_with_birthplace_data": 192,
+    "total_classified_birthplace_records": 192,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 176,
+    "diaspora_count": 16,
+    "diaspora_pct": 8.33,
+    "medal_count": 37,
+    "medal_winning_athletes": 33,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Germany": 4,
+      "Switzerland": 2,
+      "Great Britain": 2,
+      "Netherlands": 1,
+      "Nigeria": 1
+    },
+    "top_represented_countries": {
+      "United States": 3,
+      "Israel": 2,
+      "Morocco": 1,
+      "Austria": 1,
+      "Dominican Republic": 1
+    }
+  },
+  {
+    "sport": "Canoe Sprint",
+    "total_athletes": 239,
+    "total_records_with_birthplace_data": 202,
+    "total_classified_birthplace_records": 202,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 184,
+    "diaspora_count": 18,
+    "diaspora_pct": 8.91,
+    "medal_count": 62,
+    "medal_winning_athletes": 49,
+    "diaspora_medal_count": 6,
+    "diaspora_medal_pct": 10.2,
+    "top_source_countries": {
+      "Republic of Moldova": 3,
+      "Ukraine": 3,
+      "IR Iran": 2,
+      "South Africa": 2,
+      "Russian Federation": 2
+    },
+    "top_represented_countries": {
+      "EOR": 3,
+      "AIN": 3,
+      "Romania": 2,
+      "Kazakhstan": 2,
+      "Australia": 2
+    }
+  },
+  {
+    "sport": "Cycling Track",
+    "total_athletes": 224,
+    "total_records_with_birthplace_data": 187,
+    "total_classified_birthplace_records": 187,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 180,
+    "diaspora_count": 7,
+    "diaspora_pct": 3.74,
+    "medal_count": 68,
+    "medal_winning_athletes": 52,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 3.85,
+    "top_source_countries": {
+      "Great Britain": 3,
+      "Morocco": 1,
+      "Russian Federation": 1,
+      "Ireland": 1,
+      "Australia": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 2,
+      "France": 1,
+      "Israel": 1,
+      "Great Britain": 1,
+      "Thailand": 1
+    }
+  },
+  {
+    "sport": "Artistic Gymnastics",
+    "total_athletes": 190,
+    "total_records_with_birthplace_data": 186,
+    "total_classified_birthplace_records": 186,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 165,
+    "diaspora_count": 21,
+    "diaspora_pct": 11.29,
+    "medal_count": 67,
+    "medal_winning_athletes": 45,
+    "diaspora_medal_count": 3,
+    "diaspora_medal_pct": 6.67,
+    "top_source_countries": {
+      "United States": 10,
+      "Great Britain": 1,
+      "France": 1,
+      "Vietnam": 1,
+      "Egypt": 1
+    },
+    "top_represented_countries": {
+      "Philippines": 3,
+      "Israel": 2,
+      "Spain": 2,
+      "Colombia": 1,
+      "Ireland": 1
+    }
+  },
+  {
+    "sport": "Cycling Road",
+    "total_athletes": 188,
+    "total_records_with_birthplace_data": 169,
+    "total_classified_birthplace_records": 169,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 157,
+    "diaspora_count": 12,
+    "diaspora_pct": 7.1,
+    "medal_count": 19,
+    "medal_winning_athletes": 15,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Great Britain": 2,
+      "Russian Federation": 2,
+      "Belarus": 1,
+      "IR Iran": 1,
+      "Ethiopia": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 2,
+      "AIN": 2,
+      "EOR": 2,
+      "Uzbekistan": 1,
+      "Mauritius": 1
+    }
+  },
+  {
+    "sport": "Tennis",
+    "total_athletes": 176,
+    "total_records_with_birthplace_data": 174,
+    "total_classified_birthplace_records": 174,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 150,
+    "diaspora_count": 24,
+    "diaspora_pct": 13.79,
+    "medal_count": 24,
+    "medal_winning_athletes": 24,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 16.67,
+    "top_source_countries": {
+      "Russian Federation": 11,
+      "United States": 3,
+      "Ukraine": 2,
+      "Argentina": 1,
+      "Republic of Moldova": 1
+    },
+    "top_represented_countries": {
+      "AIN": 7,
+      "Kazakhstan": 4,
+      "Japan": 3,
+      "Australia": 3,
+      "Lebanon": 2
+    }
+  },
+  {
+    "sport": "Table Tennis",
+    "total_athletes": 175,
+    "total_records_with_birthplace_data": 131,
+    "total_classified_birthplace_records": 131,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 110,
+    "diaspora_count": 21,
+    "diaspora_pct": 16.03,
+    "medal_count": 30,
+    "medal_winning_athletes": 21,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 4.76,
+    "top_source_countries": {
+      "China": 12,
+      "France": 2,
+      "United States": 1,
+      "Ukraine": 1,
+      "Sri Lanka": 1
+    },
+    "top_represented_countries": {
+      "Germany": 2,
+      "Portugal": 2,
+      "Canada": 2,
+      "Singapore": 1,
+      "Guyana": 1
+    }
+  },
+  {
+    "sport": "Badminton",
+    "total_athletes": 175,
+    "total_records_with_birthplace_data": 172,
+    "total_classified_birthplace_records": 172,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 153,
+    "diaspora_count": 19,
+    "diaspora_pct": 11.05,
+    "medal_count": 24,
+    "medal_winning_athletes": 24,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "China": 3,
+      "Indonesia": 3,
+      "Bulgaria": 2,
+      "France": 2,
+      "Malaysia": 1
+    },
+    "top_represented_countries": {
+      "France": 3,
+      "Azerbaijan": 2,
+      "Canada": 2,
+      "Algeria": 2,
+      "Singapore": 1
+    }
+  },
+  {
+    "sport": "Diving",
+    "total_athletes": 135,
+    "total_records_with_birthplace_data": 119,
+    "total_classified_birthplace_records": 119,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 107,
+    "diaspora_count": 12,
+    "diaspora_pct": 10.08,
+    "medal_count": 36,
+    "medal_winning_athletes": 28,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 3.57,
+    "top_source_countries": {
+      "Great Britain": 4,
+      "United States": 3,
+      "Canada": 1,
+      "Denmark": 1,
+      "New Zealand": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 2,
+      "France": 2,
+      "Italy": 2,
+      "Australia": 2,
+      "Jamaica": 1
+    }
+  },
+  {
+    "sport": "Taekwondo",
+    "total_athletes": 134,
+    "total_records_with_birthplace_data": 118,
+    "total_classified_birthplace_records": 118,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 107,
+    "diaspora_count": 11,
+    "diaspora_pct": 9.32,
+    "medal_count": 32,
+    "medal_winning_athletes": 32,
+    "diaspora_medal_count": 3,
+    "diaspora_medal_pct": 9.38,
+    "top_source_countries": {
+      "IR Iran": 4,
+      "United States": 2,
+      "Russian Federation": 2,
+      "Spain": 1,
+      "Syria": 1
+    },
+    "top_represented_countries": {
+      "EOR": 5,
+      "Hungary": 2,
+      "Gambia": 1,
+      "Azerbaijan": 1,
+      "Serbia": 1
+    }
+  },
+  {
+    "sport": "Archery",
+    "total_athletes": 128,
+    "total_records_with_birthplace_data": 79,
+    "total_classified_birthplace_records": 79,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 77,
+    "diaspora_count": 2,
+    "diaspora_pct": 2.53,
+    "medal_count": 30,
+    "medal_winning_athletes": 23,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1,
+      "Mexico": 1
+    },
+    "top_represented_countries": {
+      "Virgin Islands, US": 1,
+      "Netherlands": 1
+    }
+  },
+  {
+    "sport": "Weightlifting",
+    "total_athletes": 122,
+    "total_records_with_birthplace_data": 83,
+    "total_classified_birthplace_records": 83,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 71,
+    "diaspora_count": 12,
+    "diaspora_pct": 14.46,
+    "medal_count": 30,
+    "medal_winning_athletes": 30,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 13.33,
+    "top_source_countries": {
+      "Cameroon": 3,
+      "Belarus": 2,
+      "Armenia": 1,
+      "Colombia": 1,
+      "Finland": 1
+    },
+    "top_represented_countries": {
+      "France": 3,
+      "Bahrain": 2,
+      "AIN": 2,
+      "EOR": 2,
+      "Norway": 1
+    }
+  },
+  {
+    "sport": "Golf",
+    "total_athletes": 120,
+    "total_records_with_birthplace_data": 120,
+    "total_classified_birthplace_records": 120,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 112,
+    "diaspora_count": 8,
+    "diaspora_pct": 6.67,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 16.67,
+    "top_source_countries": {
+      "United States": 2,
+      "Great Britain": 2,
+      "Mexico": 1,
+      "Germany": 1,
+      "Korea": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 2,
+      "Mexico": 1,
+      "Norway": 1,
+      "Poland": 1,
+      "New Zealand": 1
+    }
+  },
+  {
+    "sport": "Triathlon",
+    "total_athletes": 111,
+    "total_records_with_birthplace_data": 107,
+    "total_classified_birthplace_records": 107,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 96,
+    "diaspora_count": 11,
+    "diaspora_pct": 10.28,
+    "medal_count": 17,
+    "medal_winning_athletes": 15,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 3,
+      "Japan": 1,
+      "Australia": 1,
+      "Switzerland": 1,
+      "Ukraine": 1
+    },
+    "top_represented_countries": {
+      "Netherlands": 2,
+      "Romania": 1,
+      "Luxembourg": 1,
+      "Morocco": 1,
+      "Guam": 1
+    }
+  },
+  {
+    "sport": "Artistic Swimming",
+    "total_athletes": 106,
+    "total_records_with_birthplace_data": 72,
+    "total_classified_birthplace_records": 72,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 61,
+    "diaspora_count": 11,
+    "diaspora_pct": 15.28,
+    "medal_count": 30,
+    "medal_winning_athletes": 28,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 14.29,
+    "top_source_countries": {
+      "Greece": 2,
+      "Russian Federation": 2,
+      "Canada": 2,
+      "Korea": 1,
+      "Australia": 1
+    },
+    "top_represented_countries": {
+      "United States": 3,
+      "Australia": 3,
+      "Austria": 2,
+      "France": 1,
+      "Spain": 1
+    }
+  },
+  {
+    "sport": "Beach Volleyball",
+    "total_athletes": 96,
+    "total_records_with_birthplace_data": 93,
+    "total_classified_birthplace_records": 93,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 86,
+    "diaspora_count": 7,
+    "diaspora_pct": 7.53,
+    "medal_count": 12,
+    "medal_winning_athletes": 12,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 8.33,
+    "top_source_countries": {
+      "German Dem. Republic": 1,
+      "Morocco": 1,
+      "Gambia": 1,
+      "Senegal": 1,
+      "Uruguay": 1
+    },
+    "top_represented_countries": {
+      "Qatar": 2,
+      "Germany": 1,
+      "France": 1,
+      "Italy": 1,
+      "Australia": 1
+    }
+  },
+  {
+    "sport": "Rhythmic Gymnastics",
+    "total_athletes": 94,
+    "total_records_with_birthplace_data": 85,
+    "total_classified_birthplace_records": 85,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 72,
+    "diaspora_count": 13,
+    "diaspora_pct": 15.29,
+    "medal_count": 18,
+    "medal_winning_athletes": 18,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 11.11,
+    "top_source_countries": {
+      "Russian Federation": 5,
+      "United States": 2,
+      "Egypt": 1,
+      "Uzbekistan": 1,
+      "Republic of Moldova": 1
+    },
+    "top_represented_countries": {
+      "Australia": 3,
+      "Bulgaria": 2,
+      "Germany": 2,
+      "Romania": 1,
+      "Cyprus": 1
+    }
+  },
+  {
+    "sport": "Skateboarding",
+    "total_athletes": 88,
+    "total_records_with_birthplace_data": 84,
+    "total_classified_birthplace_records": 84,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 79,
+    "diaspora_count": 5,
+    "diaspora_pct": 5.95,
+    "medal_count": 12,
+    "medal_winning_athletes": 12,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 16.67,
+    "top_source_countries": {
+      "United States": 4,
+      "Japan": 1
+    },
+    "top_represented_countries": {
+      "Great Britain": 2,
+      "Puerto Rico": 1,
+      "Italy": 1,
+      "Australia": 1
+    }
+  },
+  {
+    "sport": "Canoe Slalom",
+    "total_athletes": 84,
+    "total_records_with_birthplace_data": 82,
+    "total_classified_birthplace_records": 82,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 70,
+    "diaspora_count": 12,
+    "diaspora_pct": 14.63,
+    "medal_count": 18,
+    "medal_winning_athletes": 16,
+    "diaspora_medal_count": 3,
+    "diaspora_medal_pct": 12.5,
+    "top_source_countries": {
+      "France": 7,
+      "United States": 2,
+      "Germany": 1,
+      "Spain": 1,
+      "IR Iran": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 3,
+      "Australia": 2,
+      "Algeria": 1,
+      "Italy": 1,
+      "Morocco": 1
+    }
+  },
+  {
+    "sport": "Modern Pentathlon",
+    "total_athletes": 72,
+    "total_records_with_birthplace_data": 61,
+    "total_classified_birthplace_records": 61,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 56,
+    "diaspora_count": 5,
+    "diaspora_pct": 8.2,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 16.67,
+    "top_source_countries": {
+      "Russian Federation": 1,
+      "Bulgaria": 1,
+      "Ukraine": 1,
+      "Great Britain": 1,
+      "France": 1
+    },
+    "top_represented_countries": {
+      "Uzbekistan": 1,
+      "Sweden": 1,
+      "Kazakhstan": 1,
+      "Hungary": 1,
+      "Switzerland": 1
+    }
+  },
+  {
+    "sport": "Sport Climbing",
+    "total_athletes": 68,
+    "total_records_with_birthplace_data": 62,
+    "total_classified_birthplace_records": 62,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 59,
+    "diaspora_count": 3,
+    "diaspora_pct": 4.84,
+    "medal_count": 12,
+    "medal_winning_athletes": 12,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1,
+      "Germany": 1,
+      "Venezuela": 1
+    },
+    "top_represented_countries": {
+      "New Zealand": 1,
+      "Australia": 1,
+      "Spain": 1
+    }
+  },
+  {
+    "sport": "Cycling Mountain Bike",
+    "total_athletes": 68,
+    "total_records_with_birthplace_data": 47,
+    "total_classified_birthplace_records": 47,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 47,
+    "diaspora_count": 0,
+    "diaspora_pct": 0.0,
+    "medal_count": 5,
+    "medal_winning_athletes": 5,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "top_represented_countries": {}
+  },
+  {
+    "sport": "Cycling BMX Racing",
+    "total_athletes": 67,
+    "total_records_with_birthplace_data": 45,
+    "total_classified_birthplace_records": 45,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 45,
+    "diaspora_count": 0,
+    "diaspora_pct": 0.0,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "top_represented_countries": {}
+  },
+  {
+    "sport": "3x3 Basketball",
+    "total_athletes": 65,
+    "total_records_with_birthplace_data": 49,
+    "total_classified_birthplace_records": 49,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 44,
+    "diaspora_count": 5,
+    "diaspora_pct": 10.2,
+    "medal_count": 25,
+    "medal_winning_athletes": 25,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 8.0,
+    "top_source_countries": {
+      "Yugoslavia": 2,
+      "Argentina": 1,
+      "United States": 1,
+      "Suriname": 1
+    },
+    "top_represented_countries": {
+      "Serbia": 2,
+      "Spain": 1,
+      "Azerbaijan": 1,
+      "Netherlands": 1
+    }
+  },
+  {
+    "sport": "Marathon Swimming",
+    "total_athletes": 55,
+    "total_records_with_birthplace_data": 47,
+    "total_classified_birthplace_records": 47,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 44,
+    "diaspora_count": 3,
+    "diaspora_pct": 6.38,
+    "medal_count": 11,
+    "medal_winning_athletes": 9,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 11.11,
+    "top_source_countries": {
+      "Great Britain": 1,
+      "France": 1,
+      "Zimbabwe": 1
+    },
+    "top_represented_countries": {
+      "Ireland": 1,
+      "Monaco": 1,
+      "Australia": 1
+    }
+  },
+  {
+    "sport": "Surfing",
+    "total_athletes": 48,
+    "total_records_with_birthplace_data": 47,
+    "total_classified_birthplace_records": 47,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 40,
+    "diaspora_count": 7,
+    "diaspora_pct": 14.89,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2,
+      "Portugal": 1,
+      "Spain": 1,
+      "Japan": 1,
+      "Australia": 1
+    },
+    "top_represented_countries": {
+      "Germany": 2,
+      "Japan": 2,
+      "Indonesia": 1,
+      "Brazil": 1,
+      "Spain": 1
+    }
+  },
+  {
+    "sport": "Breaking",
+    "total_athletes": 33,
+    "total_records_with_birthplace_data": 32,
+    "total_classified_birthplace_records": 32,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 30,
+    "diaspora_count": 2,
+    "diaspora_pct": 6.25,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 1,
+      "Afghanistan": 1
+    },
+    "top_represented_countries": {
+      "Ukraine": 1,
+      "EOR": 1
+    }
+  },
+  {
+    "sport": "Trampoline Gymnastics",
+    "total_athletes": 32,
+    "total_records_with_birthplace_data": 29,
+    "total_classified_birthplace_records": 29,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 23,
+    "diaspora_count": 6,
+    "diaspora_pct": 20.69,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 33.33,
+    "top_source_countries": {
+      "Belarus": 3,
+      "Spain": 1,
+      "Australia": 1,
+      "Russian Federation": 1
+    },
+    "top_represented_countries": {
+      "AIN": 3,
+      "Colombia": 1,
+      "New Zealand": 1,
+      "United States": 1
+    }
+  },
+  {
+    "sport": "Cycling BMX Freestyle",
+    "total_athletes": 24,
+    "total_records_with_birthplace_data": 23,
+    "total_classified_birthplace_records": 23,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 21,
+    "diaspora_count": 2,
+    "diaspora_pct": 8.7,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 16.67,
+    "top_source_countries": {
+      "Bolivia": 1,
+      "France": 1
+    },
+    "top_represented_countries": {
+      "Argentina": 1,
+      "Switzerland": 1
+    }
+  }
+]

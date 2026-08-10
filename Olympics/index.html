@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who do Olympians compete for?</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Olympic representation and birthplace</h1>
+        <p>Paris 2024 athletes: recorded birth country compared with the team represented.</p>
+      </div>
+    </header>
+
+    <section class="insight-strip" id="identity-strip" aria-label="Dataset summary">
+      <div class="insight-value" id="identity-diaspora-count">--</div>
+      <div class="insight-copy">
+        <strong id="identity-thesis">athletes represented a different NOC than their recorded birth country</strong>
+        <span id="identity-summary">Loading athlete data...</span>
+        <div class="decomposition-bar" id="identity-decomposition" aria-label="Diaspora type decomposition"></div>
+        <div class="type-legend" id="identity-type-legend" aria-label="Diaspora type legend"></div>
+      </div>
+      <div class="insight-meta" id="identity-total">-- total athletes</div>
+    </section>
+
+    <nav class="tabs" role="tablist" aria-label="Dashboard sections">
+      <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="rankings-panel" data-tab="rankings">Rankings</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="sports-panel" data-tab="sports">By sport</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="training-panel" data-tab="training">Residence & training</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="corridors-panel" data-tab="corridors">Corridors</button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="map-panel" data-tab="map">Explore map</button>
+    </nav>
+
+    <main>
+      <section class="tab-panel active" id="rankings-panel" role="tabpanel">
+        <div class="rankings-grid">
+          <section class="module">
+            <div class="module-heading">
+              <h2>Highest foreign-born share</h2>
+              <p>Represented teams with at least 10 athletes with known birthplaces.</p>
+            </div>
+            <div id="share-ranking" class="bar-chart" role="img" aria-label="Top 15 represented teams by foreign-born athlete share"></div>
+            <p class="note">Threshold reduces volatility from very small teams.</p>
+          </section>
+
+          <section class="module">
+            <div class="module-heading">
+              <h2>Most foreign-born athletes</h2>
+              <p>By represented team.</p>
+            </div>
+            <div id="count-ranking" class="bar-chart" role="img" aria-label="Top 15 represented teams by foreign-born athlete count"></div>
+          </section>
+        </div>
+
+        <section class="module full-width" id="dependency-scatter-module">
+          <div class="module-heading">
+            <h2>Small-nation dependency</h2>
+            <p>Delegation size versus foreign-born share. EOR and AIN are separated because they exist through displacement or exclusion.</p>
+          </div>
+          <div id="dependency-scatter" class="svg-chart" role="img" aria-label="Scatter plot of delegation size and foreign-born share"></div>
+        </section>
+
+        <section class="module full-width" id="medal-dumbbell-module">
+          <div class="module-heading">
+            <h2>Diaspora share and medals</h2>
+            <p>Top medal-winning NOCs, comparing cross-border share of delegation with share among medalists.</p>
+          </div>
+          <div id="medal-dumbbell" class="svg-chart" role="img" aria-label="Dumbbell chart comparing delegation and medalist diaspora shares"></div>
+        </section>
+
+        <section class="module full-width">
+          <div class="module-heading">
+            <h2>Largest birthplace diaspora hubs</h2>
+            <p>Birth cities producing the most athletes who represented another team.</p>
+          </div>
+          <div class="table-wrap">
+            <table class="hub-table">
+              <thead>
+                <tr>
+                  <th>Birth city</th>
+                  <th>Birth country</th>
+                  <th>Diaspora athletes</th>
+                  <th>Represented teams</th>
+                </tr>
+              </thead>
+              <tbody id="city-hubs"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="sports-panel" role="tabpanel" hidden>
+        <section class="module" id="corridors-module">
+          <div class="module-heading sport-heading">
+            <div>
+              <h2>Foreign-born share by sport</h2>
+              <p>Sports are ranked among disciplines with at least 25 known athlete birthplaces.</p>
+            </div>
+            <div class="control-group" aria-label="Sport ranking measure">
+              <button class="control-button active" type="button" data-sport-mode="share">Share (%)</button>
+              <button class="control-button" type="button" data-sport-mode="count">Count</button>
+            </div>
+          </div>
+          <div id="sport-chart" class="bar-chart sport-chart" role="img" aria-label="Foreign-born representation ranked by sport"></div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="training-panel" role="tabpanel" hidden>
+        <section class="proxy-note" aria-label="Residence proxy definition">
+          <strong>Residence-based proxy</strong>
+          <span>The source records where athletes reside, not their actual training facility. This view treats residence country as an approximate training base.</span>
+        </section>
+
+        <section class="residence-summary-grid" aria-label="Residence data summary">
+          <div class="summary-card"><strong id="training-known-count">--</strong><span>Known residence countries</span></div>
+          <div class="summary-card"><strong id="training-home-count">--</strong><span>Reside in represented country</span></div>
+          <div class="summary-card"><strong id="training-abroad-count">--</strong><span>Reside outside represented country</span></div>
+          <div class="summary-card"><strong id="training-abroad-share">--</strong><span>Abroad share of known residences</span></div>
+        </section>
+
+        <section class="module full-width residence-map-module" aria-labelledby="residence-map-title">
+          <div class="module-heading residence-map-heading">
+            <div>
+              <h2 id="residence-map-title">Where abroad-based athletes reside</h2>
+              <p>Bubble size shows athletes living in each host country. Select a host to inspect its five largest incoming representation routes.</p>
+            </div>
+            <div class="residence-map-actions">
+              <div class="control-group" aria-label="Residence host count">
+                <button class="control-button" type="button" data-training-host-limit="10">Top 10</button>
+                <button class="control-button active" type="button" data-training-host-limit="20">Top 20</button>
+                <button class="control-button" type="button" data-training-host-limit="all">All</button>
+              </div>
+              <button class="control-button hidden" id="clear-training-host" type="button">Clear selection</button>
+            </div>
+          </div>
+          <div class="residence-map-frame">
+            <div id="training-map" aria-label="Map of countries where athletes residing abroad live"></div>
+            <div class="residence-map-legend" aria-label="Residence map legend">
+              <span><i></i>Bubble size: athletes based abroad</span>
+              <span>Residence is a training-base proxy</span>
+            </div>
+          </div>
+          <p class="note" id="training-map-status" aria-live="polite">Select a host country to reveal its largest incoming routes.</p>
+        </section>
+
+        <div class="rankings-grid full-width">
+          <section class="module">
+            <div class="module-heading">
+              <h2>Largest residence hosts</h2>
+              <p>Countries hosting the most athletes who represent another Olympic team.</p>
+            </div>
+            <div id="training-host-ranking" class="bar-chart" role="img" aria-label="Residence host countries ranked by athletes representing another country"></div>
+          </section>
+
+          <section class="module">
+            <div class="module-heading">
+              <h2>Teams based abroad</h2>
+              <p>Highest abroad-residence share among teams with at least 10 known athlete residences.</p>
+            </div>
+            <div id="training-team-ranking" class="bar-chart" role="img" aria-label="Represented teams ranked by athletes residing abroad"></div>
+          </section>
+        </div>
+
+        <section class="module full-width">
+          <div class="module-heading corridor-heading">
+            <div>
+              <h2>Representation to residence corridors</h2>
+              <p>Each route runs from the country represented to the athlete's recorded country of residence.</p>
+            </div>
+            <div class="corridor-controls">
+              <label class="field-control">
+                Min athletes
+                <input type="number" id="training-min-count" min="1" max="99" value="3">
+              </label>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="hub-table">
+              <thead>
+                <tr>
+                  <th>Represents</th>
+                  <th>Residence proxy</th>
+                  <th>Athletes</th>
+                  <th>Top sports</th>
+                </tr>
+              </thead>
+              <tbody id="training-corridor-rows"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="corridors-panel" role="tabpanel" hidden>
+        <section class="module">
+          <div class="module-heading corridor-heading">
+            <div>
+              <h2>Where athletes flow</h2>
+              <p>Each row is a one-direction route: born in one country -> competed for another. 548 routes total; typed where the pattern is clear.</p>
+            </div>
+            <div class="corridor-controls">
+              <label class="field-control">
+                Min athletes
+                <input type="number" id="corridor-min-count" min="1" max="99" value="3">
+              </label>
+              <button class="control-button" id="corridor-map-toggle" type="button">Show on map</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="hub-table corridor-table">
+              <thead>
+                <tr>
+                  <th><button class="table-sort active" type="button" data-corridor-sort="corridor">Corridor</button></th>
+                  <th><button class="table-sort" type="button" data-corridor-sort="corridor_type">Type</button></th>
+                  <th><button class="table-sort" type="button" data-corridor-sort="athlete_count">Athletes</button></th>
+                  <th><button class="table-sort" type="button" data-corridor-sort="medal_count">Medals</button></th>
+                  <th><button class="table-sort" type="button" data-corridor-sort="asymmetry">Reverse flow</button></th>
+                  <th>Top sports</th>
+                </tr>
+              </thead>
+              <tbody id="corridor-rows"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="map-panel" role="tabpanel" hidden>
+        <section class="map-module">
+          <section class="migration-story-controls" aria-labelledby="migration-story-title">
+            <div>
+              <span class="story-control-kicker">Animated map stories</span>
+              <h2 id="migration-story-title">Watch cross-border representation unfold</h2>
+              <p>Two documentary-style scenes trace recorded birth country to represented Olympic team. Routes remain clickable when the animation ends.</p>
+            </div>
+            <div class="story-control-actions">
+              <div class="control-group" aria-label="Choose an animated migration story">
+                <button class="control-button story-launch-button" type="button" data-migration-story="all" aria-pressed="false">All cross-border athletes</button>
+                <button class="control-button story-launch-button" type="button" data-migration-story="medalists" aria-pressed="false">Medal winners</button>
+              </div>
+              <div class="story-playback-controls">
+                <button class="control-button" id="migration-story-pause" type="button" disabled>Pause</button>
+                <button class="control-button" id="migration-story-restart" type="button" disabled>Restart</button>
+              </div>
+            </div>
+          </section>
+          <div class="map-controls">
+            <div class="control-group" aria-label="Map view">
+              <button class="control-button active" id="view-btn-country" type="button" data-view="country">By represented team</button>
+              <button class="control-button" id="view-btn-city" type="button" data-view="city">By birthplace city</button>
+              <button class="control-button" id="view-btn-corridors" type="button" data-view="corridors">Corridors</button>
+            </div>
+            <label class="checkbox-control hidden" id="city-filter-container">
+              <input type="checkbox" id="filter-diaspora-hubs-only">
+              Only cities with cross-border representation
+            </label>
+            <div class="control-group" aria-label="Marker size">
+              <button class="control-button active" type="button" data-size-mode="count">Size: Count</button>
+              <button class="control-button" type="button" data-size-mode="share">Size: Share</button>
+            </div>
+          </div>
+          <div class="map-frame">
+            <div id="map" aria-label="Interactive map of Olympic representation and birthplace"></div>
+            <div class="migration-story-overlay" id="migration-story-overlay" hidden>
+              <span class="story-overlay-kicker" id="migration-story-kicker">Olympic migration</span>
+              <h3 id="migration-story-heading">Cross-border athletes</h3>
+              <p id="migration-story-narration"></p>
+              <div class="story-overlay-stats">
+                <strong id="migration-story-count">0</strong>
+                <span id="migration-story-count-label">athletes revealed</span>
+              </div>
+              <div class="story-progress" id="migration-story-progressbar" role="progressbar" aria-label="Migration story progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span id="migration-story-progress"></span>
+              </div>
+              <div class="story-overlay-route" id="migration-story-route"></div>
+            </div>
+            <span class="visually-hidden" id="migration-story-status" aria-live="polite"></span>
+            <div class="map-legend">
+              <div>Marker size: athlete count</div>
+              <div>Color: foreign-born share</div>
+              <div class="legend-swatches" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="legend-scale"><span>Low</span><span>High</span></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </main>
+  </div>
+
+  <aside class="detail-drawer" id="detail-drawer" aria-hidden="true" aria-labelledby="drawer-title">
+    <div class="drawer-drag-handle" id="drawer-drag-handle" aria-hidden="true"></div>
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-kicker" id="drawer-kicker">Selection</span>
+        <h2 id="drawer-title">Details</h2>
+      </div>
+      <button class="icon-button" id="close-drawer-btn" type="button" aria-label="Close details">x</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </aside>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,4607 @@
+{
+  "ARM": {
+    "noc": "ARM",
+    "country": "Armenia",
+    "total_athletes": 15,
+    "total_records_with_birthplace_data": 12,
+    "total_classified_birthplace_records": 12,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 12,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 4,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      40.0691,
+      45.0382
+    ]
+  },
+  "COL": {
+    "noc": "COL",
+    "country": "Colombia",
+    "total_athletes": 88,
+    "total_records_with_birthplace_data": 83,
+    "total_classified_birthplace_records": 83,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 80,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 3.61,
+    "medal_count": 4,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2,
+      "Spain": 1
+    },
+    "coords": [
+      4.5709,
+      -74.2973
+    ]
+  },
+  "JAM": {
+    "noc": "JAM",
+    "country": "Jamaica",
+    "total_athletes": 65,
+    "total_records_with_birthplace_data": 57,
+    "total_classified_birthplace_records": 57,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 52,
+    "foreign_born_count": 5,
+    "foreign_born_pct": 8.77,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 3,
+      "Great Britain": 2
+    },
+    "coords": [
+      18.1096,
+      -77.2975
+    ]
+  },
+  "GAM": {
+    "noc": "GAM",
+    "country": "Gambia",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 7,
+    "total_classified_birthplace_records": 7,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 42.86,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Great Britain": 1,
+      "Finland": 1,
+      "United States": 1
+    },
+    "coords": [
+      13.4432,
+      -15.3101
+    ]
+  },
+  "MEX": {
+    "noc": "MEX",
+    "country": "Mexico",
+    "total_athletes": 108,
+    "total_records_with_birthplace_data": 93,
+    "total_classified_birthplace_records": 93,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 88,
+    "foreign_born_count": 5,
+    "foreign_born_pct": 5.38,
+    "medal_count": 8,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 14.29,
+    "top_source_countries": {
+      "United States": 4,
+      "Great Britain": 1
+    },
+    "coords": [
+      23.6345,
+      -102.5528
+    ]
+  },
+  "COM": {
+    "noc": "COM",
+    "country": "Comoros",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 66.67,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 2
+    },
+    "coords": [
+      -11.875,
+      43.8722
+    ]
+  },
+  "IRQ": {
+    "noc": "IRQ",
+    "country": "Iraq",
+    "total_athletes": 23,
+    "total_records_with_birthplace_data": 21,
+    "total_classified_birthplace_records": 21,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 17,
+    "foreign_born_count": 4,
+    "foreign_born_pct": 19.05,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Sweden": 2,
+      "Switzerland": 1,
+      "Germany": 1
+    },
+    "coords": [
+      33.2232,
+      43.6793
+    ]
+  },
+  "DJI": {
+    "noc": "DJI",
+    "country": "Djibouti",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      11.8251,
+      42.5903
+    ]
+  },
+  "UAE": {
+    "noc": "UAE",
+    "country": "UA Emirates",
+    "total_athletes": 13,
+    "total_records_with_birthplace_data": 7,
+    "total_classified_birthplace_records": 7,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 85.71,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 3,
+      "Mongolia": 2,
+      "Georgia": 1
+    },
+    "coords": [
+      23.4241,
+      53.8478
+    ]
+  },
+  "IRI": {
+    "noc": "IRI",
+    "country": "IR Iran",
+    "total_athletes": 41,
+    "total_records_with_birthplace_data": 32,
+    "total_classified_birthplace_records": 32,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 32,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 12,
+    "medal_winning_athletes": 12,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      32.4279,
+      53.688
+    ]
+  },
+  "MAW": {
+    "noc": "MAW",
+    "country": "Malawi",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -13.2543,
+      34.3015
+    ]
+  },
+  "ARG": {
+    "noc": "ARG",
+    "country": "Argentina",
+    "total_athletes": 143,
+    "total_records_with_birthplace_data": 133,
+    "total_classified_birthplace_records": 133,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 129,
+    "foreign_born_count": 4,
+    "foreign_born_pct": 3.01,
+    "medal_count": 19,
+    "medal_winning_athletes": 19,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 5.26,
+    "top_source_countries": {
+      "Switzerland": 1,
+      "Bolivia": 1,
+      "Paraguay": 1,
+      "Italy": 1
+    },
+    "coords": [
+      -38.4161,
+      -63.6167
+    ]
+  },
+  "SGP": {
+    "noc": "SGP",
+    "country": "Singapore",
+    "total_athletes": 23,
+    "total_records_with_birthplace_data": 19,
+    "total_classified_birthplace_records": 19,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 16,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 15.79,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Malaysia": 1,
+      "China": 1,
+      "United States": 1
+    },
+    "coords": [
+      1.3521,
+      103.8198
+    ]
+  },
+  "MAS": {
+    "noc": "MAS",
+    "country": "Malaysia",
+    "total_athletes": 26,
+    "total_records_with_birthplace_data": 25,
+    "total_classified_birthplace_records": 25,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 25,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      4.2105,
+      101.9758
+    ]
+  },
+  "MTN": {
+    "noc": "MTN",
+    "country": "Mauritania",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      21.0079,
+      -10.9408
+    ]
+  },
+  "GAB": {
+    "noc": "GAB",
+    "country": "Gabon",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      -0.8037,
+      11.6094
+    ]
+  },
+  "IND": {
+    "noc": "IND",
+    "country": "India",
+    "total_athletes": 112,
+    "total_records_with_birthplace_data": 90,
+    "total_classified_birthplace_records": 90,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 89,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 1.11,
+    "medal_count": 22,
+    "medal_winning_athletes": 21,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "UA Emirates": 1
+    },
+    "coords": [
+      20.5937,
+      78.9629
+    ]
+  },
+  "ETH": {
+    "noc": "ETH",
+    "country": "Ethiopia",
+    "total_athletes": 33,
+    "total_records_with_birthplace_data": 32,
+    "total_classified_birthplace_records": 32,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 32,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 4,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      9.145,
+      40.4897
+    ]
+  },
+  "SKN": {
+    "noc": "SKN",
+    "country": "St Kitts and Nevis",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      17.3578,
+      -62.783
+    ]
+  },
+  "CGO": {
+    "noc": "CGO",
+    "country": "Congo",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -0.228,
+      15.8277
+    ]
+  },
+  "PUR": {
+    "noc": "PUR",
+    "country": "Puerto Rico",
+    "total_athletes": 51,
+    "total_records_with_birthplace_data": 46,
+    "total_classified_birthplace_records": 46,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 19,
+    "foreign_born_count": 27,
+    "foreign_born_pct": 58.7,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 100.0,
+    "top_source_countries": {
+      "United States": 24,
+      "Cuba": 2,
+      "Germany": 1
+    },
+    "coords": [
+      18.2208,
+      -66.5901
+    ]
+  },
+  "ISV": {
+    "noc": "ISV",
+    "country": "Virgin Islands, US",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 66.67,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2
+    },
+    "coords": [
+      18.3358,
+      -64.8963
+    ]
+  },
+  "LCA": {
+    "noc": "LCA",
+    "country": "Saint Lucia",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 2,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      13.9094,
+      -60.9789
+    ]
+  },
+  "MHL": {
+    "noc": "MHL",
+    "country": "Marshall Islands",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      7.1315,
+      171.1845
+    ]
+  },
+  "JOR": {
+    "noc": "JOR",
+    "country": "Jordan",
+    "total_athletes": 12,
+    "total_records_with_birthplace_data": 11,
+    "total_classified_birthplace_records": 11,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 11,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      30.5852,
+      36.2384
+    ]
+  },
+  "OMA": {
+    "noc": "OMA",
+    "country": "Oman",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      21.4735,
+      55.9754
+    ]
+  },
+  "GHA": {
+    "noc": "GHA",
+    "country": "Ghana",
+    "total_athletes": 9,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      7.9465,
+      -1.0232
+    ]
+  },
+  "LBA": {
+    "noc": "LBA",
+    "country": "Libya",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      26.3351,
+      17.2283
+    ]
+  },
+  "ALG": {
+    "noc": "ALG",
+    "country": "Algeria",
+    "total_athletes": 46,
+    "total_records_with_birthplace_data": 34,
+    "total_classified_birthplace_records": 34,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 28,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 17.65,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 33.33,
+    "top_source_countries": {
+      "France": 6
+    },
+    "coords": [
+      28.0339,
+      1.6596
+    ]
+  },
+  "CAY": {
+    "noc": "CAY",
+    "country": "Cayman Islands",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 75.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2,
+      "Barbados": 1
+    },
+    "coords": [
+      19.3133,
+      -81.2546
+    ]
+  },
+  "GUY": {
+    "noc": "GUY",
+    "country": "Guyana",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2
+    },
+    "coords": [
+      4.8604,
+      -58.9302
+    ]
+  },
+  "AIN": {
+    "noc": "AIN",
+    "country": "AIN",
+    "total_athletes": 32,
+    "total_records_with_birthplace_data": 24,
+    "total_classified_birthplace_records": 24,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 24,
+    "foreign_born_pct": 100.0,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 5,
+    "diaspora_medal_pct": 83.33,
+    "top_source_countries": {
+      "Russian Federation": 13,
+      "Belarus": 9,
+      "Ukraine": 2
+    },
+    "coords": [
+      55.7558,
+      37.6173
+    ]
+  },
+  "VIN": {
+    "noc": "VIN",
+    "country": "StVincent&Grenadines",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      12.9843,
+      -61.2872
+    ]
+  },
+  "ROU": {
+    "noc": "ROU",
+    "country": "Romania",
+    "total_athletes": 96,
+    "total_records_with_birthplace_data": 75,
+    "total_classified_birthplace_records": 75,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 63,
+    "foreign_born_count": 12,
+    "foreign_born_pct": 16.0,
+    "medal_count": 21,
+    "medal_winning_athletes": 16,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Kenya": 3,
+      "United States": 3,
+      "Republic of Moldova": 3,
+      "Italy": 2,
+      "France": 1
+    },
+    "coords": [
+      45.9432,
+      24.9668
+    ]
+  },
+  "BRN": {
+    "noc": "BRN",
+    "country": "Bahrain",
+    "total_athletes": 14,
+    "total_records_with_birthplace_data": 12,
+    "total_classified_birthplace_records": 14,
+    "inferred_homegrown_count": 2,
+    "homegrown_count": 2,
+    "foreign_born_count": 12,
+    "foreign_born_pct": 85.71,
+    "medal_count": 4,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 100.0,
+    "top_source_countries": {
+      "Kenya": 4,
+      "Russian Federation": 2,
+      "Nigeria": 2,
+      "Ethiopia": 2,
+      "Armenia": 1
+    },
+    "coords": [
+      26.0667,
+      50.5577
+    ]
+  },
+  "CIV": {
+    "noc": "CIV",
+    "country": "C\u00f4te d'Ivoire",
+    "total_athletes": 13,
+    "total_records_with_birthplace_data": 11,
+    "total_classified_birthplace_records": 11,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 10,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 9.09,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      7.54,
+      -5.5471
+    ]
+  },
+  "UZB": {
+    "noc": "UZB",
+    "country": "Uzbekistan",
+    "total_athletes": 88,
+    "total_records_with_birthplace_data": 73,
+    "total_classified_birthplace_records": 73,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 66,
+    "foreign_born_count": 7,
+    "foreign_born_pct": 9.59,
+    "medal_count": 13,
+    "medal_winning_athletes": 13,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 7.69,
+    "top_source_countries": {
+      "Russian Federation": 6,
+      "Belarus": 1
+    },
+    "coords": [
+      41.3775,
+      64.5853
+    ]
+  },
+  "BER": {
+    "noc": "BER",
+    "country": "Bermuda",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 7,
+    "total_classified_birthplace_records": 7,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 28.57,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2
+    },
+    "coords": [
+      32.3078,
+      -64.7505
+    ]
+  },
+  "LUX": {
+    "noc": "LUX",
+    "country": "Luxembourg",
+    "total_athletes": 13,
+    "total_records_with_birthplace_data": 10,
+    "total_classified_birthplace_records": 10,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 7,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 30.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1,
+      "Germany": 1,
+      "China": 1
+    },
+    "coords": [
+      49.8153,
+      6.1296
+    ]
+  },
+  "MAR": {
+    "noc": "MAR",
+    "country": "Morocco",
+    "total_athletes": 61,
+    "total_records_with_birthplace_data": 50,
+    "total_classified_birthplace_records": 50,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 35,
+    "foreign_born_count": 15,
+    "foreign_born_pct": 30.0,
+    "medal_count": 20,
+    "medal_winning_athletes": 20,
+    "diaspora_medal_count": 11,
+    "diaspora_medal_pct": 55.0,
+    "top_source_countries": {
+      "France": 6,
+      "Belgium": 4,
+      "Spain": 3,
+      "Netherlands": 2
+    },
+    "coords": [
+      31.7917,
+      -7.0926
+    ]
+  },
+  "IRL": {
+    "noc": "IRL",
+    "country": "Ireland",
+    "total_athletes": 143,
+    "total_records_with_birthplace_data": 117,
+    "total_classified_birthplace_records": 117,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 81,
+    "foreign_born_count": 36,
+    "foreign_born_pct": 30.77,
+    "medal_count": 9,
+    "medal_winning_athletes": 8,
+    "diaspora_medal_count": 3,
+    "diaspora_medal_pct": 25.0,
+    "top_source_countries": {
+      "Great Britain": 22,
+      "United States": 5,
+      "Australia": 4,
+      "Bahrain": 1,
+      "Kenya": 1
+    },
+    "coords": [
+      53.1424,
+      -7.6921
+    ]
+  },
+  "KIR": {
+    "noc": "KIR",
+    "country": "Kiribati",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      1.8709,
+      -157.363
+    ]
+  },
+  "SUR": {
+    "noc": "SUR",
+    "country": "Suriname",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      3.9193,
+      -56.0278
+    ]
+  },
+  "ARU": {
+    "noc": "ARU",
+    "country": "Aruba",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Netherlands Antilles": 1,
+      "Cura\u00e7ao": 1
+    },
+    "coords": [
+      12.5211,
+      -69.9683
+    ]
+  },
+  "TJK": {
+    "noc": "TJK",
+    "country": "Tajikistan",
+    "total_athletes": 14,
+    "total_records_with_birthplace_data": 11,
+    "total_classified_birthplace_records": 11,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 10,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 9.09,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 33.33,
+    "top_source_countries": {
+      "Russian Federation": 1
+    },
+    "coords": [
+      38.861,
+      71.2761
+    ]
+  },
+  "STP": {
+    "noc": "STP",
+    "country": "Sao Tome & Principe",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      0.1864,
+      6.6131
+    ]
+  },
+  "CRO": {
+    "noc": "CRO",
+    "country": "Croatia",
+    "total_athletes": 73,
+    "total_records_with_birthplace_data": 67,
+    "total_classified_birthplace_records": 67,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 56,
+    "foreign_born_count": 11,
+    "foreign_born_pct": 16.42,
+    "medal_count": 20,
+    "medal_winning_athletes": 20,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 10.0,
+    "top_source_countries": {
+      "Bosnia & Herzegovina": 4,
+      "Slovenia": 2,
+      "Russian Federation": 2,
+      "Austria": 2,
+      "Germany": 1
+    },
+    "coords": [
+      45.1,
+      15.2
+    ]
+  },
+  "PAR": {
+    "noc": "PAR",
+    "country": "Paraguay",
+    "total_athletes": 29,
+    "total_records_with_birthplace_data": 26,
+    "total_classified_birthplace_records": 26,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 25,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 3.85,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Argentina": 1
+    },
+    "coords": [
+      -23.4425,
+      -58.4438
+    ]
+  },
+  "FRA": {
+    "noc": "FRA",
+    "country": "France",
+    "total_athletes": 601,
+    "total_records_with_birthplace_data": 534,
+    "total_classified_birthplace_records": 534,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 493,
+    "foreign_born_count": 41,
+    "foreign_born_pct": 7.68,
+    "medal_count": 184,
+    "medal_winning_athletes": 168,
+    "diaspora_medal_count": 12,
+    "diaspora_medal_pct": 6.55,
+    "top_source_countries": {
+      "Cameroon": 4,
+      "United States": 4,
+      "Morocco": 3,
+      "Great Britain": 3,
+      "Russian Federation": 3
+    },
+    "coords": [
+      46.2276,
+      2.2137
+    ]
+  },
+  "CUB": {
+    "noc": "CUB",
+    "country": "Cuba",
+    "total_athletes": 61,
+    "total_records_with_birthplace_data": 53,
+    "total_classified_birthplace_records": 53,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 53,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 9,
+    "medal_winning_athletes": 9,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      21.5218,
+      -77.7812
+    ]
+  },
+  "KUW": {
+    "noc": "KUW",
+    "country": "Kuwait",
+    "total_athletes": 9,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Great Britain": 1
+    },
+    "coords": [
+      29.3117,
+      47.4818
+    ]
+  },
+  "TLS": {
+    "noc": "TLS",
+    "country": "Timor-Leste",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 0,
+    "total_classified_birthplace_records": 0,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -8.8742,
+      125.7275
+    ]
+  },
+  "JPN": {
+    "noc": "JPN",
+    "country": "Japan",
+    "total_athletes": 431,
+    "total_records_with_birthplace_data": 395,
+    "total_classified_birthplace_records": 395,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 383,
+    "foreign_born_count": 12,
+    "foreign_born_pct": 3.04,
+    "medal_count": 82,
+    "medal_winning_athletes": 70,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 6,
+      "Australia": 2,
+      "Thailand": 1,
+      "Malaysia": 1,
+      "Fiji": 1
+    },
+    "coords": [
+      36.2048,
+      138.2529
+    ]
+  },
+  "YEM": {
+    "noc": "YEM",
+    "country": "Yemen",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      15.5527,
+      48.5164
+    ]
+  },
+  "GER": {
+    "noc": "GER",
+    "country": "Germany",
+    "total_athletes": 457,
+    "total_records_with_birthplace_data": 391,
+    "total_classified_birthplace_records": 391,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 363,
+    "foreign_born_count": 28,
+    "foreign_born_pct": 7.16,
+    "medal_count": 111,
+    "medal_winning_athletes": 104,
+    "diaspora_medal_count": 7,
+    "diaspora_medal_pct": 5.77,
+    "top_source_countries": {
+      "United States": 5,
+      "Belgium": 2,
+      "Russian Federation": 2,
+      "Eritrea": 2,
+      "Ukraine": 1
+    },
+    "coords": [
+      51.1657,
+      10.4515
+    ]
+  },
+  "VAN": {
+    "noc": "VAN",
+    "country": "Vanuatu",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -15.3767,
+      166.9592
+    ]
+  },
+  "BHU": {
+    "noc": "BHU",
+    "country": "Bhutan",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      27.5142,
+      90.4336
+    ]
+  },
+  "BAN": {
+    "noc": "BAN",
+    "country": "Bangladesh",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Great Britain": 1
+    },
+    "coords": [
+      23.685,
+      90.3563
+    ]
+  },
+  "CAM": {
+    "noc": "CAM",
+    "country": "Cambodia",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      12.5657,
+      104.991
+    ]
+  },
+  "AFG": {
+    "noc": "AFG",
+    "country": "Afghanistan",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "IR Iran": 1
+    },
+    "coords": [
+      33.9391,
+      67.7099
+    ]
+  },
+  "LES": {
+    "noc": "LES",
+    "country": "Lesotho",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -29.6099,
+      28.2336
+    ]
+  },
+  "ISR": {
+    "noc": "ISR",
+    "country": "Israel",
+    "total_athletes": 89,
+    "total_records_with_birthplace_data": 71,
+    "total_classified_birthplace_records": 71,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 56,
+    "foreign_born_count": 15,
+    "foreign_born_pct": 21.13,
+    "medal_count": 11,
+    "medal_winning_athletes": 11,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 9.09,
+    "top_source_countries": {
+      "Ethiopia": 4,
+      "United States": 4,
+      "Ukraine": 2,
+      "Russian Federation": 2,
+      "Kenya": 1
+    },
+    "coords": [
+      31.0461,
+      34.8516
+    ]
+  },
+  "SWZ": {
+    "noc": "SWZ",
+    "country": "Eswatini",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -26.5225,
+      31.4659
+    ]
+  },
+  "GBR": {
+    "noc": "GBR",
+    "country": "Great Britain",
+    "total_athletes": 343,
+    "total_records_with_birthplace_data": 295,
+    "total_classified_birthplace_records": 295,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 276,
+    "foreign_born_count": 19,
+    "foreign_born_pct": 6.44,
+    "medal_count": 149,
+    "medal_winning_athletes": 131,
+    "diaspora_medal_count": 9,
+    "diaspora_medal_pct": 6.11,
+    "top_source_countries": {
+      "United States": 4,
+      "South Africa": 3,
+      "Ireland": 2,
+      "Netherlands": 2,
+      "Japan": 1
+    },
+    "coords": [
+      55.3781,
+      -3.436
+    ]
+  },
+  "TKM": {
+    "noc": "TKM",
+    "country": "Turkmenistan",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      38.9697,
+      59.5563
+    ]
+  },
+  "SWE": {
+    "noc": "SWE",
+    "country": "Sweden",
+    "total_athletes": 125,
+    "total_records_with_birthplace_data": 119,
+    "total_classified_birthplace_records": 119,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 111,
+    "foreign_born_count": 8,
+    "foreign_born_pct": 6.72,
+    "medal_count": 16,
+    "medal_winning_athletes": 14,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 7.14,
+    "top_source_countries": {
+      "Germany": 3,
+      "Belgium": 1,
+      "Bulgaria": 1,
+      "United States": 1,
+      "Luxembourg": 1
+    },
+    "coords": [
+      60.1282,
+      18.6435
+    ]
+  },
+  "UKR": {
+    "noc": "UKR",
+    "country": "Ukraine",
+    "total_athletes": 141,
+    "total_records_with_birthplace_data": 121,
+    "total_classified_birthplace_records": 121,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 116,
+    "foreign_born_count": 5,
+    "foreign_born_pct": 4.13,
+    "medal_count": 16,
+    "medal_winning_athletes": 15,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 6.67,
+    "top_source_countries": {
+      "Russian Federation": 4,
+      "Azerbaijan": 1
+    },
+    "coords": [
+      48.3794,
+      31.1656
+    ]
+  },
+  "VIE": {
+    "noc": "VIE",
+    "country": "Vietnam",
+    "total_athletes": 16,
+    "total_records_with_birthplace_data": 13,
+    "total_classified_birthplace_records": 13,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 13,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      14.0583,
+      108.2772
+    ]
+  },
+  "MOZ": {
+    "noc": "MOZ",
+    "country": "Mozambique",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -18.6657,
+      35.5296
+    ]
+  },
+  "TPE": {
+    "noc": "TPE",
+    "country": "Chinese Taipei",
+    "total_athletes": 60,
+    "total_records_with_birthplace_data": 50,
+    "total_classified_birthplace_records": 50,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 50,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 8,
+    "medal_winning_athletes": 8,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      23.6978,
+      120.9605
+    ]
+  },
+  "ITA": {
+    "noc": "ITA",
+    "country": "Italy",
+    "total_athletes": 397,
+    "total_records_with_birthplace_data": 378,
+    "total_classified_birthplace_records": 378,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 341,
+    "foreign_born_count": 37,
+    "foreign_born_pct": 9.79,
+    "medal_count": 87,
+    "medal_winning_athletes": 80,
+    "diaspora_medal_count": 6,
+    "diaspora_medal_pct": 7.5,
+    "top_source_countries": {
+      "United States": 3,
+      "Republic of Moldova": 2,
+      "Germany": 2,
+      "Ethiopia": 2,
+      "Ukraine": 2
+    },
+    "coords": [
+      41.8719,
+      12.5674
+    ]
+  },
+  "MLI": {
+    "noc": "MLI",
+    "country": "Mali",
+    "total_athletes": 24,
+    "total_records_with_birthplace_data": 22,
+    "total_classified_birthplace_records": 22,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 14,
+    "foreign_born_count": 8,
+    "foreign_born_pct": 36.36,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 7,
+      "Canada": 1
+    },
+    "coords": [
+      17.5707,
+      -3.9962
+    ]
+  },
+  "GEO": {
+    "noc": "GEO",
+    "country": "Georgia",
+    "total_athletes": 28,
+    "total_records_with_birthplace_data": 22,
+    "total_classified_birthplace_records": 22,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 22,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 7,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      42.3154,
+      43.3569
+    ]
+  },
+  "ESP": {
+    "noc": "ESP",
+    "country": "Spain",
+    "total_athletes": 401,
+    "total_records_with_birthplace_data": 359,
+    "total_classified_birthplace_records": 359,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 325,
+    "foreign_born_count": 34,
+    "foreign_born_pct": 9.47,
+    "medal_count": 82,
+    "medal_winning_athletes": 80,
+    "diaspora_medal_count": 7,
+    "diaspora_medal_pct": 8.75,
+    "top_source_countries": {
+      "Morocco": 6,
+      "Cuba": 3,
+      "Georgia": 2,
+      "Argentina": 2,
+      "Russian Federation": 2
+    },
+    "coords": [
+      40.4637,
+      -3.7492
+    ]
+  },
+  "KOS": {
+    "noc": "KOS",
+    "country": "Kosovo",
+    "total_athletes": 9,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Switzerland": 1
+    },
+    "coords": [
+      42.6026,
+      20.903
+    ]
+  },
+  "FIJ": {
+    "noc": "FIJ",
+    "country": "Fiji",
+    "total_athletes": 36,
+    "total_records_with_birthplace_data": 25,
+    "total_classified_birthplace_records": 25,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 25,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 14,
+    "medal_winning_athletes": 14,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -17.7134,
+      178.065
+    ]
+  },
+  "NAM": {
+    "noc": "NAM",
+    "country": "Namibia",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -22.9576,
+      18.4904
+    ]
+  },
+  "CRC": {
+    "noc": "CRC",
+    "country": "Costa Rica",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      9.7489,
+      -83.7534
+    ]
+  },
+  "UGA": {
+    "noc": "UGA",
+    "country": "Uganda",
+    "total_athletes": 25,
+    "total_records_with_birthplace_data": 21,
+    "total_classified_birthplace_records": 21,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 19,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 9.52,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1,
+      "Sweden": 1
+    },
+    "coords": [
+      1.3733,
+      32.2903
+    ]
+  },
+  "ERI": {
+    "noc": "ERI",
+    "country": "Eritrea",
+    "total_athletes": 11,
+    "total_records_with_birthplace_data": 9,
+    "total_classified_birthplace_records": 9,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 9,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      15.1794,
+      39.7823
+    ]
+  },
+  "ALB": {
+    "noc": "ALB",
+    "country": "Albania",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 40.0,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 50.0,
+    "top_source_countries": {
+      "Russian Federation": 2
+    },
+    "coords": [
+      41.1533,
+      20.1683
+    ]
+  },
+  "BUL": {
+    "noc": "BUL",
+    "country": "Bulgaria",
+    "total_athletes": 46,
+    "total_records_with_birthplace_data": 41,
+    "total_classified_birthplace_records": 41,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 33,
+    "foreign_born_count": 8,
+    "foreign_born_pct": 19.51,
+    "medal_count": 7,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 57.14,
+    "top_source_countries": {
+      "United States": 2,
+      "Egypt": 1,
+      "Cuba": 1,
+      "Georgia": 1,
+      "Ukraine": 1
+    },
+    "coords": [
+      42.7339,
+      25.4858
+    ]
+  },
+  "MRI": {
+    "noc": "MRI",
+    "country": "Mauritius",
+    "total_athletes": 12,
+    "total_records_with_birthplace_data": 10,
+    "total_classified_birthplace_records": 10,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 7,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 30.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "South Africa": 1,
+      "Italy": 1,
+      "Zimbabwe": 1
+    },
+    "coords": [
+      -20.3484,
+      57.5522
+    ]
+  },
+  "BUR": {
+    "noc": "BUR",
+    "country": "Burkina Faso",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 6,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      12.2383,
+      -1.5616
+    ]
+  },
+  "FSM": {
+    "noc": "FSM",
+    "country": "Micronesia",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Guam": 1
+    },
+    "coords": [
+      7.4256,
+      150.5508
+    ]
+  },
+  "MDA": {
+    "noc": "MDA",
+    "country": "Republic of Moldova",
+    "total_athletes": 26,
+    "total_records_with_birthplace_data": 23,
+    "total_classified_birthplace_records": 23,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 20,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 13.04,
+    "medal_count": 4,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 50.0,
+    "top_source_countries": {
+      "Russian Federation": 2,
+      "Ukraine": 1
+    },
+    "coords": [
+      47.4116,
+      28.3699
+    ]
+  },
+  "GRN": {
+    "noc": "GRN",
+    "country": "Grenada",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 25.0,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      12.1165,
+      -61.679
+    ]
+  },
+  "BAR": {
+    "noc": "BAR",
+    "country": "Barbados",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      13.1939,
+      -59.5432
+    ]
+  },
+  "SEY": {
+    "noc": "SEY",
+    "country": "Seychelles",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -4.6796,
+      55.492
+    ]
+  },
+  "MON": {
+    "noc": "MON",
+    "country": "Monaco",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 40.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1,
+      "China": 1
+    },
+    "coords": [
+      43.7384,
+      7.4246
+    ]
+  },
+  "CYP": {
+    "noc": "CYP",
+    "country": "Cyprus",
+    "total_athletes": 15,
+    "total_records_with_birthplace_data": 15,
+    "total_classified_birthplace_records": 15,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 9,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 40.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 3,
+      "Serbia": 1,
+      "Greece": 1,
+      "Great Britain": 1
+    },
+    "coords": [
+      35.1264,
+      33.4299
+    ]
+  },
+  "KAZ": {
+    "noc": "KAZ",
+    "country": "Kazakhstan",
+    "total_athletes": 79,
+    "total_records_with_birthplace_data": 64,
+    "total_classified_birthplace_records": 64,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 54,
+    "foreign_born_count": 10,
+    "foreign_born_pct": 15.62,
+    "medal_count": 8,
+    "medal_winning_athletes": 8,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 4,
+      "Ukraine": 3,
+      "Kenya": 2,
+      "Uzbekistan": 1
+    },
+    "coords": [
+      48.0196,
+      66.9237
+    ]
+  },
+  "ANT": {
+    "noc": "ANT",
+    "country": "Antigua and Barbuda",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "New Zealand": 1
+    },
+    "coords": [
+      17.0608,
+      -61.7964
+    ]
+  },
+  "CHI": {
+    "noc": "CHI",
+    "country": "Chile",
+    "total_athletes": 48,
+    "total_records_with_birthplace_data": 43,
+    "total_classified_birthplace_records": 43,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 40,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 6.98,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 50.0,
+    "top_source_countries": {
+      "Canada": 1,
+      "Cuba": 1,
+      "China": 1
+    },
+    "coords": [
+      -35.6751,
+      -71.543
+    ]
+  },
+  "NIG": {
+    "noc": "NIG",
+    "country": "Niger",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 25.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      17.6078,
+      8.0817
+    ]
+  },
+  "MDV": {
+    "noc": "MDV",
+    "country": "Maldives",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 25.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Sri Lanka": 1
+    },
+    "coords": [
+      3.2028,
+      73.2207
+    ]
+  },
+  "LIE": {
+    "noc": "LIE",
+    "country": "Liechtenstein",
+    "total_athletes": 1,
+    "total_records_with_birthplace_data": 0,
+    "total_classified_birthplace_records": 0,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      47.166,
+      9.5554
+    ]
+  },
+  "CHA": {
+    "noc": "CHA",
+    "country": "Chad",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      15.4542,
+      18.7322
+    ]
+  },
+  "AUT": {
+    "noc": "AUT",
+    "country": "Austria",
+    "total_athletes": 84,
+    "total_records_with_birthplace_data": 71,
+    "total_classified_birthplace_records": 71,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 61,
+    "foreign_born_count": 10,
+    "foreign_born_pct": 14.08,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Germany": 3,
+      "Greece": 2,
+      "Romania": 1,
+      "Argentina": 1,
+      "Russian Federation": 1
+    },
+    "coords": [
+      47.5162,
+      14.5501
+    ]
+  },
+  "PER": {
+    "noc": "PER",
+    "country": "Peru",
+    "total_athletes": 26,
+    "total_records_with_birthplace_data": 21,
+    "total_classified_birthplace_records": 21,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 19,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 9.52,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2
+    },
+    "coords": [
+      -9.19,
+      -75.0152
+    ]
+  },
+  "SEN": {
+    "noc": "SEN",
+    "country": "Senegal",
+    "total_athletes": 11,
+    "total_records_with_birthplace_data": 8,
+    "total_classified_birthplace_records": 8,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 7,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 12.5,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      14.4974,
+      -14.4524
+    ]
+  },
+  "QAT": {
+    "noc": "QAT",
+    "country": "Qatar",
+    "total_athletes": 13,
+    "total_records_with_birthplace_data": 10,
+    "total_classified_birthplace_records": 10,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 60.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Sudan": 2,
+      "Saudi Arabia": 1,
+      "Egypt": 1,
+      "Gambia": 1,
+      "Senegal": 1
+    },
+    "coords": [
+      25.3548,
+      51.1839
+    ]
+  },
+  "BRA": {
+    "noc": "BRA",
+    "country": "Brazil",
+    "total_athletes": 290,
+    "total_records_with_birthplace_data": 268,
+    "total_classified_birthplace_records": 268,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 261,
+    "foreign_born_count": 7,
+    "foreign_born_pct": 2.61,
+    "medal_count": 67,
+    "medal_winning_athletes": 61,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 3.28,
+    "top_source_countries": {
+      "United States": 3,
+      "Germany": 2,
+      "Italy": 1,
+      "Cuba": 1
+    },
+    "coords": [
+      -14.235,
+      -51.9253
+    ]
+  },
+  "NGR": {
+    "noc": "NGR",
+    "country": "Nigeria",
+    "total_athletes": 86,
+    "total_records_with_birthplace_data": 67,
+    "total_classified_birthplace_records": 67,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 47,
+    "foreign_born_count": 20,
+    "foreign_born_pct": 29.85,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 18,
+      "Canada": 1,
+      "Netherlands": 1
+    },
+    "coords": [
+      9.082,
+      8.6753
+    ]
+  },
+  "BOL": {
+    "noc": "BOL",
+    "country": "Bolivia",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -16.2902,
+      -63.5887
+    ]
+  },
+  "BIZ": {
+    "noc": "BIZ",
+    "country": "Belize",
+    "total_athletes": 1,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      17.1899,
+      -88.4976
+    ]
+  },
+  "EGY": {
+    "noc": "EGY",
+    "country": "Egypt",
+    "total_athletes": 157,
+    "total_records_with_birthplace_data": 100,
+    "total_classified_birthplace_records": 100,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 96,
+    "foreign_born_count": 4,
+    "foreign_born_pct": 4.0,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Canada": 1,
+      "Algeria": 1,
+      "United States": 1,
+      "France": 1
+    },
+    "coords": [
+      26.8206,
+      30.8025
+    ]
+  },
+  "PAK": {
+    "noc": "PAK",
+    "country": "Pakistan",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 6,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      30.3753,
+      69.3451
+    ]
+  },
+  "TUR": {
+    "noc": "TUR",
+    "country": "T\u00fcrkiye",
+    "total_athletes": 101,
+    "total_records_with_birthplace_data": 83,
+    "total_classified_birthplace_records": 83,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 74,
+    "foreign_born_count": 9,
+    "foreign_born_pct": 10.84,
+    "medal_count": 11,
+    "medal_winning_athletes": 11,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Cuba": 2,
+      "Kenya": 1,
+      "Egypt": 1,
+      "Georgia": 1,
+      "Slovenia": 1
+    },
+    "coords": [
+      38.9637,
+      35.2433
+    ]
+  },
+  "POL": {
+    "noc": "POL",
+    "country": "Poland",
+    "total_athletes": 226,
+    "total_records_with_birthplace_data": 170,
+    "total_classified_birthplace_records": 170,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 162,
+    "foreign_born_count": 8,
+    "foreign_born_pct": 4.71,
+    "medal_count": 28,
+    "medal_winning_athletes": 28,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 3.57,
+    "top_source_countries": {
+      "Belarus": 2,
+      "Tunisia": 1,
+      "Ukraine": 1,
+      "Cuba": 1,
+      "France": 1
+    },
+    "coords": [
+      51.9194,
+      19.1451
+    ]
+  },
+  "CZE": {
+    "noc": "CZE",
+    "country": "Czechia",
+    "total_athletes": 111,
+    "total_records_with_birthplace_data": 103,
+    "total_classified_birthplace_records": 103,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 99,
+    "foreign_born_count": 4,
+    "foreign_born_pct": 3.88,
+    "medal_count": 9,
+    "medal_winning_athletes": 9,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Finland": 1,
+      "Ukraine": 1,
+      "Russian Federation": 1,
+      "Netherlands": 1
+    },
+    "coords": [
+      49.8175,
+      15.473
+    ]
+  },
+  "CPV": {
+    "noc": "CPV",
+    "country": "Cabo Verde",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 33.33,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1,
+      "United States": 1
+    },
+    "coords": [
+      16.0022,
+      -24.0131
+    ]
+  },
+  "GBS": {
+    "noc": "GBS",
+    "country": "Guinea-Bissau",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      11.8037,
+      -15.1804
+    ]
+  },
+  "MGL": {
+    "noc": "MGL",
+    "country": "Mongolia",
+    "total_athletes": 32,
+    "total_records_with_birthplace_data": 26,
+    "total_classified_birthplace_records": 26,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 26,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      46.8625,
+      103.8467
+    ]
+  },
+  "BEN": {
+    "noc": "BEN",
+    "country": "Benin",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      9.3077,
+      2.3158
+    ]
+  },
+  "GUM": {
+    "noc": "GUM",
+    "country": "Guam",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Japan": 1,
+      "United States": 1,
+      "Korea": 1
+    },
+    "coords": [
+      13.4443,
+      144.7937
+    ]
+  },
+  "PLW": {
+    "noc": "PLW",
+    "country": "Palau",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 0,
+    "total_classified_birthplace_records": 0,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      7.515,
+      134.5825
+    ]
+  },
+  "KGZ": {
+    "noc": "KGZ",
+    "country": "Kyrgyzstan",
+    "total_athletes": 16,
+    "total_records_with_birthplace_data": 14,
+    "total_classified_birthplace_records": 14,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 12,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 14.29,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 2
+    },
+    "coords": [
+      41.2044,
+      74.7661
+    ]
+  },
+  "ZIM": {
+    "noc": "ZIM",
+    "country": "Zimbabwe",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -19.0154,
+      29.1549
+    ]
+  },
+  "IVB": {
+    "noc": "IVB",
+    "country": "Virgin Islands, B",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      18.4207,
+      -64.6399
+    ]
+  },
+  "KOR": {
+    "noc": "KOR",
+    "country": "Korea",
+    "total_athletes": 147,
+    "total_records_with_birthplace_data": 111,
+    "total_classified_birthplace_records": 111,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 108,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 2.7,
+    "medal_count": 58,
+    "medal_winning_athletes": 46,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 6.52,
+    "top_source_countries": {
+      "Japan": 2,
+      "China": 1
+    },
+    "coords": [
+      35.9078,
+      127.7669
+    ]
+  },
+  "HUN": {
+    "noc": "HUN",
+    "country": "Hungary",
+    "total_athletes": 177,
+    "total_records_with_birthplace_data": 161,
+    "total_classified_birthplace_records": 161,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 146,
+    "foreign_born_count": 15,
+    "foreign_born_pct": 9.32,
+    "medal_count": 31,
+    "medal_winning_athletes": 25,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 8.0,
+    "top_source_countries": {
+      "Germany": 3,
+      "Spain": 2,
+      "Serbia": 2,
+      "United States": 1,
+      "Russian Federation": 1
+    },
+    "coords": [
+      47.1625,
+      19.5033
+    ]
+  },
+  "MNE": {
+    "noc": "MNE",
+    "country": "Montenegro",
+    "total_athletes": 19,
+    "total_records_with_birthplace_data": 9,
+    "total_classified_birthplace_records": 9,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 9,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      42.7087,
+      19.3744
+    ]
+  },
+  "AND": {
+    "noc": "AND",
+    "country": "Andorra",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Spain": 1
+    },
+    "coords": [
+      42.5063,
+      1.5218
+    ]
+  },
+  "SVK": {
+    "noc": "SVK",
+    "country": "Slovakia",
+    "total_athletes": 28,
+    "total_records_with_birthplace_data": 28,
+    "total_classified_birthplace_records": 28,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 26,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 7.14,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "China": 1,
+      "Russian Federation": 1
+    },
+    "coords": [
+      48.669,
+      19.699
+    ]
+  },
+  "GUI": {
+    "noc": "GUI",
+    "country": "Guinea",
+    "total_athletes": 25,
+    "total_records_with_birthplace_data": 20,
+    "total_classified_birthplace_records": 20,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 11,
+    "foreign_born_count": 9,
+    "foreign_born_pct": 45.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 6,
+      "Germany": 1,
+      "Portugal": 1,
+      "Senegal": 1
+    },
+    "coords": [
+      9.9456,
+      -9.6966
+    ]
+  },
+  "ESA": {
+    "noc": "ESA",
+    "country": "El Salvador",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Guatemala": 1
+    },
+    "coords": [
+      13.7942,
+      -88.8965
+    ]
+  },
+  "SOL": {
+    "noc": "SOL",
+    "country": "Solomon Islands",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -9.6457,
+      160.1562
+    ]
+  },
+  "THA": {
+    "noc": "THA",
+    "country": "Thailand",
+    "total_athletes": 52,
+    "total_records_with_birthplace_data": 40,
+    "total_classified_birthplace_records": 40,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 37,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 7.5,
+    "medal_count": 6,
+    "medal_winning_athletes": 6,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Japan": 1,
+      "United States": 1,
+      "Australia": 1
+    },
+    "coords": [
+      15.87,
+      100.9925
+    ]
+  },
+  "SUD": {
+    "noc": "SUD",
+    "country": "Sudan",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 0,
+    "total_classified_birthplace_records": 0,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      12.8628,
+      30.2176
+    ]
+  },
+  "RSA": {
+    "noc": "RSA",
+    "country": "South Africa",
+    "total_athletes": 141,
+    "total_records_with_birthplace_data": 110,
+    "total_classified_birthplace_records": 110,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 107,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 2.73,
+    "medal_count": 21,
+    "medal_winning_athletes": 20,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Ireland": 1,
+      "Kenya": 1,
+      "New Zealand": 1
+    },
+    "coords": [
+      -30.5595,
+      22.9375
+    ]
+  },
+  "COK": {
+    "noc": "COK",
+    "country": "Cook Islands",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "New Zealand": 1
+    },
+    "coords": [
+      -21.2367,
+      -159.7777
+    ]
+  },
+  "NOR": {
+    "noc": "NOR",
+    "country": "Norway",
+    "total_athletes": 109,
+    "total_records_with_birthplace_data": 93,
+    "total_classified_birthplace_records": 93,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 84,
+    "foreign_born_count": 9,
+    "foreign_born_pct": 9.68,
+    "medal_count": 23,
+    "medal_winning_athletes": 23,
+    "diaspora_medal_count": 2,
+    "diaspora_medal_pct": 8.7,
+    "top_source_countries": {
+      "United States": 2,
+      "Eritrea": 2,
+      "Denmark": 1,
+      "France": 1,
+      "Finland": 1
+    },
+    "coords": [
+      60.472,
+      8.4689
+    ]
+  },
+  "INA": {
+    "noc": "INA",
+    "country": "Indonesia",
+    "total_athletes": 29,
+    "total_records_with_birthplace_data": 28,
+    "total_classified_birthplace_records": 28,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 27,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 3.57,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Japan": 1
+    },
+    "coords": [
+      -0.7893,
+      113.9213
+    ]
+  },
+  "KEN": {
+    "noc": "KEN",
+    "country": "Kenya",
+    "total_athletes": 74,
+    "total_records_with_birthplace_data": 56,
+    "total_classified_birthplace_records": 56,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 55,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 1.79,
+    "medal_count": 11,
+    "medal_winning_athletes": 9,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Germany": 1
+    },
+    "coords": [
+      -0.0236,
+      37.9062
+    ]
+  },
+  "DEN": {
+    "noc": "DEN",
+    "country": "Denmark",
+    "total_athletes": 131,
+    "total_records_with_birthplace_data": 106,
+    "total_classified_birthplace_records": 106,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 103,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 2.83,
+    "medal_count": 41,
+    "medal_winning_athletes": 41,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 2.44,
+    "top_source_countries": {
+      "Armenia": 1,
+      "Russian Federation": 1,
+      "New Zealand": 1
+    },
+    "coords": [
+      56.2639,
+      9.5018
+    ]
+  },
+  "RWA": {
+    "noc": "RWA",
+    "country": "Rwanda",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -1.9403,
+      29.8739
+    ]
+  },
+  "ANG": {
+    "noc": "ANG",
+    "country": "Angola",
+    "total_athletes": 25,
+    "total_records_with_birthplace_data": 19,
+    "total_classified_birthplace_records": 19,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 19,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -11.2027,
+      17.8739
+    ]
+  },
+  "TAN": {
+    "noc": "TAN",
+    "country": "Tanzania",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -6.369,
+      34.8888
+    ]
+  },
+  "EST": {
+    "noc": "EST",
+    "country": "Estonia",
+    "total_athletes": 24,
+    "total_records_with_birthplace_data": 23,
+    "total_classified_birthplace_records": 23,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 22,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 4.35,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Finland": 1
+    },
+    "coords": [
+      58.5953,
+      25.0136
+    ]
+  },
+  "LTU": {
+    "noc": "LTU",
+    "country": "Lithuania",
+    "total_athletes": 51,
+    "total_records_with_birthplace_data": 44,
+    "total_classified_birthplace_records": 44,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 44,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 7,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      55.1694,
+      23.8813
+    ]
+  },
+  "NZL": {
+    "noc": "NZL",
+    "country": "New Zealand",
+    "total_athletes": 208,
+    "total_records_with_birthplace_data": 197,
+    "total_classified_birthplace_records": 197,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 175,
+    "foreign_born_count": 22,
+    "foreign_born_pct": 11.17,
+    "medal_count": 49,
+    "medal_winning_athletes": 43,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 2.33,
+    "top_source_countries": {
+      "Great Britain": 8,
+      "Australia": 7,
+      "United States": 2,
+      "France": 1,
+      "Netherlands": 1
+    },
+    "coords": [
+      -40.9006,
+      174.886
+    ]
+  },
+  "CHN": {
+    "noc": "CHN",
+    "country": "China",
+    "total_athletes": 398,
+    "total_records_with_birthplace_data": 349,
+    "total_classified_birthplace_records": 349,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 348,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 0.29,
+    "medal_count": 167,
+    "medal_winning_athletes": 130,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Great Britain": 1
+    },
+    "coords": [
+      35.8617,
+      104.1954
+    ]
+  },
+  "SMR": {
+    "noc": "SMR",
+    "country": "San Marino",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1,
+      "Italy": 1
+    },
+    "coords": [
+      43.9424,
+      12.4578
+    ]
+  },
+  "BDI": {
+    "noc": "BDI",
+    "country": "Burundi",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -3.3731,
+      29.9189
+    ]
+  },
+  "VEN": {
+    "noc": "VEN",
+    "country": "Venezuela",
+    "total_athletes": 31,
+    "total_records_with_birthplace_data": 26,
+    "total_classified_birthplace_records": 26,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 26,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      6.4238,
+      -66.5897
+    ]
+  },
+  "MLT": {
+    "noc": "MLT",
+    "country": "Malta",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      35.9375,
+      14.3754
+    ]
+  },
+  "EOR": {
+    "noc": "EOR",
+    "country": "EOR",
+    "total_athletes": 37,
+    "total_records_with_birthplace_data": 36,
+    "total_classified_birthplace_records": 36,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 36,
+    "foreign_born_pct": 100.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 100.0,
+    "top_source_countries": {
+      "IR Iran": 15,
+      "Syria": 5,
+      "Afghanistan": 4,
+      "Ethiopia": 2,
+      "Sudan": 2
+    },
+    "coords": [
+      48.8566,
+      2.3522
+    ]
+  },
+  "BEL": {
+    "noc": "BEL",
+    "country": "Belgium",
+    "total_athletes": 177,
+    "total_records_with_birthplace_data": 140,
+    "total_classified_birthplace_records": 140,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 128,
+    "foreign_born_count": 12,
+    "foreign_born_pct": 8.57,
+    "medal_count": 10,
+    "medal_winning_athletes": 9,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 11.11,
+    "top_source_countries": {
+      "Great Britain": 2,
+      "C\u00f4te d'Ivoire": 1,
+      "Kenya": 1,
+      "Romania": 1,
+      "DR Congo": 1
+    },
+    "coords": [
+      50.5039,
+      4.4699
+    ]
+  },
+  "TUV": {
+    "noc": "TUV",
+    "country": "Tuvalu",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -7.1095,
+      177.6493
+    ]
+  },
+  "SOM": {
+    "noc": "SOM",
+    "country": "Somalia",
+    "total_athletes": 1,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      5.1521,
+      46.1996
+    ]
+  },
+  "LBR": {
+    "noc": "LBR",
+    "country": "Liberia",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 60.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 3
+    },
+    "coords": [
+      6.4281,
+      -9.4295
+    ]
+  },
+  "ZAM": {
+    "noc": "ZAM",
+    "country": "Zambia",
+    "total_athletes": 31,
+    "total_records_with_birthplace_data": 23,
+    "total_classified_birthplace_records": 23,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 23,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -13.1339,
+      27.8493
+    ]
+  },
+  "AUS": {
+    "noc": "AUS",
+    "country": "Australia",
+    "total_athletes": 475,
+    "total_records_with_birthplace_data": 433,
+    "total_classified_birthplace_records": 433,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 372,
+    "foreign_born_count": 61,
+    "foreign_born_pct": 14.09,
+    "medal_count": 121,
+    "medal_winning_athletes": 93,
+    "diaspora_medal_count": 18,
+    "diaspora_medal_pct": 16.13,
+    "top_source_countries": {
+      "Great Britain": 10,
+      "United States": 7,
+      "South Africa": 6,
+      "New Zealand": 3,
+      "Russian Federation": 3
+    },
+    "coords": [
+      -25.2744,
+      133.7751
+    ]
+  },
+  "KSA": {
+    "noc": "KSA",
+    "country": "Saudi Arabia",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      23.8859,
+      45.0792
+    ]
+  },
+  "TOG": {
+    "noc": "TOG",
+    "country": "Togo",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      8.6195,
+      0.8248
+    ]
+  },
+  "DOM": {
+    "noc": "DOM",
+    "country": "Dominican Republic",
+    "total_athletes": 59,
+    "total_records_with_birthplace_data": 47,
+    "total_classified_birthplace_records": 47,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 35,
+    "foreign_born_count": 12,
+    "foreign_born_pct": 25.53,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Spain": 6,
+      "Germany": 2,
+      "Nigeria": 1,
+      "Mexico": 1,
+      "Belgium": 1
+    },
+    "coords": [
+      18.7357,
+      -70.1627
+    ]
+  },
+  "SLE": {
+    "noc": "SLE",
+    "country": "Sierra Leone",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      8.4606,
+      -11.7799
+    ]
+  },
+  "HAI": {
+    "noc": "HAI",
+    "country": "Haiti",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 4,
+      "Canada": 2
+    },
+    "coords": [
+      18.9712,
+      -72.2852
+    ]
+  },
+  "FIN": {
+    "noc": "FIN",
+    "country": "Finland",
+    "total_athletes": 57,
+    "total_records_with_birthplace_data": 54,
+    "total_classified_birthplace_records": 54,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 51,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 5.56,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1,
+      "Sweden": 1,
+      "Germany": 1
+    },
+    "coords": [
+      61.9241,
+      25.7482
+    ]
+  },
+  "BAH": {
+    "noc": "BAH",
+    "country": "Bahamas",
+    "total_athletes": 19,
+    "total_records_with_birthplace_data": 14,
+    "total_classified_birthplace_records": 14,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 14,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      25.0343,
+      -77.3963
+    ]
+  },
+  "TTO": {
+    "noc": "TTO",
+    "country": "Trinidad and Tobago",
+    "total_athletes": 17,
+    "total_records_with_birthplace_data": 10,
+    "total_classified_birthplace_records": 10,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 9,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 10.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      10.6918,
+      -61.2225
+    ]
+  },
+  "DMA": {
+    "noc": "DMA",
+    "country": "Dominica",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      15.415,
+      -61.371
+    ]
+  },
+  "USA": {
+    "noc": "USA",
+    "country": "United States",
+    "total_athletes": 619,
+    "total_records_with_birthplace_data": 552,
+    "total_classified_birthplace_records": 552,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 527,
+    "foreign_born_count": 25,
+    "foreign_born_pct": 4.53,
+    "medal_count": 317,
+    "medal_winning_athletes": 254,
+    "diaspora_medal_count": 10,
+    "diaspora_medal_pct": 3.54,
+    "top_source_countries": {
+      "Australia": 3,
+      "Canada": 3,
+      "Great Britain": 3,
+      "Italy": 2,
+      "China": 2
+    },
+    "coords": [
+      37.0902,
+      -95.7129
+    ]
+  },
+  "BRU": {
+    "noc": "BRU",
+    "country": "Brunei Darussalam",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 0,
+    "total_classified_birthplace_records": 0,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      4.5353,
+      114.7277
+    ]
+  },
+  "TUN": {
+    "noc": "TUN",
+    "country": "Tunisia",
+    "total_athletes": 26,
+    "total_records_with_birthplace_data": 20,
+    "total_classified_birthplace_records": 20,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 17,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 15.0,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 2,
+      "Italy": 1
+    },
+    "coords": [
+      33.8869,
+      9.5375
+    ]
+  },
+  "URU": {
+    "noc": "URU",
+    "country": "Uruguay",
+    "total_athletes": 27,
+    "total_records_with_birthplace_data": 9,
+    "total_classified_birthplace_records": 9,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 8,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 11.11,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Argentina": 1
+    },
+    "coords": [
+      -32.5228,
+      -55.7658
+    ]
+  },
+  "MAD": {
+    "noc": "MAD",
+    "country": "Madagascar",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -18.7669,
+      46.8691
+    ]
+  },
+  "CAF": {
+    "noc": "CAF",
+    "country": "Centr Afric Re",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      6.6111,
+      20.9394
+    ]
+  },
+  "POR": {
+    "noc": "POR",
+    "country": "Portugal",
+    "total_athletes": 75,
+    "total_records_with_birthplace_data": 71,
+    "total_classified_birthplace_records": 71,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 58,
+    "foreign_born_count": 13,
+    "foreign_born_pct": 18.31,
+    "medal_count": 5,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 25.0,
+    "top_source_countries": {
+      "Brazil": 3,
+      "Switzerland": 2,
+      "China": 2,
+      "Sao Tome & Principe": 2,
+      "Guinea": 1
+    },
+    "coords": [
+      39.3999,
+      -8.2245
+    ]
+  },
+  "NEP": {
+    "noc": "NEP",
+    "country": "Nepal",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 16.67,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Thailand": 1
+    },
+    "coords": [
+      28.3949,
+      84.124
+    ]
+  },
+  "HKG": {
+    "noc": "HKG",
+    "country": "Hong Kong, China",
+    "total_athletes": 34,
+    "total_records_with_birthplace_data": 26,
+    "total_classified_birthplace_records": 26,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 25,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 3.85,
+    "medal_count": 4,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      22.3193,
+      114.1694
+    ]
+  },
+  "HON": {
+    "noc": "HON",
+    "country": "Honduras",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 66.67,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2
+    },
+    "coords": [
+      15.2,
+      -86.2419
+    ]
+  },
+  "PNG": {
+    "noc": "PNG",
+    "country": "Papua New Guinea",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -6.3149,
+      143.9555
+    ]
+  },
+  "ISL": {
+    "noc": "ISL",
+    "country": "Iceland",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      64.9631,
+      -19.0208
+    ]
+  },
+  "AZE": {
+    "noc": "AZE",
+    "country": "Azerbaijan",
+    "total_athletes": 48,
+    "total_records_with_birthplace_data": 41,
+    "total_classified_birthplace_records": 41,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 22,
+    "foreign_born_count": 19,
+    "foreign_born_pct": 46.34,
+    "medal_count": 7,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 4,
+    "diaspora_medal_pct": 57.14,
+    "top_source_countries": {
+      "Ukraine": 5,
+      "Russian Federation": 5,
+      "Indonesia": 2,
+      "IR Iran": 2,
+      "Georgia": 2
+    },
+    "coords": [
+      40.1431,
+      47.5769
+    ]
+  },
+  "ECU": {
+    "noc": "ECU",
+    "country": "Ecuador",
+    "total_athletes": 40,
+    "total_records_with_birthplace_data": 40,
+    "total_classified_birthplace_records": 40,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 37,
+    "foreign_born_count": 3,
+    "foreign_born_pct": 7.5,
+    "medal_count": 6,
+    "medal_winning_athletes": 5,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2,
+      "Switzerland": 1
+    },
+    "coords": [
+      -1.8312,
+      -78.1834
+    ]
+  },
+  "PLE": {
+    "noc": "PLE",
+    "country": "Palestine",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 5,
+    "foreign_born_pct": 83.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 2,
+      "Chile": 1,
+      "Syria": 1,
+      "Saudi Arabia": 1
+    },
+    "coords": [
+      31.9522,
+      35.2332
+    ]
+  },
+  "SRI": {
+    "noc": "SRI",
+    "country": "Sri Lanka",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      7.8731,
+      80.7718
+    ]
+  },
+  "NED": {
+    "noc": "NED",
+    "country": "Netherlands",
+    "total_athletes": 290,
+    "total_records_with_birthplace_data": 240,
+    "total_classified_birthplace_records": 240,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 227,
+    "foreign_born_count": 13,
+    "foreign_born_pct": 5.42,
+    "medal_count": 115,
+    "medal_winning_athletes": 107,
+    "diaspora_medal_count": 5,
+    "diaspora_medal_pct": 2.8,
+    "top_source_countries": {
+      "Suriname": 3,
+      "Zimbabwe": 1,
+      "South Africa": 1,
+      "Belgium": 1,
+      "Morocco": 1
+    },
+    "coords": [
+      52.1326,
+      5.2913
+    ]
+  },
+  "BIH": {
+    "noc": "BIH",
+    "country": "Bosnia & Herzegovina",
+    "total_athletes": 5,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      43.9159,
+      17.6791
+    ]
+  },
+  "CAN": {
+    "noc": "CAN",
+    "country": "Canada",
+    "total_athletes": 332,
+    "total_records_with_birthplace_data": 317,
+    "total_classified_birthplace_records": 317,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 278,
+    "foreign_born_count": 39,
+    "foreign_born_pct": 12.3,
+    "medal_count": 55,
+    "medal_winning_athletes": 50,
+    "diaspora_medal_count": 5,
+    "diaspora_medal_pct": 10.0,
+    "top_source_countries": {
+      "United States": 9,
+      "China": 6,
+      "Japan": 2,
+      "France": 2,
+      "Hong Kong, China": 2
+    },
+    "coords": [
+      56.1304,
+      -106.3468
+    ]
+  },
+  "MYA": {
+    "noc": "MYA",
+    "country": "Myanmar",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      21.9162,
+      95.956
+    ]
+  },
+  "BOT": {
+    "noc": "BOT",
+    "country": "Botswana",
+    "total_athletes": 14,
+    "total_records_with_birthplace_data": 9,
+    "total_classified_birthplace_records": 9,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 9,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 5,
+    "medal_winning_athletes": 4,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -22.3285,
+      24.6849
+    ]
+  },
+  "LAT": {
+    "noc": "LAT",
+    "country": "Latvia",
+    "total_athletes": 29,
+    "total_records_with_birthplace_data": 26,
+    "total_classified_birthplace_records": 26,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 24,
+    "foreign_born_count": 2,
+    "foreign_born_pct": 7.69,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1,
+      "Italy": 1
+    },
+    "coords": [
+      56.8796,
+      24.6032
+    ]
+  },
+  "TGA": {
+    "noc": "TGA",
+    "country": "Tonga",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 3,
+    "total_classified_birthplace_records": 3,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 33.33,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      -21.1789,
+      -175.1982
+    ]
+  },
+  "LBN": {
+    "noc": "LBN",
+    "country": "Lebanon",
+    "total_athletes": 9,
+    "total_records_with_birthplace_data": 7,
+    "total_classified_birthplace_records": 7,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 4,
+    "foreign_born_pct": 57.14,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Armenia": 1,
+      "Russian Federation": 1,
+      "Germany": 1,
+      "United States": 1
+    },
+    "coords": [
+      33.8547,
+      35.8623
+    ]
+  },
+  "SRB": {
+    "noc": "SRB",
+    "country": "Serbia",
+    "total_athletes": 114,
+    "total_records_with_birthplace_data": 106,
+    "total_classified_birthplace_records": 106,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 77,
+    "foreign_born_count": 29,
+    "foreign_born_pct": 27.36,
+    "medal_count": 29,
+    "medal_winning_athletes": 29,
+    "diaspora_medal_count": 5,
+    "diaspora_medal_pct": 17.24,
+    "top_source_countries": {
+      "Russian Federation": 7,
+      "Yugoslavia": 6,
+      "Bosnia & Herzegovina": 5,
+      "Croatia": 2,
+      "United States": 2
+    },
+    "coords": [
+      44.0165,
+      21.0059
+    ]
+  },
+  "NCA": {
+    "noc": "NCA",
+    "country": "Nicaragua",
+    "total_athletes": 7,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 5,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 16.67,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Germany": 1
+    },
+    "coords": [
+      12.8654,
+      -85.2072
+    ]
+  },
+  "CMR": {
+    "noc": "CMR",
+    "country": "Cameroon",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 25.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "France": 1
+    },
+    "coords": [
+      7.3697,
+      12.3547
+    ]
+  },
+  "GEQ": {
+    "noc": "GEQ",
+    "country": "Equatorial Guinea",
+    "total_athletes": 3,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 2,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      1.6508,
+      10.2679
+    ]
+  },
+  "LAO": {
+    "noc": "LAO",
+    "country": "Lao PDR",
+    "total_athletes": 4,
+    "total_records_with_birthplace_data": 2,
+    "total_classified_birthplace_records": 2,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 50.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      19.8563,
+      102.4955
+    ]
+  },
+  "GUA": {
+    "noc": "GUA",
+    "country": "Guatemala",
+    "total_athletes": 16,
+    "total_records_with_birthplace_data": 14,
+    "total_classified_birthplace_records": 14,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 14,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 2,
+    "medal_winning_athletes": 2,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      15.7835,
+      -90.2308
+    ]
+  },
+  "GRE": {
+    "noc": "GRE",
+    "country": "Greece",
+    "total_athletes": 100,
+    "total_records_with_birthplace_data": 88,
+    "total_classified_birthplace_records": 88,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 81,
+    "foreign_born_count": 7,
+    "foreign_born_pct": 7.95,
+    "medal_count": 10,
+    "medal_winning_athletes": 10,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 10.0,
+    "top_source_countries": {
+      "United States": 4,
+      "Bulgaria": 1,
+      "Republic of Moldova": 1,
+      "Russian Federation": 1
+    },
+    "coords": [
+      39.0742,
+      21.8243
+    ]
+  },
+  "ASA": {
+    "noc": "ASA",
+    "country": "American Samoa",
+    "total_athletes": 2,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 0,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 100.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      -14.271,
+      -170.1322
+    ]
+  },
+  "MKD": {
+    "noc": "MKD",
+    "country": "North Macedonia",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 3,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 25.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Russian Federation": 1
+    },
+    "coords": [
+      41.6086,
+      21.7453
+    ]
+  },
+  "SAM": {
+    "noc": "SAM",
+    "country": "Samoa",
+    "total_athletes": 24,
+    "total_records_with_birthplace_data": 7,
+    "total_classified_birthplace_records": 7,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 6,
+    "foreign_born_pct": 85.71,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "New Zealand": 3,
+      "Australia": 1,
+      "Japan": 1,
+      "United States": 1
+    },
+    "coords": [
+      -13.759,
+      -172.1046
+    ]
+  },
+  "COD": {
+    "noc": "COD",
+    "country": "DR Congo",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 4,
+    "total_classified_birthplace_records": 4,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -4.0383,
+      21.7587
+    ]
+  },
+  "SYR": {
+    "noc": "SYR",
+    "country": "Syria",
+    "total_athletes": 6,
+    "total_records_with_birthplace_data": 5,
+    "total_classified_birthplace_records": 5,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 20.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      34.8021,
+      38.9968
+    ]
+  },
+  "PAN": {
+    "noc": "PAN",
+    "country": "Panama",
+    "total_athletes": 8,
+    "total_records_with_birthplace_data": 8,
+    "total_classified_birthplace_records": 8,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 7,
+    "foreign_born_count": 1,
+    "foreign_born_pct": 12.5,
+    "medal_count": 1,
+    "medal_winning_athletes": 1,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 1
+    },
+    "coords": [
+      8.538,
+      -80.7821
+    ]
+  },
+  "SSD": {
+    "noc": "SSD",
+    "country": "South Sudan",
+    "total_athletes": 14,
+    "total_records_with_birthplace_data": 13,
+    "total_classified_birthplace_records": 13,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 4,
+    "foreign_born_count": 9,
+    "foreign_born_pct": 69.23,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Sudan": 3,
+      "United States": 2,
+      "Ethiopia": 1,
+      "Egypt": 1,
+      "Kenya": 1
+    },
+    "coords": [
+      6.877,
+      31.307
+    ]
+  },
+  "NRU": {
+    "noc": "NRU",
+    "country": "Nauru",
+    "total_athletes": 1,
+    "total_records_with_birthplace_data": 1,
+    "total_classified_birthplace_records": 1,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 1,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 0,
+    "medal_winning_athletes": 0,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      -0.5228,
+      166.9315
+    ]
+  },
+  "PHI": {
+    "noc": "PHI",
+    "country": "Philippines",
+    "total_athletes": 22,
+    "total_records_with_birthplace_data": 17,
+    "total_classified_birthplace_records": 17,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 10,
+    "foreign_born_count": 7,
+    "foreign_born_pct": 41.18,
+    "medal_count": 4,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "United States": 4,
+      "Singapore": 1,
+      "Japan": 1,
+      "Spain": 1
+    },
+    "coords": [
+      12.8797,
+      121.774
+    ]
+  },
+  "SUI": {
+    "noc": "SUI",
+    "country": "Switzerland",
+    "total_athletes": 137,
+    "total_records_with_birthplace_data": 103,
+    "total_classified_birthplace_records": 103,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 90,
+    "foreign_born_count": 13,
+    "foreign_born_pct": 12.62,
+    "medal_count": 10,
+    "medal_winning_athletes": 10,
+    "diaspora_medal_count": 1,
+    "diaspora_medal_pct": 10.0,
+    "top_source_countries": {
+      "United States": 4,
+      "France": 2,
+      "Germany": 2,
+      "Eritrea": 1,
+      "Mauritius": 1
+    },
+    "coords": [
+      46.8182,
+      8.2275
+    ]
+  },
+  "PRK": {
+    "noc": "PRK",
+    "country": "DPR Korea",
+    "total_athletes": 14,
+    "total_records_with_birthplace_data": 6,
+    "total_classified_birthplace_records": 6,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 6,
+    "foreign_born_count": 0,
+    "foreign_born_pct": 0.0,
+    "medal_count": 8,
+    "medal_winning_athletes": 7,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {},
+    "coords": [
+      40.3399,
+      127.5101
+    ]
+  },
+  "SLO": {
+    "noc": "SLO",
+    "country": "Slovenia",
+    "total_athletes": 95,
+    "total_records_with_birthplace_data": 83,
+    "total_classified_birthplace_records": 83,
+    "inferred_homegrown_count": 0,
+    "homegrown_count": 76,
+    "foreign_born_count": 7,
+    "foreign_born_pct": 8.43,
+    "medal_count": 3,
+    "medal_winning_athletes": 3,
+    "diaspora_medal_count": 0,
+    "diaspora_medal_pct": 0.0,
+    "top_source_countries": {
+      "Yugoslavia": 4,
+      "Russian Federation": 1,
+      "Greece": 1,
+      "Lithuania": 1
+    },
+    "coords": [
+      46.1512,
+      14.9955
+    ]
+  }
+}
