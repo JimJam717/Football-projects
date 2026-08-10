@@ -24,10 +24,15 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare project pages artifact
+        run: |
+          mkdir -p site/Olympics
+          cp -R Olympics/. site/Olympics/
+
       - name: Upload Olympics dashboard
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Olympics
+          path: ./site
 
       - name: Deploy to GitHub Pages
         id: deployment
